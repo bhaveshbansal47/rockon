@@ -1,0 +1,1 @@
+(function(){$(function(){return $("form.validation").validate()})}).call(this);

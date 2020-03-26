@@ -1,0 +1,1708 @@
+<!DOCTYPE html>
+<html lang='en' xmlns:fb='http://ogp.me/ns/fb#'>
+
+<!-- Mirrored from www.stageit.com/melanie_horsnell/tiny_house_concert/70867 by HTTrack Website Copier/3.x [XR&CO'2014], Thu, 26 Mar 2020 07:09:05 GMT -->
+<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=utf-8" /><!-- /Added by HTTrack -->
+<head>
+<script type="text/javascript">window.NREUM||(NREUM={});NREUM.info={"beacon":"bam.nr-data.net","errorBeacon":"bam.nr-data.net","licenseKey":"43b01e0566","applicationID":"124249","transactionName":"IF5YRkNXVFwARRtVFAdYU1xSXWdEClhYGxILXkE=","queueTime":1,"applicationTime":81,"agent":""}</script>
+<script type="text/javascript">(window.NREUM||(NREUM={})).loader_config={xpid:"VwEFV1JACQEEVlVb",licenseKey:"43b01e0566",applicationID:"124249"};window.NREUM||(NREUM={}),__nr_require=function(t,e,n){function r(n){if(!e[n]){var o=e[n]={exports:{}};t[n][0].call(o.exports,function(e){var o=t[n][1][e];return r(o||e)},o,o.exports)}return e[n].exports}if("function"==typeof __nr_require)return __nr_require;for(var o=0;o<n.length;o++)r(n[o]);return r}({1:[function(t,e,n){function r(t){try{s.console&&console.log(t)}catch(e){}}var o,i=t("ee"),a=t(18),s={};try{o=localStorage.getItem("__nr_flags").split(","),console&&"function"==typeof console.log&&(s.console=!0,o.indexOf("dev")!==-1&&(s.dev=!0),o.indexOf("nr_dev")!==-1&&(s.nrDev=!0))}catch(c){}s.nrDev&&i.on("internal-error",function(t){r(t.stack)}),s.dev&&i.on("fn-err",function(t,e,n){r(n.stack)}),s.dev&&(r("NR AGENT IN DEVELOPMENT MODE"),r("flags: "+a(s,function(t,e){return t}).join(", ")))},{}],2:[function(t,e,n){function r(t,e,n,r,s){try{p?p-=1:o(s||new UncaughtException(t,e,n),!0)}catch(f){try{i("ierr",[f,c.now(),!0])}catch(d){}}return"function"==typeof u&&u.apply(this,a(arguments))}function UncaughtException(t,e,n){this.message=t||"Uncaught error with no additional information",this.sourceURL=e,this.line=n}function o(t,e){var n=e?null:c.now();i("err",[t,n])}var i=t("handle"),a=t(19),s=t("ee"),c=t("loader"),f=t("gos"),u=window.onerror,d=!1,l="nr@seenError",p=0;c.features.err=!0,t(1),window.onerror=r;try{throw new Error}catch(h){"stack"in h&&(t(6),t(5),"addEventListener"in window&&t(3),c.xhrWrappable&&t(7),d=!0)}s.on("fn-start",function(t,e,n){d&&(p+=1)}),s.on("fn-err",function(t,e,n){d&&!n[l]&&(f(n,l,function(){return!0}),this.thrown=!0,o(n))}),s.on("fn-end",function(){d&&!this.thrown&&p>0&&(p-=1)}),s.on("internal-error",function(t){i("ierr",[t,c.now(),!0])})},{}],3:[function(t,e,n){function r(t){for(var e=t;e&&!e.hasOwnProperty(u);)e=Object.getPrototypeOf(e);e&&o(e)}function o(t){s.inPlace(t,[u,d],"-",i)}function i(t,e){return t[1]}var a=t("ee").get("events"),s=t("wrap-function")(a,!0),c=t("gos"),f=XMLHttpRequest,u="addEventListener",d="removeEventListener";e.exports=a,"getPrototypeOf"in Object?(r(document),r(window),r(f.prototype)):f.prototype.hasOwnProperty(u)&&(o(window),o(f.prototype)),a.on(u+"-start",function(t,e){var n=t[1],r=c(n,"nr@wrapped",function(){function t(){if("function"==typeof n.handleEvent)return n.handleEvent.apply(n,arguments)}var e={object:t,"function":n}[typeof n];return e?s(e,"fn-",null,e.name||"anonymous"):n});this.wrapped=t[1]=r}),a.on(d+"-start",function(t){t[1]=this.wrapped||t[1]})},{}],4:[function(t,e,n){function r(t,e,n){var r=t[e];"function"==typeof r&&(t[e]=function(){var t=i(arguments),e={};o.emit(n+"before-start",[t],e);var a;e[m]&&e[m].dt&&(a=e[m].dt);var s=r.apply(this,t);return o.emit(n+"start",[t,a],s),s.then(function(t){return o.emit(n+"end",[null,t],s),t},function(t){throw o.emit(n+"end",[t],s),t})})}var o=t("ee").get("fetch"),i=t(19),a=t(18);e.exports=o;var s=window,c="fetch-",f=c+"body-",u=["arrayBuffer","blob","json","text","formData"],d=s.Request,l=s.Response,p=s.fetch,h="prototype",m="nr@context";d&&l&&p&&(a(u,function(t,e){r(d[h],e,f),r(l[h],e,f)}),r(s,"fetch",c),o.on(c+"end",function(t,e){var n=this;if(e){var r=e.headers.get("content-length");null!==r&&(n.rxSize=r),o.emit(c+"done",[null,e],n)}else o.emit(c+"done",[t],n)}))},{}],5:[function(t,e,n){var r=t("ee").get("raf"),o=t("wrap-function")(r),i="equestAnimationFrame";e.exports=r,o.inPlace(window,["r"+i,"mozR"+i,"webkitR"+i,"msR"+i],"raf-"),r.on("raf-start",function(t){t[0]=o(t[0],"fn-")})},{}],6:[function(t,e,n){function r(t,e,n){t[0]=a(t[0],"fn-",null,n)}function o(t,e,n){this.method=n,this.timerDuration=isNaN(t[1])?0:+t[1],t[0]=a(t[0],"fn-",this,n)}var i=t("ee").get("timer"),a=t("wrap-function")(i),s="setTimeout",c="setInterval",f="clearTimeout",u="-start",d="-";e.exports=i,a.inPlace(window,[s,"setImmediate"],s+d),a.inPlace(window,[c],c+d),a.inPlace(window,[f,"clearImmediate"],f+d),i.on(c+u,r),i.on(s+u,o)},{}],7:[function(t,e,n){function r(t,e){d.inPlace(e,["onreadystatechange"],"fn-",s)}function o(){var t=this,e=u.context(t);t.readyState>3&&!e.resolved&&(e.resolved=!0,u.emit("xhr-resolved",[],t)),d.inPlace(t,w,"fn-",s)}function i(t){y.push(t),h&&(b?b.then(a):v?v(a):(E=-E,O.data=E))}function a(){for(var t=0;t<y.length;t++)r([],y[t]);y.length&&(y=[])}function s(t,e){return e}function c(t,e){for(var n in t)e[n]=t[n];return e}t(3);var f=t("ee"),u=f.get("xhr"),d=t("wrap-function")(u),l=NREUM.o,p=l.XHR,h=l.MO,m=l.PR,v=l.SI,g="readystatechange",w=["onload","onerror","onabort","onloadstart","onloadend","onprogress","ontimeout"],y=[];e.exports=u;var x=window.XMLHttpRequest=function(t){var e=new p(t);try{u.emit("new-xhr",[e],e),e.addEventListener(g,o,!1)}catch(n){try{u.emit("internal-error",[n])}catch(r){}}return e};if(c(p,x),x.prototype=p.prototype,d.inPlace(x.prototype,["open","send"],"-xhr-",s),u.on("send-xhr-start",function(t,e){r(t,e),i(e)}),u.on("open-xhr-start",r),h){var b=m&&m.resolve();if(!v&&!m){var E=1,O=document.createTextNode(E);new h(a).observe(O,{characterData:!0})}}else f.on("fn-end",function(t){t[0]&&t[0].type===g||a()})},{}],8:[function(t,e,n){function r(t){if(!i(t))return null;var e=window.NREUM;if(!e.loader_config)return null;var n=(e.loader_config.accountID||"").toString()||null,r=(e.loader_config.agentID||"").toString()||null,s=(e.loader_config.trustKey||"").toString()||null;if(!n||!r)return null;var c=a.generateCatId(),f=a.generateCatId(),u=Date.now(),d=o(c,f,u,n,r,s);return{header:d,guid:c,traceId:f,timestamp:u}}function o(t,e,n,r,o,i){var a="btoa"in window&&"function"==typeof window.btoa;if(!a)return null;var s={v:[0,1],d:{ty:"Browser",ac:r,ap:o,id:t,tr:e,ti:n}};return i&&r!==i&&(s.d.tk=i),btoa(JSON.stringify(s))}function i(t){var e=!1,n=!1,r={};if("init"in NREUM&&"distributed_tracing"in NREUM.init&&(r=NREUM.init.distributed_tracing,n=!!r.enabled),n)if(t.sameOrigin)e=!0;else if(r.allowed_origins instanceof Array)for(var o=0;o<r.allowed_origins.length;o++){var i=s(r.allowed_origins[o]);if(t.hostname===i.hostname&&t.protocol===i.protocol&&t.port===i.port){e=!0;break}}return n&&e}var a=t(16),s=t(10);e.exports={generateTracePayload:r,shouldGenerateTrace:i}},{}],9:[function(t,e,n){function r(t){var e=this.params,n=this.metrics;if(!this.ended){this.ended=!0;for(var r=0;r<l;r++)t.removeEventListener(d[r],this.listener,!1);e.aborted||(n.duration=a.now()-this.startTime,this.loadCaptureCalled||4!==t.readyState?null==e.status&&(e.status=0):i(this,t),n.cbTime=this.cbTime,u.emit("xhr-done",[t],t),s("xhr",[e,n,this.startTime]))}}function o(t,e){var n=c(e),r=t.params;r.host=n.hostname+":"+n.port,r.pathname=n.pathname,t.parsedOrigin=c(e),t.sameOrigin=t.parsedOrigin.sameOrigin}function i(t,e){t.params.status=e.status;var n=v(e,t.lastSize);if(n&&(t.metrics.rxSize=n),t.sameOrigin){var r=e.getResponseHeader("X-NewRelic-App-Data");r&&(t.params.cat=r.split(", ").pop())}t.loadCaptureCalled=!0}var a=t("loader");if(a.xhrWrappable){var s=t("handle"),c=t(10),f=t(8).generateTracePayload,u=t("ee"),d=["load","error","abort","timeout"],l=d.length,p=t("id"),h=t(14),m=t(13),v=t(11),g=window.XMLHttpRequest;a.features.xhr=!0,t(7),t(4),u.on("new-xhr",function(t){var e=this;e.totalCbs=0,e.called=0,e.cbTime=0,e.end=r,e.ended=!1,e.xhrGuids={},e.lastSize=null,e.loadCaptureCalled=!1,t.addEventListener("load",function(n){i(e,t)},!1),h&&(h>34||h<10)||window.opera||t.addEventListener("progress",function(t){e.lastSize=t.loaded},!1)}),u.on("open-xhr-start",function(t){this.params={method:t[0]},o(this,t[1]),this.metrics={}}),u.on("open-xhr-end",function(t,e){"loader_config"in NREUM&&"xpid"in NREUM.loader_config&&this.sameOrigin&&e.setRequestHeader("X-NewRelic-ID",NREUM.loader_config.xpid);var n=f(this.parsedOrigin);n&&n.header&&(e.setRequestHeader("newrelic",n.header),this.dt=n)}),u.on("send-xhr-start",function(t,e){var n=this.metrics,r=t[0],o=this;if(n&&r){var i=m(r);i&&(n.txSize=i)}this.startTime=a.now(),this.listener=function(t){try{"abort"!==t.type||o.loadCaptureCalled||(o.params.aborted=!0),("load"!==t.type||o.called===o.totalCbs&&(o.onloadCalled||"function"!=typeof e.onload))&&o.end(e)}catch(n){try{u.emit("internal-error",[n])}catch(r){}}};for(var s=0;s<l;s++)e.addEventListener(d[s],this.listener,!1)}),u.on("xhr-cb-time",function(t,e,n){this.cbTime+=t,e?this.onloadCalled=!0:this.called+=1,this.called!==this.totalCbs||!this.onloadCalled&&"function"==typeof n.onload||this.end(n)}),u.on("xhr-load-added",function(t,e){var n=""+p(t)+!!e;this.xhrGuids&&!this.xhrGuids[n]&&(this.xhrGuids[n]=!0,this.totalCbs+=1)}),u.on("xhr-load-removed",function(t,e){var n=""+p(t)+!!e;this.xhrGuids&&this.xhrGuids[n]&&(delete this.xhrGuids[n],this.totalCbs-=1)}),u.on("addEventListener-end",function(t,e){e instanceof g&&"load"===t[0]&&u.emit("xhr-load-added",[t[1],t[2]],e)}),u.on("removeEventListener-end",function(t,e){e instanceof g&&"load"===t[0]&&u.emit("xhr-load-removed",[t[1],t[2]],e)}),u.on("fn-start",function(t,e,n){e instanceof g&&("onload"===n&&(this.onload=!0),("load"===(t[0]&&t[0].type)||this.onload)&&(this.xhrCbStart=a.now()))}),u.on("fn-end",function(t,e){this.xhrCbStart&&u.emit("xhr-cb-time",[a.now()-this.xhrCbStart,this.onload,e],e)}),u.on("fetch-before-start",function(t){var e,n=t[1]||{};"string"==typeof t[0]?e=t[0]:t[0]&&t[0].url&&(e=t[0].url),e&&(this.parsedOrigin=c(e),this.sameOrigin=this.parsedOrigin.sameOrigin);var r=f(this.parsedOrigin);if(r&&r.header){var o=r.header;if("string"==typeof t[0]){var i={};for(var a in n)i[a]=n[a];i.headers=new Headers(n.headers||{}),i.headers.set("newrelic",o),this.dt=r,t.length>1?t[1]=i:t.push(i)}else t[0]&&t[0].headers&&(t[0].headers.append("newrelic",o),this.dt=r)}})}},{}],10:[function(t,e,n){var r={};e.exports=function(t){if(t in r)return r[t];var e=document.createElement("a"),n=window.location,o={};e.href=t,o.port=e.port;var i=e.href.split("://");!o.port&&i[1]&&(o.port=i[1].split("../../index.html")[0].split("@").pop().split(":")[1]),o.port&&"0"!==o.port||(o.port="https"===i[0]?"443":"80"),o.hostname=e.hostname||n.hostname,o.pathname=e.pathname,o.protocol=i[0],"/"!==o.pathname.charAt(0)&&(o.pathname="/"+o.pathname);var a=!e.protocol||":"===e.protocol||e.protocol===n.protocol,s=e.hostname===document.domain&&e.port===n.port;return o.sameOrigin=a&&(!e.hostname||s),"/"===o.pathname&&(r[t]=o),o}},{}],11:[function(t,e,n){function r(t,e){var n=t.responseType;return"json"===n&&null!==e?e:"arraybuffer"===n||"blob"===n||"json"===n?o(t.response):"text"===n||"document"===n||""===n||void 0===n?o(t.responseText):void 0}var o=t(13);e.exports=r},{}],12:[function(t,e,n){function r(){}function o(t,e,n){return function(){return i(t,[f.now()].concat(s(arguments)),e?null:this,n),e?void 0:this}}var i=t("handle"),a=t(18),s=t(19),c=t("ee").get("tracer"),f=t("loader"),u=NREUM;"undefined"==typeof window.newrelic&&(newrelic=u);var d=["setPageViewName","setCustomAttribute","setErrorHandler","finished","addToTrace","inlineHit","addRelease"],l="api-",p=l+"ixn-";a(d,function(t,e){u[e]=o(l+e,!0,"api")}),u.addPageAction=o(l+"addPageAction",!0),u.setCurrentRouteName=o(l+"routeName",!0),e.exports=newrelic,u.interaction=function(){return(new r).get()};var h=r.prototype={createTracer:function(t,e){var n={},r=this,o="function"==typeof e;return i(p+"tracer",[f.now(),t,n],r),function(){if(c.emit((o?"":"no-")+"fn-start",[f.now(),r,o],n),o)try{return e.apply(this,arguments)}catch(t){throw c.emit("fn-err",[arguments,this,t],n),t}finally{c.emit("fn-end",[f.now()],n)}}}};a("actionText,setName,setAttribute,save,ignore,onEnd,getContext,end,get".split(","),function(t,e){h[e]=o(p+e)}),newrelic.noticeError=function(t,e){"string"==typeof t&&(t=new Error(t)),i("err",[t,f.now(),!1,e])}},{}],13:[function(t,e,n){e.exports=function(t){if("string"==typeof t&&t.length)return t.length;if("object"==typeof t){if("undefined"!=typeof ArrayBuffer&&t instanceof ArrayBuffer&&t.byteLength)return t.byteLength;if("undefined"!=typeof Blob&&t instanceof Blob&&t.size)return t.size;if(!("undefined"!=typeof FormData&&t instanceof FormData))try{return JSON.stringify(t).length}catch(e){return}}}},{}],14:[function(t,e,n){var r=0,o=navigator.userAgent.match(/Firefox[\/\s](\d+\.\d+)/);o&&(r=+o[1]),e.exports=r},{}],15:[function(t,e,n){function r(t,e){var n=t.getEntries();n.forEach(function(t){"first-paint"===t.name?c("timing",["fp",Math.floor(t.startTime)]):"first-contentful-paint"===t.name&&c("timing",["fcp",Math.floor(t.startTime)])})}function o(t,e){var n=t.getEntries();n.length>0&&c("lcp",[n[n.length-1]])}function i(t){if(t instanceof u&&!l){var e,n=Math.round(t.timeStamp);e=n>1e12?Date.now()-n:f.now()-n,l=!0,c("timing",["fi",n,{type:t.type,fid:e}])}}if(!("init"in NREUM&&"page_view_timing"in NREUM.init&&"enabled"in NREUM.init.page_view_timing&&NREUM.init.page_view_timing.enabled===!1)){var a,s,c=t("handle"),f=t("loader"),u=NREUM.o.EV;if("PerformanceObserver"in window&&"function"==typeof window.PerformanceObserver){a=new PerformanceObserver(r),s=new PerformanceObserver(o);try{a.observe({entryTypes:["paint"]}),s.observe({entryTypes:["largest-contentful-paint"]})}catch(d){}}if("addEventListener"in document){var l=!1,p=["click","keydown","mousedown","pointerdown","touchstart"];p.forEach(function(t){document.addEventListener(t,i,!1)})}}},{}],16:[function(t,e,n){function r(){function t(){return e?15&e[n++]:16*Math.random()|0}var e=null,n=0,r=window.crypto||window.msCrypto;r&&r.getRandomValues&&(e=r.getRandomValues(new Uint8Array(31)));for(var o,i="xxxxxxxx-xxxx-4xxx-yxxx-xxxxxxxxxxxx",a="",s=0;s<i.length;s++)o=i[s],"x"===o?a+=t().toString(16):"y"===o?(o=3&t()|8,a+=o.toString(16)):a+=o;return a}function o(){function t(){return e?15&e[n++]:16*Math.random()|0}var e=null,n=0,r=window.crypto||window.msCrypto;r&&r.getRandomValues&&Uint8Array&&(e=r.getRandomValues(new Uint8Array(31)));for(var o=[],i=0;i<16;i++)o.push(t().toString(16));return o.join("")}e.exports={generateUuid:r,generateCatId:o}},{}],17:[function(t,e,n){function r(t,e){if(!o)return!1;if(t!==o)return!1;if(!e)return!0;if(!i)return!1;for(var n=i.split("."),r=e.split("."),a=0;a<r.length;a++)if(r[a]!==n[a])return!1;return!0}var o=null,i=null,a=/Version\/(\S+)\s+Safari/;if(navigator.userAgent){var s=navigator.userAgent,c=s.match(a);c&&s.indexOf("Chrome")===-1&&s.indexOf("Chromium")===-1&&(o="Safari",i=c[1])}e.exports={agent:o,version:i,match:r}},{}],18:[function(t,e,n){function r(t,e){var n=[],r="",i=0;for(r in t)o.call(t,r)&&(n[i]=e(r,t[r]),i+=1);return n}var o=Object.prototype.hasOwnProperty;e.exports=r},{}],19:[function(t,e,n){function r(t,e,n){e||(e=0),"undefined"==typeof n&&(n=t?t.length:0);for(var r=-1,o=n-e||0,i=Array(o<0?0:o);++r<o;)i[r]=t[e+r];return i}e.exports=r},{}],20:[function(t,e,n){e.exports={exists:"undefined"!=typeof window.performance&&window.performance.timing&&"undefined"!=typeof window.performance.timing.navigationStart}},{}],ee:[function(t,e,n){function r(){}function o(t){function e(t){return t&&t instanceof r?t:t?c(t,s,i):i()}function n(n,r,o,i){if(!l.aborted||i){t&&t(n,r,o);for(var a=e(o),s=m(n),c=s.length,f=0;f<c;f++)s[f].apply(a,r);var d=u[y[n]];return d&&d.push([x,n,r,a]),a}}function p(t,e){w[t]=m(t).concat(e)}function h(t,e){var n=w[t];if(n)for(var r=0;r<n.length;r++)n[r]===e&&n.splice(r,1)}function m(t){return w[t]||[]}function v(t){return d[t]=d[t]||o(n)}function g(t,e){f(t,function(t,n){e=e||"feature",y[n]=e,e in u||(u[e]=[])})}var w={},y={},x={on:p,addEventListener:p,removeEventListener:h,emit:n,get:v,listeners:m,context:e,buffer:g,abort:a,aborted:!1};return x}function i(){return new r}function a(){(u.api||u.feature)&&(l.aborted=!0,u=l.backlog={})}var s="nr@context",c=t("gos"),f=t(18),u={},d={},l=e.exports=o();l.backlog=u},{}],gos:[function(t,e,n){function r(t,e,n){if(o.call(t,e))return t[e];var r=n();if(Object.defineProperty&&Object.keys)try{return Object.defineProperty(t,e,{value:r,writable:!0,enumerable:!1}),r}catch(i){}return t[e]=r,r}var o=Object.prototype.hasOwnProperty;e.exports=r},{}],handle:[function(t,e,n){function r(t,e,n,r){o.buffer([t],r),o.emit(t,e,n)}var o=t("ee").get("handle");e.exports=r,r.ee=o},{}],id:[function(t,e,n){function r(t){var e=typeof t;return!t||"object"!==e&&"function"!==e?-1:t===window?0:a(t,i,function(){return o++})}var o=1,i="nr@id",a=t("gos");e.exports=r},{}],loader:[function(t,e,n){function r(){if(!E++){var t=b.info=NREUM.info,e=p.getElementsByTagName("script")[0];if(setTimeout(u.abort,3e4),!(t&&t.licenseKey&&t.applicationID&&e))return u.abort();f(y,function(e,n){t[e]||(t[e]=n)}),c("mark",["onload",a()+b.offset],null,"api");var n=p.createElement("script");n.src="https://"+t.agent,e.parentNode.insertBefore(n,e)}}function o(){"complete"===p.readyState&&i()}function i(){c("mark",["domContent",a()+b.offset],null,"api")}function a(){return O.exists&&performance.now?Math.round(performance.now()):(s=Math.max((new Date).getTime(),s))-b.offset}var s=(new Date).getTime(),c=t("handle"),f=t(18),u=t("ee"),d=t(17),l=window,p=l.document,h="addEventListener",m="attachEvent",v=l.XMLHttpRequest,g=v&&v.prototype;NREUM.o={ST:setTimeout,SI:l.setImmediate,CT:clearTimeout,XHR:v,REQ:l.Request,EV:l.Event,PR:l.Promise,MO:l.MutationObserver};var w=""+location,y={beacon:"bam.nr-data.net",errorBeacon:"bam.nr-data.net",agent:"js-agent.newrelic.com/nr-1167.min.js"},x=v&&g&&g[h]&&!/CriOS/.test(navigator.userAgent),b=e.exports={offset:s,now:a,origin:w,features:{},xhrWrappable:x,userAgent:d};t(12),t(15),p[h]?(p[h]("DOMContentLoaded",i,!1),l[h]("load",r,!1)):(p[m]("onreadystatechange",o),l[m]("onload",r)),c("mark",["firstbyte",s],null,"api");var E=0,O=t(20)},{}],"wrap-function":[function(t,e,n){function r(t){return!(t&&t instanceof Function&&t.apply&&!t[a])}var o=t("ee"),i=t(19),a="nr@original",s=Object.prototype.hasOwnProperty,c=!1;e.exports=function(t,e){function n(t,e,n,o){function nrWrapper(){var r,a,s,c;try{a=this,r=i(arguments),s="function"==typeof n?n(r,a):n||{}}catch(f){l([f,"",[r,a,o],s])}u(e+"start",[r,a,o],s);try{return c=t.apply(a,r)}catch(d){throw u(e+"err",[r,a,d],s),d}finally{u(e+"end",[r,a,c],s)}}return r(t)?t:(e||(e=""),nrWrapper[a]=t,d(t,nrWrapper),nrWrapper)}function f(t,e,o,i){o||(o="");var a,s,c,f="-"===o.charAt(0);for(c=0;c<e.length;c++)s=e[c],a=t[s],r(a)||(t[s]=n(a,f?s+o:o,i,s))}function u(n,r,o){if(!c||e){var i=c;c=!0;try{t.emit(n,r,o,e)}catch(a){l([a,n,r,o])}c=i}}function d(t,e){if(Object.defineProperty&&Object.keys)try{var n=Object.keys(t);return n.forEach(function(n){Object.defineProperty(e,n,{get:function(){return t[n]},set:function(e){return t[n]=e,e}})}),e}catch(r){l([r])}for(var o in t)s.call(t,o)&&(e[o]=t[o]);return e}function l(e){try{t.emit("internal-error",e)}catch(n){}}return t||(t=o),n.inPlace=f,n.flag=a,n}},{}]},{},["loader",2,9]);</script>
+<script src="../../../d2tp1vr1gg6ixe.cloudfront.net/assets/header-7484814f936f893bb9ab737b7eead5e6.js" type="text/javascript"></script>
+<title>Stageit - Melanie Horsnell - Tiny house concert</title>
+<meta content="authenticity_token" name="csrf-param" />
+<meta content="7me/f9B5QkETyhHPhHQUDq//wx7Q9r22TS28NUgORuY=" name="csrf-token" />
+<meta content='Stageit is an online venue for LIVE &amp;amp; interactive virtual concerts providing fans with a front row seat to a backstage experience. &amp;trade;' name='description'>
+<meta content='stageit, live music, live concerts, live experience, interactive virtual concerts' name='keywords'>
+<link href='https://d2tp1vr1gg6ixe.cloudfront.net/assets/favicon16x16-7e4f0564805d7f1d7e4faca5659a09b5.ico' rel='shortcut icon' type='image/x-icon'>
+
+<link href='https://fonts.googleapis.com/css?family=Cabin' rel='stylesheet' type='text/css'>
+<link href='https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300,700' rel='stylesheet' type='text/css'>
+<link href="../../../d2tp1vr1gg6ixe.cloudfront.net/assets/application-b62d269f61cbb20001633b4fdbf30a26.css" media="screen" rel="stylesheet" type="text/css" />
+
+<link href="../../../d2tp1vr1gg6ixe.cloudfront.net/assets/audience_tool/show-91a1719fcb7743ae25ca34cbee182680.css" media="screen" rel="stylesheet" type="text/css" />
+<link href="../../../d2tp1vr1gg6ixe.cloudfront.net/assets/audience_tool/buy_flow-dfedbfc7f334bb645f1b0c5058576dc2.css" media="screen" rel="stylesheet" type="text/css" />
+<link href="../../../d2tp1vr1gg6ixe.cloudfront.net/assets/audience_tool/broadcaster-e9a4b8eec99fb4454adc4f445d1560b5.css" media="screen" rel="stylesheet" type="text/css" />
+<link href="../../../d2tp1vr1gg6ixe.cloudfront.net/assets/audience_tool/mobile_show-6f6f11d70568687c07bc7202813336cb.css" media="screen" rel="stylesheet" type="text/css" />
+<link href="../../../d2tp1vr1gg6ixe.cloudfront.net/assets/merchandise-89d881b9da8228021d0bc0aebfd90b3b.css" media="screen" rel="stylesheet" type="text/css" />
+<link href="../../../d2tp1vr1gg6ixe.cloudfront.net/assets/hitchhikers-6e23a4a9bef2efa22120473c461bbd6c.css" media="screen" rel="stylesheet" type="text/css" />
+<link href="../../../d2tp1vr1gg6ixe.cloudfront.net/assets/better_supporters-25a58d96923b87c1de19ed6c51413a81.css" media="screen" rel="stylesheet" type="text/css" />
+<meta content='During these strange times, here is a weekly concert live from sunny Candelo!' property='og:description'>
+<meta content='During these strange times, here is a weekly concert live from sunny Candelo!' name='twitter:description'>
+<meta content='296364270389381' property='fb:app_id'>
+<meta content='stageit-production:performance' property='og:type'>
+<meta content='https://www.stageit.com/melanie_horsnell/tiny_house_concert/70867' property='og:url'>
+<meta content='Melanie Horsnell' property='og:title'>
+<meta content='summary' name='twitter:card'>
+<meta content='@Stageit' name='twitter:site'>
+<meta content='Melanie Horsnell' name='twitter:title'>
+<meta content='https://dvojaj7u7jwrp.cloudfront.net/user/images/396921/small/profilepic.?1584146491' name='twitter:image'>
+<meta property='og:image' content='https://dvojaj7u7jwrp.cloudfront.net/user/images/396921/original/profilepic.?1584146491' /><link rel='image_src' href='https://dvojaj7u7jwrp.cloudfront.net/user/images/396921/original/profilepic.?1584146491' />
+<meta property='og:image' content='https://dvojaj7u7jwrp.cloudfront.net/user/images/396921/original/profilepic.?1584146491' /><link rel='image_src' href='https://dvojaj7u7jwrp.cloudfront.net/user/images/396921/original/profilepic.?1584146491' />
+<script id='message_template' type='text/x-handlebars-template'>
+<li class='{{class}}' data-login='{{login}}'>
+<div class='avatar'>
+<img height='35' src='{{avatar_thumb_url}}' width='35'>
+</div>
+<div class='content'>
+<div class='from'>
+{{login}}
+<div class='timetoken'>
+{{timetoken}}
+</div>
+</div>
+{{{body}}}
+</div>
+</li>
+</script>
+<script id='info_message_template' type='text/x-handlebars-template'>
+<li class='msg info {{class}}'>
+{{#if title}}
+<div class='title'>{{title}}</div>
+{{/if}}
+<div class='content'>
+{{body_text}}
+{{#body_lines}}
+<div class='content_line'>{{line}}</div>
+{{/body_lines}}
+</div>
+</li>
+</script>
+<script id='error_message_template' type='text/x-handlebars-template'>
+<li class='msg error {{class}}'>
+{{#if code}}
+<div class='title'>{{code}}</div>
+{{/if}}
+{{#if message}}
+<div class='content'>
+{{message}}
+</div>
+{{/if}}
+</li>
+</script>
+<script id='tip_template' type='text/x-handlebars-template'>
+<li class='tip {{class}}'>
+<div class='multiple_notes_icon'><img alt="Note_avatar" src="../../../d2tp1vr1gg6ixe.cloudfront.net/assets/sidestage/note_avatar-b869cefc923973194661346fcea5203c.png" /></div>
+<div class='body'>
+{{login}} Tipped {{amount}} Notes!
+</div>
+<span class='notes'>
+{{amount}}
+<span class='tip_large_note_icon'>
+<img alt="Large_note" src="../../../d2tp1vr1gg6ixe.cloudfront.net/assets/large_note-aa2a9db75a7b92aa37266c3ee2123fc9.png" />
+</span>
+</span>
+</li>
+</script>
+<script id='roster_fan_template' type='text/x-handlebars-template'>
+<li class='roster_fan' data-login='{{login}}'>
+<div class='avatar'>
+<img height='35' src='{{avatar_thumb_url}}' width='35'>
+</div>
+<div class='login'>{{login}}</div>
+</li>
+</script>
+<script id='profile_hover_template' type='text/x-handlebars-template'>
+<div class='profile_hover_box'>
+<img alt="Qtip_triangle" class="profile_hover_nipple" src="../../../d2tp1vr1gg6ixe.cloudfront.net/assets/sidestage/qtip_triangle-9ff77f8cc094eeb13a719e31a4da7527.png" />
+<div class='profile_img'>
+<img height='100' src='{{avatar_small_url}}' width='100'>
+</div>
+<div class='basic_info'>
+<div class='profile_login'>
+{{login}}
+</div>
+<div class='place truncate'>
+{{location}}
+</div>
+</div>
+<div class='buttons'>
+<a href="#" class="stageit_button hover_box_view_profile_link" data-login="{{login}}">Profile</a>
+<a href="#" class="stageit_button hover_box_private_chat_link" data-login="{{login}}">Private Chat</a>
+</div>
+</div>
+</script>
+<script id='private_chat_menu_item' type='text/x-handlebars-template'>
+<li class='private_chat_menu_item' data-login='{{login}}'>
+<div class='avatar {{extra_class}}'>
+<img height='35' src='{{avatar_thumb_url}}' width='35'>
+</div>
+<div class='private_chat_menu_text'>{{name}}</div>
+</li>
+</script>
+<script id='chat_room_template' type='text/x-handlebars-template'>
+<div class='sidestage_page chat_sidestage_page' id='{{room_id}}' style='display:none'>
+{{#show_header}}
+<div class='header'>
+<div class='back_button'>
+<img alt="Back_arrow" class="back_button_arrow" src="../../../d2tp1vr1gg6ixe.cloudfront.net/assets/sidestage/back_arrow-a34aecf8d5e87bce65eb6650dee7459a.png" />
+Back
+</div>
+Private Chat with {{name}}
+</div>
+{{/show_header}}
+<div class='message_box'>
+<ul class='messages'></ul>
+</div>
+<div id='sidestage_login'>
+<div class='login_header'>
+How would you like to sign in?
+<span class='close' onclick='Stageit.stage.sidestage.hide_login_area()'></span>
+</div>
+<div class='content'>
+<button class='sidestage-login-btn' onclick="Stageit.stage.sidestage.hide_login_area(); Stageit.stage.sidestage.sidepage_manager.navigate_to_page('login_page')" type='button'>Login with Stageit</button>
+<a href="/auth/facebook/redirect" class="zocial facebook sidestage-facebook-btn">Sign in with Facebook</a>
+</div>
+</div>
+<div class='missed_messages' onclick='Stageit.stage.sidestage.scroll_message_box_to_bottom()'>
+<div class='missed_message_text'>There are new messages below.  Click to scroll down.</div>
+<div class='arrow'><img alt="Dismiss_arrow" src="../../../d2tp1vr1gg6ixe.cloudfront.net/assets/sidestage/dismiss_arrow-21d835e6b85c97dbd12af550d94a08c3.png" /></div>
+</div>
+<div class='chat_disabled' style='display:none;'>
+The performer has disabled chat for this show.
+</div>
+<div class='chat_input_area'>
+<div class='user_login'>
+<img alt="Chat_favicon" src="../../../d2tp1vr1gg6ixe.cloudfront.net/assets/chat_favicon-9de7608d194c01f0d91f64e1c94bc48d.png" />
+Only ticket holders will be able to chat once the show begins.
+</div>
+<div class='chat_input_container'>
+<input class='chat_input' maxlength='140' name='chat_input' placeholder='Type your message...' type='text'>
+<div class='char_counter'></div>
+</div>
+<input class='chat_say stageit_button' type='button' value='Say'>
+</div>
+</div>
+</script>
+<script id='user_profile_template' type='text/x-handlebars-template'>
+<div class='sidestage_page profile_page' id='profile_{{login}}_{{profile_type}}'>
+<div class='header'>
+<div class='back_button'>
+<img alt="Back_arrow" class="back_button_arrow" src="../../../d2tp1vr1gg6ixe.cloudfront.net/assets/sidestage/back_arrow-a34aecf8d5e87bce65eb6650dee7459a.png" />
+Back
+</div>
+{{login}}
+</div>
+{{> user_profile_image}}
+<div class='basic_info'>
+<div class='profile_login'>
+{{login}}
+</div>
+{{#if location}}
+<div class='place truncate'>
+{{location}}
+</div>
+{{/if}}
+{{#if gender}}
+<div class='gender_age'>
+{{ gender }}
+</div>
+{{/if}}
+<div class='buttons'>
+{{#unless is_current_user}}
+<a href="#" class="stageit_button" onclick="Stageit.stage.sidestage.open_direct_chat(&#x27;{{login}}&#x27;);event.stopPropagation()">Private Chat</a>
+{{/unless}}
+</div>
+</div>
+<div class='profile_spinner'></div>
+</div>
+</script>
+<script id='artist_profile_template' type='text/x-handlebars-template'>
+<div class='sidestage_page profile_page' id='profile_{{login}}_{{profile_type}}'>
+<div class='header'>
+<div class='back_button'>
+<img alt="Back_arrow" class="back_button_arrow" src="../../../d2tp1vr1gg6ixe.cloudfront.net/assets/sidestage/back_arrow-a34aecf8d5e87bce65eb6650dee7459a.png" />
+Back
+</div>
+<div class='login truncate'>
+{{user_name}}
+</div>
+</div>
+{{> user_profile_image}}
+<div class='basic_info'>
+<div class='profile_login'>
+{{login}}
+{{#if verified}}
+<img alt="Verified-artist" class="verified regular" data-tooltip-animation="true" data-tooltip-append-to-body="true" data-tooltip-class="black-tooltip" data-tooltip="This artist is verified" src="../../../d2tp1vr1gg6ixe.cloudfront.net/assets/profile/verified-artist-ecb64ec83c51bb34833daabd8402f293.png" />
+
+{{/if}}
+</div>
+{{#if location}}
+<div class='place truncate'>
+{{location}}
+</div>
+{{/if}}
+{{#if gender}}
+<div class='gender_age'>
+{{ gender }}
+</div>
+{{/if}}
+<div class='buttons'>
+<a href="/{{login}}" class="stageit_button" target="_blank">Full Profile</a>
+<div class='follow follow_{{id}}'>
+{{#if following}}
+<a class='stageit_button' data-remote href='/performer/{{id}}/unfollow'>Unfollow</a>
+{{else}}
+<a href="#" class="stageit_button" onclick="Stageit.stage.sidestage.sidepage_manager.navigate_to_page(&#x27;login_page&#x27;)">Follow</a>
+{{/if}}
+</div>
+</div>
+</div>
+<div class='profile_spinner'></div>
+</div>
+</script>
+<script id='hitchhiking_performance_partial' type='text/x-handlebars-template'>
+<div class='performance {{id}}'>
+<a href='{{performance_url}}' target='_blank'>
+<img class='performance_thumb' height='65' src='{{this.image_url}}' width='65'>
+{{#if this.sold_out}}
+<img alt="Sold_banner_sm" class="sold_out_banner performance_thumb" src="../../../d2tp1vr1gg6ixe.cloudfront.net/assets/sidestage/sold_banner_sm-dfd341480ae298d65d390235ec3c1c2d.png" />
+{{/if}}
+</a>
+<div class='details'>
+<a href='{{performance_url}}' target='_blank'>
+<div class='headliner truncate'>
+{{this.headliner}}
+</div>
+</a>
+{{this.date}}
+{{#unless this.ticketless}}
+-
+{{#if this.pay_what_you_can}}
+Pay What You Can
+{{else}}
+{{this.price}} Notes
+{{/if}}
+{{/unless}}
+<div class='buy'>
+{{#if this.ticket_bought}}
+<div class='ticket_bought'>
+<img alt="Ticket" height="15" src="../../../d2tp1vr1gg6ixe.cloudfront.net/assets/emails/ticket-7e5b71cb2fa663ddd00419d384a5856e.png" />
+You have a ticket
+</div>
+{{else}}
+{{#unless this.sold_out}}
+{{#unless this.ticketless}}
+<button class='buy_ticket_btn_small' data-author-id='{{author_id}}' data-performance-id='{{id}}' data-url='/site/ticket_reservations/preview?performance_id={{id}}' data-user-id=''>Buy Ticket</button>
+{{/unless}}
+{{/unless}}
+{{/if}}
+{{#unless is_current_user}}
+<button class='give_ride_btn_small' data-gift-type='Ticket' data-performance-id='{{id}}' data-recipient-id='{{recipient_id}}' data-url='../../login.html'>Give a Ride!</button>
+{{/unless}}
+</div>
+</div>
+</div>
+</script>
+<script id='performance_info_partial' type='text/x-handlebars-template'>
+<a href='{{this.performance_url}}' target='_blank'>
+<img class='performance_thumb' height='65' src='{{this.image_url}}' width='65'>
+{{#if this.sold_out}}
+<img alt="Sold_banner_sm" class="sold_out_banner performance_thumb" src="../../../d2tp1vr1gg6ixe.cloudfront.net/assets/sidestage/sold_banner_sm-dfd341480ae298d65d390235ec3c1c2d.png" />
+{{/if}}
+</a>
+<div class='details'>
+<a href='{{this.performance_url}}' target='_blank'>
+{{#if this.headliner}}
+<div class='headliner truncate'>
+{{this.headliner}}
+</div>
+{{else}}
+{{#if this.title}}
+<div class='title truncate'>
+{{this.title}}
+</div>
+{{/if}}
+{{/if}}
+</a>
+{{this.date}}
+{{#unless this.ticketless}}
+-
+{{#if this.pay_what_you_can}}
+Pay What You Can
+{{else}}
+{{this.price}} Notes
+{{/if}}
+{{/unless}}
+<div class='buy'>
+{{#if this.ticket_bought}}
+<div class='ticket_bought'>
+<img alt="Ticket" height="15" src="../../../d2tp1vr1gg6ixe.cloudfront.net/assets/emails/ticket-7e5b71cb2fa663ddd00419d384a5856e.png" />
+You have a ticket
+</div>
+{{else}}
+{{#unless this.sold_out}}
+{{#unless this.ticketless}}
+{{#unless this.is_author_viewer}}
+<button class='buy_ticket_btn_small' data-author-id='{{author_id}}' data-performance-id='{{id}}' data-url='/site/ticket_reservations/preview?performance_id={{id}}' data-user-id=''>Buy Ticket</button>
+{{/unless}}
+{{/unless}}
+{{/unless}}
+{{/if}}}
+</div>
+</div>
+</script>
+<script id='additional_profile_info_template' type='text/x-handlebars-template'>
+<div class='stageit_horizontal_tabs' id='{{login}}_{{profile_type}}_sidestage_tabs'>
+<div class='tabs'>
+<ul>
+<li class='active'><a href="#{{login}}_{{profile_type}}_about_info">About</a></li>
+<li><a href="#{{login}}_{{profile_type}}_shows_info">Shows</a></li>
+</ul>
+</div>
+<div class='additional_profile_info_container content'>
+<div class='additional_profile_info tab_content active about_info' id='{{login}}_{{profile_type}}_about_info'>
+{{#if about}}
+<div class='about_chunk'>
+<h3>Bio:</h3>
+<div class='about_user'>
+{{ about }}
+</div>
+</div>
+{{/if}}
+<div>
+{{#if is_performer}}
+<dl>
+<dt>
+Shows Performed
+</dt>
+<dd>
+{{ performances_count }}
+</dd>
+</dl>
+<dl>
+<dt>
+Followers
+</dt>
+<dd>
+{{ followers_count }}
+</dd>
+</dl>
+{{else}}
+<dl>
+<dt>
+Member Since
+</dt>
+<dd>
+{{ member_since }}
+</dd>
+</dl>
+<dl>
+<dt>
+Shows Attended
+</dt>
+<dd>
+{{ num_shows_i_have_been_to }}
+</dd>
+</dl>
+<dl>
+<dt>
+Performers I Follow
+</dt>
+<dd>
+{{ num_following }}
+</dd>
+</dl>
+{{/if}}
+{{#if social_links_present}}
+<div class='about_chunk'>
+<div class='social_links'>
+{{#if twitter_link}}
+<a href="{{twitter_link}}" target="_blank"><img alt="Twitter_icon" src="../../../d2tp1vr1gg6ixe.cloudfront.net/assets/profile/twitter_icon-0dda027a966ecddfdc0953973d61c462.png" /></a>
+{{/if}}
+{{#if facebook_link}}
+<a href="{{facebook_link}}" target="_blank"><img alt="Fb_icon" src="../../../d2tp1vr1gg6ixe.cloudfront.net/assets/profile/fb_icon-547f192dd0a7304e21fa884e8c55b5f0.png" /></a>
+{{/if}}
+{{#if youtube_link}}
+<a href="{{youtube_link}}" target="_blank"><img alt="Youtube_icon" src="../../../d2tp1vr1gg6ixe.cloudfront.net/assets/profile/youtube_icon-8f79fcb286d692dcaed75882275cfa06.png" /></a>
+{{/if}}
+{{#if website_link}}
+<a href="{{website_link}}" target="_blank"><img alt="Www_icon" src="../../../d2tp1vr1gg6ixe.cloudfront.net/assets/profile/www_icon-34d953aae8de6ee43bbbf4d3d58985c0.png" /></a>
+{{/if}}
+{{#if instagram_link}}
+<a href="{{instagram_link}}" target="_blank"><img alt="Instagram_icon" src="../../../d2tp1vr1gg6ixe.cloudfront.net/assets/profile/instagram_icon-bbeacf36a06fbbecef906c483317572b.png" /></a>
+{{/if}}
+</div>
+</div>
+{{/if}}
+</div>
+</div>
+<div class='additional_profile_info tab_content shows_info' id='{{login}}_{{profile_type}}_shows_info'>
+{{#if num_upcoming_shows}}
+<div class='shows_chunk'>
+<h3 class='shows_label'>Upcoming Performances ({{num_upcoming_shows}})</h3>
+<div class='upcoming_shows'>
+{{#each upcoming_shows}}
+<div class='upcoming_performance {{this.id}}'>
+{{> performance_info}}
+</div>
+{{/each}}
+</div>
+</div>
+{{/if}}
+{{#if num_shows_i_want_to_go}}
+<div class='shows_chunk'>
+<h3 class='shows_label'>Shows I Want To Go To ({{num_shows_i_want_to_go}})</h3>
+<div class='shows_im_going_to'>
+{{#each shows_i_want_to_go}}
+{{{include "hitchhiking_performance" is_current_user=../is_current_user recipient_id=../../id }}}
+{{/each}}
+</div>
+</div>
+{{/if}}
+{{#if num_shows_im_going_to}}
+<div class='shows_chunk'>
+<h3 class='shows_label'>Shows I'm going to ({{num_shows_im_going_to}})</h3>
+<div class='shows_im_going_to'>
+{{#each shows_im_going_to}}
+<div class='performance {{this.id}}'>
+{{> performance_info}}
+</div>
+{{/each}}
+</div>
+</div>
+{{/if}}
+</div>
+</div>
+</div>
+</script>
+<script id='pretty_error' type='text/x-handlebars-template'>
+<div class='pretty_error'>
+<div class='error'>
+<span><img alt="Error_x" src="../../../d2tp1vr1gg6ixe.cloudfront.net/assets/sidestage/error_x-8f16bd933c429947f68358b03ef00de3.gif" /></span>
+<span class='msg'>{{text}}</span>
+</div>
+</div>
+</script>
+<script id='top_supporter_item_template' type='text/x-handlebars-template'>
+<li data-login='{{login}}'>
+<a href='#'>
+<span class='l'>&nbsp;</span>
+<span class='c'>
+<img alt='{{login}}' height='30' src='{{photo_url}}' width='30'>
+</span>
+<span class='r'>&nbsp;</span>
+</a>
+</li>
+</script>
+<script id='supporter_login_template' type='text/x-handlebars-template'>
+<div class='item'>
+<li>
+<span>
+<a href="#" class="supporter_login_item" data-login="{{login}}">{{login}}</a>
+</span>
+</li>
+</div>
+</script>
+<script id='supporter_amount_template' type='text/x-handlebars-template'>
+<div class='item'>
+<li>
+{{total_tips}}
+<img alt="Note_icon" src="../../../d2tp1vr1gg6ixe.cloudfront.net/assets/artist_tool/tip_jar/note_icon-0dab72fab45ab3c86c5999de2c89b4bd.png" />
+</li>
+</div>
+</script>
+<script id='own_show_popup_template' type='text/x-handlebars-template'>
+<div class='popup_contents wide_popup' data-title='Sorry!'>
+<div class='popup_text'>
+You cannot get a ticket for your own performance.
+</div>
+<div class='popup_subtext'>
+<em>Nice try, though.</em>
+</div>
+</div>
+<div class='popup_footer'>
+<div class='right'>
+<span class='stageit_button' onclick="$('#popup').dialog('close');">
+Close
+</span>
+</div>
+</div>
+</script>
+<script id='user_profile_image_partial' type='text/x-handlebars-template'>
+<div class='profile_img'>
+<a class='colorbox_link' href='#'>
+<img height='135px' src='{{avatar_feature_url}}' width='135px'>
+</a>
+<div class='hidden'>
+{{#each photos}}
+<a class='user_photo_{{../id}}' href='{{url}}'></a>
+{{/each}}
+</div>
+</div>
+</script>
+<script id='additional_hitchhiker_info_template' type='text/x-handlebars-template'>
+{{#if has_prev}}
+<div class='sort_left' onclick="Stageit.stage.sidestage.view_hitchhiker({{prev}}, 'left');"></div>
+{{else}}
+<div class='sort_left' style='visibility: hidden;'></div>
+{{/if}}
+<div class='middle' data-id='{{recipient_id}}' data-index='{{current}}'>
+{{#if recipient_id}}
+{{#if is_current_user}}
+<div class='hitchhiker_div'>You're hitchhiking!</div>
+{{else}}
+<input class='give_ride_btn' data-gift-type='Ticket' data-performance-id='{{performance_id}}' data-recipient-id='{{recipient_id}}' data-track-url='/site/hitchhikings/tracking_data' data-url='https://www.stageit.com/site/hitchhikings/new_gift' type='button' value='Give This User A Ride'>
+{{/if}}
+{{/if}}
+</div>
+{{#if has_next}}
+<div class='sort_right' onclick="Stageit.stage.sidestage.view_hitchhiker({{next}}, 'right');"></div>
+{{else}}
+<div class='sort_right' style='visibility: hidden;'></div>
+{{/if}}
+</script>
+<script id='hitchhiker_alert_template' type='text/x-handlebars-template'>
+{{#if count}}
+<div id='hitchhiker_alert'>
+<a class='queue_open'>
+<div class='lead'>
+{{#if count_is_one}}
+1 user needs a ride!
+{{else}}
+{{count}} users need a ride!
+{{/if}}
+</div>
+<div>Click here to see who's hitchhiking</div>
+</a>
+<a class='alert-close ui-dialog-titlebar-close ui-corner-all' href='#' role='button'>
+<span class='ui-icon ui-icon-closethick'></span>
+</a>
+</div>
+{{/if}}
+</script>
+<script id='become_hitchhiker_template' type='text/x-handlebars-template'>
+<li class='hitchhike' data-url='{{information_hitchhiking_url}}'>
+Hitch a Ride! -
+<span class='drawer_comment'>
+Click to learn more
+</span>
+</li>
+</script>
+<script id='stop_hitchhiking_template' type='text/x-handlebars-template'>
+<li class='stop_hitchhiking' data-url='{{stop_hitchhiking_url}}'>
+You're Hitchhiking! -
+<span class='drawer_comment'>
+Click to stop
+</span>
+</li>
+</script>
+<script id='precondition_age_popup_template' type='text/x-handlebars-template'>
+<div class='popup_contents wide_popup' data-title='Preconditons'>
+<div class='popup_text'>
+You must be {{criteria}} years old or older to access this page.
+</div>
+<div class='popup_subtext'>
+Please verify your date of birth below.
+</div>
+<div id='precondition_age_select'>
+<select id="m" name="m"><option value="0">January</option>
+<option value="1">February</option>
+<option value="2">March</option>
+<option value="3">April</option>
+<option value="4">May</option>
+<option value="5">June</option>
+<option value="6">July</option>
+<option value="7">August</option>
+<option value="8">September</option>
+<option value="9">October</option>
+<option value="10">November</option>
+<option value="11">December</option></select>
+<select id="d" name="d"><option value="1">1</option>
+<option value="2">2</option>
+<option value="3">3</option>
+<option value="4">4</option>
+<option value="5">5</option>
+<option value="6">6</option>
+<option value="7">7</option>
+<option value="8">8</option>
+<option value="9">9</option>
+<option value="10">10</option>
+<option value="11">11</option>
+<option value="12">12</option>
+<option value="13">13</option>
+<option value="14">14</option>
+<option value="15">15</option>
+<option value="16">16</option>
+<option value="17">17</option>
+<option value="18">18</option>
+<option value="19">19</option>
+<option value="20">20</option>
+<option value="21">21</option>
+<option value="22">22</option>
+<option value="23">23</option>
+<option value="24">24</option>
+<option value="25">25</option>
+<option value="26">26</option>
+<option value="27">27</option>
+<option value="28">28</option>
+<option value="29">29</option>
+<option value="30">30</option>
+<option value="31">31</option></select>
+<select id="y" name="y"><option value="1900">1900</option>
+<option value="1901">1901</option>
+<option value="1902">1902</option>
+<option value="1903">1903</option>
+<option value="1904">1904</option>
+<option value="1905">1905</option>
+<option value="1906">1906</option>
+<option value="1907">1907</option>
+<option value="1908">1908</option>
+<option value="1909">1909</option>
+<option value="1910">1910</option>
+<option value="1911">1911</option>
+<option value="1912">1912</option>
+<option value="1913">1913</option>
+<option value="1914">1914</option>
+<option value="1915">1915</option>
+<option value="1916">1916</option>
+<option value="1917">1917</option>
+<option value="1918">1918</option>
+<option value="1919">1919</option>
+<option value="1920">1920</option>
+<option value="1921">1921</option>
+<option value="1922">1922</option>
+<option value="1923">1923</option>
+<option value="1924">1924</option>
+<option value="1925">1925</option>
+<option value="1926">1926</option>
+<option value="1927">1927</option>
+<option value="1928">1928</option>
+<option value="1929">1929</option>
+<option value="1930">1930</option>
+<option value="1931">1931</option>
+<option value="1932">1932</option>
+<option value="1933">1933</option>
+<option value="1934">1934</option>
+<option value="1935">1935</option>
+<option value="1936">1936</option>
+<option value="1937">1937</option>
+<option value="1938">1938</option>
+<option value="1939">1939</option>
+<option value="1940">1940</option>
+<option value="1941">1941</option>
+<option value="1942">1942</option>
+<option value="1943">1943</option>
+<option value="1944">1944</option>
+<option value="1945">1945</option>
+<option value="1946">1946</option>
+<option value="1947">1947</option>
+<option value="1948">1948</option>
+<option value="1949">1949</option>
+<option value="1950">1950</option>
+<option value="1951">1951</option>
+<option value="1952">1952</option>
+<option value="1953">1953</option>
+<option value="1954">1954</option>
+<option value="1955">1955</option>
+<option value="1956">1956</option>
+<option value="1957">1957</option>
+<option value="1958">1958</option>
+<option value="1959">1959</option>
+<option value="1960">1960</option>
+<option value="1961">1961</option>
+<option value="1962">1962</option>
+<option value="1963">1963</option>
+<option value="1964">1964</option>
+<option value="1965">1965</option>
+<option value="1966">1966</option>
+<option value="1967">1967</option>
+<option value="1968">1968</option>
+<option value="1969">1969</option>
+<option value="1970">1970</option>
+<option value="1971">1971</option>
+<option value="1972">1972</option>
+<option value="1973">1973</option>
+<option value="1974">1974</option>
+<option value="1975">1975</option>
+<option value="1976">1976</option>
+<option value="1977">1977</option>
+<option value="1978">1978</option>
+<option value="1979">1979</option>
+<option value="1980">1980</option>
+<option value="1981">1981</option>
+<option value="1982">1982</option>
+<option value="1983">1983</option>
+<option value="1984">1984</option>
+<option value="1985">1985</option>
+<option value="1986">1986</option>
+<option value="1987">1987</option>
+<option value="1988">1988</option>
+<option value="1989">1989</option>
+<option value="1990">1990</option>
+<option value="1991">1991</option>
+<option value="1992">1992</option>
+<option value="1993">1993</option>
+<option value="1994">1994</option>
+<option value="1995">1995</option>
+<option value="1996">1996</option>
+<option value="1997">1997</option>
+<option value="1998">1998</option>
+<option value="1999">1999</option>
+<option value="2000">2000</option>
+<option value="2001">2001</option>
+<option value="2002">2002</option>
+<option value="2003">2003</option>
+<option value="2004">2004</option>
+<option value="2005">2005</option>
+<option value="2006">2006</option>
+<option value="2007">2007</option>
+<option value="2008">2008</option>
+<option value="2009">2009</option>
+<option value="2010">2010</option>
+<option value="2011">2011</option>
+<option value="2012">2012</option>
+<option value="2013">2013</option>
+<option value="2014">2014</option>
+<option value="2015">2015</option>
+<option value="2016">2016</option>
+<option value="2017">2017</option>
+<option value="2018">2018</option>
+<option value="2019">2019</option>
+<option value="2020">2020</option></select>
+</div>
+</div>
+<div class='popup_footer'>
+<div class='right'>
+<span class='stageit_button grey_button' onclick="window.location = '../../index.html';">
+Exit
+</span>
+<span class='stageit_button' id='precondition_button'>Verify</span>
+</div>
+</div>
+</script>
+<script id='precondition_age_failed_popup_template' type='text/x-handlebars-template'>
+<div class='popup_contents wide_popup' data-title='Preconditons'>
+<div class='popup_text'>
+Sorry, you are not old enough to access this show. Come back in a few years.
+</div>
+<div class='popup_subtext'></div>
+</div>
+<div class='popup_footer'>
+<div class='right'>
+<span class='stageit_button grey_button' onclick="window.location = '../../index.html';">
+Exit
+</span>
+</div>
+</div>
+</script>
+<script id='precondition_age_popup_titlebar_template' type='text/x-handlebars-template'>
+<div class='popup_titlebar_left'>
+Verify your age
+</div>
+</script>
+<script id='precondition_facebook_popup_template' type='text/x-handlebars-template'>
+<div class='popup_contents wide_popup' data-title='Preconditons'>
+<div id='precondition_facebook'>
+<div id='precondition_like_connect' style='display:none'>
+<div class='popup_text'>
+Please Connect with Facebook to access to this show.
+</div>
+<div id='precondition_like_connect_button'>
+<a href="#" class="zocial facebook" onclick="window.location=&#x27;/auth/facebook/redirect&#x27;;return false;">Connect to Facebook</a>
+</div>
+</div>
+<div id='precondition_like_button' style='display:none'>
+<div class='popup_text'>
+Please click the like button below and press continue.
+</div>
+<div id='precondition_like_button_box'>
+<fb:like-box href="{{criteria}}" width="292" show_faces="false" stream="false" header="true" css="font-"></fb:like-box>
+</div>
+</div>
+</div>
+</div>
+<div class='popup_footer'>
+<div class='right'>
+<span class='stageit_button grey_button'><a href="../../index.html">Exit</a></span>
+<span class='stageit_button' id='precondition_button' style='display:none'>Continue</span>
+</div>
+</div>
+</script>
+<script id='precondition_facebook_connect_popup_titlebar_template' type='text/x-handlebars-template'>
+<div class='popup_titlebar_left'>
+Please Connect to Facebook
+</div>
+</script>
+<script id='precondition_facebook_like_popup_titlebar_template' type='text/x-handlebars-template'>
+<div class='popup_titlebar_left'>
+Please like this Facebook page to continue
+</div>
+</script>
+<link href="../../../d2tp1vr1gg6ixe.cloudfront.net/assets/shared/show_header-5e7be2c736cd325675c142ecfef88b17.css" media="screen" rel="stylesheet" type="text/css" />
+<meta content='summary' name='twitter:card'>
+<meta content='@stageit' name='twitter:site'>
+<meta content='Tiny house concert' name='twitter:title'>
+<meta content='During these strange times, here is a weekly concert live from sunny Candelo!' name='twitter:description'>
+<meta content='https://dvojaj7u7jwrp.cloudfront.net/user/images/396921/small/profilepic.?1584146491' name='twitter:image'>
+<link href="../../../d2tp1vr1gg6ixe.cloudfront.net/assets/sponsorship-6e277933b0fed7f402cae2f5a67b6bff.css" media="screen" rel="stylesheet" type="text/css" />
+
+<script id='gift_error_template' type='text/x-handlebars-template'>
+<div class='error'>
+<span><img alt="Error_x" src="../../../d2tp1vr1gg6ixe.cloudfront.net/assets/sidestage/error_x-8f16bd933c429947f68358b03ef00de3.gif" /></span>
+<span class='msg'>{{text}}</span>
+</div>
+</script>
+
+<meta property='og:image' content='https://dvojaj7u7jwrp.cloudfront.net/images/fb_logo.jpg' /><link rel='image_src' href='../../../dvojaj7u7jwrp.cloudfront.net/images/fb_logo.jpg' />
+<style type='text/css'>
+
+</style>
+<script type="text/javascript">
+//<![CDATA[
+window.gon = {};gon.hitchhikers=[];gon.information_hitchhiking_url="../../site/hitchhikings/informationfd51.html?performance_id=70867";
+//]]>
+</script>
+</head>
+<body class='audience_tool show' data-ng-app='stageit.desktop' id='audience_tool_show'>
+<!-- Google Tag Manager -->
+<noscript><iframe src="http://www.googletagmanager.com/ns.html?id=GTM-MXN3GQ"
+height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+'../../../www.googletagmanager.com/gtm5445.html?id='+i+dl;f.parentNode.insertBefore(j,f);
+})(window,document,'script','dataLayer','GTM-MXN3GQ');</script>
+<!-- End Google Tag Manager -->
+
+<div data-app-bundle-id="1005042012" data-environment="production" data-is-ssl-required="true" data-pubnub-relay-host="https://relay.stageit.com/" data-pubnub-sub-key="sub-c-3a77e2cf-caee-11e1-8c56-0b47e2ce4080" data-server-url="https://www.stageit.com/" id="constants"></div>
+<div data-privacy-policy="/static/static_pages/privacy_policy" data-terms-of-service="/static/static_pages/terms_of_service" id="paths"></div>
+
+<div data-api-version="v2.8" data-app-id="296364270389381" id="facebook_data"></div>
+
+<div class='woahbar_alerts'>
+<div class='woahbar' style='display:none;'>
+<span>
+Your version of Internet Explorer is not supported.
+<a class='woahbar-link' href='http://www.google.com/chrome' target='_blank'>
+Please click here to download Google Chrome.
+</a>
+<a class='close-notify'>
+<img alt="Woahbar-up-arrow" class="woahbar-up-arrow" src="../../../d2tp1vr1gg6ixe.cloudfront.net/assets/woahbar-up-arrow-0af96a14d37ed140facf65c090a84913.png" />
+</a>
+</span>
+</div>
+
+</div>
+<div id='fb-root'></div>
+<div id='page_wrapper'>
+<div id='header_wrapper'>
+<div id='header'>
+<div id='header'>
+<div id='search'>
+<a href="../../index.html"><img alt="Stageit - A front row seat to a backstage experience." src="../../../d2tp1vr1gg6ixe.cloudfront.net/assets/header/banner_logo-4f8a1539223b1356f380b8203d955b40.png" /></a>
+<script id='autocomplete_show_item' type='text/x-handlebars-template'>
+{{#performers_category}}
+<a href='{{item.url}}'>
+<div class='name'>
+{{item.name}}
+{{#if item.verified}}
+<img alt="Verified-artist" class="verified small" src="../../../d2tp1vr1gg6ixe.cloudfront.net/assets/profile/verified-artist-ecb64ec83c51bb34833daabd8402f293.png" />
+
+{{/if}}
+</div>
+<div class='genres'>
+{{item.genres}}
+</div>
+</a>
+{{/performers_category}}
+{{#upcoming_shows_category}}
+<a href='{{item.url}}'>
+<div class='name'>
+{{item.name}}
+{{#if item.verified}}
+<img alt="Verified-artist" class="verified small" src="../../../d2tp1vr1gg6ixe.cloudfront.net/assets/profile/verified-artist-ecb64ec83c51bb34833daabd8402f293.png" />
+
+{{/if}}
+</div>
+<div class='title truncate'>
+{{item.title}}
+</div>
+<div class='genres'>
+{{item.genres}}
+</div>
+</a>
+{{/upcoming_shows_category}}
+</script>
+<div id='query_box'><input id="q" name="q" placeholder="Search Stageit Performers, Shows &amp; Genres" type="text" /></div>
+</div>
+<div id='header_divider_end'></div>
+<div id='user_account'>
+<div id='welcome_content'>
+<div id='welcome'>
+Welcome to Stageit
+</div>
+<ul class='horizontal' id='user_account_actions'>
+<li><a href="../../signup.html" id="signup_link">Join Stageit</a></li>
+<li><a href="../../login.html" id="login_link">Sign in</a></li>
+<li class='facebook_connect_link'><a href="https://www.facebook.com/v2.8/dialog/oauth?client_id=296364270389381&amp;display=page&amp;redirect_uri=https%3A%2F%2Fwww.stageit.com%2Fauth%2Ffacebook%2Fcallback&amp;response_type=code&amp;scope=email&amp;state=e008c87a61996d09e86705952cccbaca7621da89ca60edcc"><img alt="Facebook_connect_tiny" src="../../../d2tp1vr1gg6ixe.cloudfront.net/assets/facebook/facebook_connect_tiny-1eb5e2e3020921b301dc9a1795306fce.png" /></a></li>
+</ul>
+</div>
+</div>
+<div id='header_divider_middle'></div>
+</div>
+
+</div>
+<div id='navigation_bar'>
+<ul class='horizontal' id='navigation'>
+<li><a href="../../index.html">Home</a></li>
+<li><a href="../../static/static_pages/what_is_stageit.html">What is StageIt?</a></li>
+<li><a href="../../static/static_pages/our_artists.html">Our Artists</a></li>
+</ul>
+</div>
+</div>
+<div id='content_wrapper'>
+<noscript>
+<div class='jswarning'>Stageit requires a browser with JavaScript support. If you have JavaScript disabled, please enable it and try refreshing this page.</div>
+</noscript>
+
+<div id='content_wrapper_top'>
+
+</div>
+<div id='notification_wrapper'>
+<div class='hitchhiking_notification' style='display:none'>
+<span>You're hitchhiking! If you get a ride, you'll be notified by email. You can also purchase a ticket below or</span>
+<a data-url='' href='#' id='stop_hitchhiking'>stop hitchhiking.</a>
+<div id='spinner_wrapper'>
+&nbsp;
+</div>
+</div>
+
+</div>
+<div id='content_container'>
+<div id='content_wrapper_left'>
+
+</div>
+<div id='content'>
+<div id='content_inner_header'>
+
+</div>
+<div class='stage_content'>
+<div style="display:none;"><div class="popup" data-autoOpen="false" data-bgiframe="true" data-height="" data-modal="true" data-resizable="false" data-width="" id="forgot_password" title="Reset Password"><form accept-charset="UTF-8" action="https://www.stageit.com/site/user/password_reset" data-remote="true" method="post"><div style="margin:0;padding:0;display:inline"><input name="utf8" type="hidden" value="&#x2713;" /><input name="_method" type="hidden" value="put" /><input name="authenticity_token" type="hidden" value="7me/f9B5QkETyhHPhHQUDq//wx7Q9r22TS28NUgORuY=" /></div>
+<div class='popup_contents wide_popup'>
+<label for='email'>Please enter your email address:</label>
+<input id="email" name="email" size="37" style="width:100%" type="text" value="" />
+<div class='error' id='passwd-error-messages'></div>
+</div>
+<div class='popup_footer'>
+<div class='right'>
+<span class='stageit_button grey_button' onclick='$("#forgot_password").dialog("close"); return false;'>Cancel</span>
+<input class="stageit_button" name="commit" type="submit" value="Send" />
+</div>
+</div>
+</form>
+
+</div></div>
+
+
+
+<div id='content_left'>
+<div class='clearfixed_container' id='show_info'>
+<a href="#" onclick="Stageit.stage.sidestage.view_profile(&#x27;melaniehorsnell&#x27;);event.stopPropagation();"><img alt="Tiny house concert" class="performance_image" src="https://dvojaj7u7jwrp.cloudfront.net/user/images/396921/small/profilepic.?1584146491" /></a>
+<div id='show_details'>
+<h2>
+<div class='truncate' id='name_recognition'>
+Melanie Horsnell
+</div>
+</h2>
+<h3>
+<div class='truncate' id='performance_title'>Tiny house concert</div>
+</h3>
+
+<div id='show_header_buttons'>
+<span class='stageit_button' id='view_profile'><a href="#" onclick="Stageit.stage.sidestage.view_profile(&#x27;melaniehorsnell&#x27;);event.stopPropagation();">View Profile</a></span>
+<div class='follow follow_506043'>
+</div>
+
+</div>
+<st-show-timer></st-show-timer>
+</div>
+</div>
+
+<div data-ng-controller='StageController' id='stage'>
+<div data-hitchhike-path="/site/hitchhikings/information?performance_id=70867" data-id="70867" data-purchase-ticket-path="/site/ticket_reservations/preview?performance_id=70867" data-sponsored="false" id="performance_info"></div>
+<script id='template/modal/backdrop.html' type='text/ng-template'>
+<div class='ui-widget-overlay modal-backdrop' data_ng_style="{'z-index': 1040 + (index &amp;&amp; 1 || 0) + index*10}" style='position: fixed'></div>
+</script>
+<script id='template/modal/window.html' type='text/ng-template'>
+<div class='ui-dialog ui-widget ui-widget-content ui-corner-all' data-ng-style="{'z-index': 1050 + index*10, display: 'block'}" data-role='dialog' data-st-center='true' data-tabindex='-1'>
+<div class='modal-dialog' ng-class="{'modal-sm': size == 'sm', 'modal-lg': size == 'lg'}"></div>
+<div class='modal-content' modal-transclude=''></div>
+</div>
+</script>
+
+<div id='overlay-left' style='display: none; float: left; z-index: 100; cursor: pointer;'></div>
+<st-viewer data-channel-id='23811464'></st-viewer>
+<div id='overlay-right' style='display: none; float: right; z-index: 100; cursor: pointer;'></div>
+<div id='curtain'>
+<div class='header'>
+April 20 at  5:45 PM PDT
+- 15 min. show
+- Price: Pay What You Can
+</div>
+<div class='content'>
+<div class='left_col'>
+<h3>showtime:</h3>
+<h3>tickets:</h3>
+</div>
+<div class='right_col'>
+<span>
+<div data-start_time='1587429900000' id='show_start_time'>
+In 26 days
+</div>
+<div id='audience_tickets_left'>
+20
+left
+</div>
+</span>
+</div>
+<div class='footer'>
+<div id='get_ticket_wrapper'>
+<ul id='get_ticket_drawer'>
+<li class='purchase' data-url='../../login.html?performance_id=70867'>
+Purchase a ticket -
+<span class='drawer_comment'>
+recommended
+</span>
+</li>
+<li class='hitchhike' data-url='../../site/hitchhikings/informationfd51.html?performance_id=70867'>
+Hitch a Ride! -
+<span class='drawer_comment'>
+Click to learn more
+</span>
+</li>
+
+</ul>
+<button data_ng_click='getSponsoredTicket()' disabled id='get_ticket_button' type='button' value='Get Ticket'>Get Ticket</button>
+</div>
+<div id='you_have_a_ticket' style='display:none;'>You have a ticket.</div>
+<div id='bottom_stage_links' style=''>
+<div id='calendar_links'>
+Add to
+<a href="../../login.html"><img alt="Ical" src="../../../d2tp1vr1gg6ixe.cloudfront.net/assets/sidestage/ical-987ac0bd8bc872de76850ee790d63cc5.png" />
+iCal
+</a><a id="google_cal_link" href="http://www.google.com/calendar/event?action=TEMPLATE&amp;text=Tiny+house+concert&amp;dates=20200421T004500Z/20200421T010000Z&amp;details=StageIt+performance+%27Tiny+house+concert%27+by+Melanie+Horsnell.++%0Ahttps%3A%2F%2Fwww.stageit.com%2Fsite%2Fperformances%3Fid%3D70867&amp;sprop=http%3A%2F%2Fwww.stageit.com%2F&amp;sprop=name:StageIt&amp;trp=true" target="_blank" alt="Add+to+Google+Calendar"><img alt="Add this event to your Google Calendar" id="googlecal" src="../../../d2tp1vr1gg6ixe.cloudfront.net/assets/sidestage/gcal-1d4694e77b3e62c334f79c0c4207a4c7.png" />gCal</a>
+</div>
+<div id='gift_ticket_link'>
+<div class='gift_ticket_img'><a href="../../login.html?gift_type=Ticket&amp;performance_id=70867" data-remote="true"><img alt="Gift_icon_small_tix" src="../../../d2tp1vr1gg6ixe.cloudfront.net/assets/gift/gift_icon_small_tix-9b00831a9b2a404604ff978c3f3c4548.png" /></a></div>
+<div class='gift_ticket_text'><a href="../../login.html?gift_type=Ticket&amp;performance_id=70867">Gift a ticket to a friend!</a></div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div id='tool_bar'>
+<div class='tool_bar_item' id='tip_form'>
+<h4>Tip the Artist</h4>
+<div class='spinner white-screen'><img alt="Big-green-flower" src="../../../dvojaj7u7jwrp.cloudfront.net/images/ajax/load/big-green-flower.gif" /></div>
+<form accept-charset="UTF-8" action="https://www.stageit.com/site/performances/70867/tips" class="new_tip" data-remote="true" id="new_tip" method="post"><div style="margin:0;padding:0;display:inline"><input name="utf8" type="hidden" value="&#x2713;" /><input name="authenticity_token" type="hidden" value="7me/f9B5QkETyhHPhHQUDq//wx7Q9r22TS28NUgORuY=" /></div><input id="tip_amount" maxlength="4" name="tip[amount]" size="4" type="text" value="10" />
+<input class="stageit_button" disabled="disabled" name="commit" type="submit" value="Tip" />
+</form>
+
+
+</div>
+<div class='tool_bar_item' id='top_supporters'>
+<h4>Top Supporters</h4>
+<ul id='top-users'></ul>
+</div>
+<div class='tool_bar_item' id='rank'>
+<h4>Your Rank</h4>
+<div id='your_tip_rank'>
+N/A
+</div>
+</div>
+<div class='tool_bar_item' id='share'>
+<h4>Share</h4>
+<a href="https://twitter.com/share" class="twitter-share-button" data-count="none" data-text="Melanie Horsnell performing on #Stageit" data-url="https://www.stageit.com/melanie_horsnell/tiny_house_concert/70867" data-via="stageit">Tweet</a>
+<fb:like href='70867.html' send='false' layout='button_count' font='lucida grande' colorscheme='light' show_faces='true' style='width: 75px'></fb:like>
+</div>
+
+</div>
+
+<div id='after_stage'>
+<ul id='after_nav'>
+<li>
+<a href='#show_more_info'>Show Info</a>
+</li>
+<li>
+<a href='#how_stageit_works'>How Stageit Works</a>
+</li>
+<li>
+<a href='#tech_requirements'>Tech Requirements</a>
+</li>
+</ul>
+<div id='show_more_info'>
+<div id='top_supporter_rewards'>
+<h3>Top Supporter Rewards:</h3>
+<p>I will send you a download of an album of your choice!</p>
+</div>
+<p class='eligibility'>
+To be eligible for any rewards, make sure to
+<a href="../../login.html">complete your top supporter information</a>.
+</p>
+<div class='horizontal_rule'></div>
+<div id='show_description'>
+<h3>Show Description:</h3>
+<p>During these strange times, here is a weekly concert live from sunny Candelo!</p>
+</div>
+</div>
+<div id='how_stageit_works'>
+<h3>How Stageit Works</h3>
+<p>Stageit is a LIVE online video concert that is never recorded or archived. Fans can chat with each other in real time and interact with the performer. To get a ticket to this show, click the "Get Ticket" button above. The tip jar also allows you to show your support at anytime. Top Supporters are ranked by their contribution to a specific show (this includes the total value of both your ticket price and tips).</p>
+<p>
+<strong>Important info:</strong>
+Tipping does not secure you a ticket for the show. You must get a ticket to enjoy the performance. This is not a ticket to a brick & mortar event in your home town. This show takes place LIVE on the internet and will not be made available for later viewing.
+</p>
+</div>
+<div id='tech_requirements'>
+<p>
+<strong>Browser:</strong>
+<a alt='chrome' href='http://www.google.com/chrome' target='_blank'>Google Chrome</a><span>, Firefox, and Safari are preferred. We support Internet Explorer 9 and above.</span></p>
+<p>
+<strong>Internet Speed:</strong>
+Typically, Stageit requires a minimum download speed of 400 kbps. However, we recommend a download speed of at least 1 mbps. You can test the speed of your internet connection at
+<a alt='Test your speed' href='http://www.speedtest.net/' target='_blank'>www.speedtest.net</a>.
+</p>
+<p>
+<strong>Media Player:</strong>
+Adobe Flash Player is required when viewing from a laptop or desktop computer.
+Please check to ensure you have the latest version of Adobe Flash by
+<a alt='Flash' href='http://helpx.adobe.com/flash-player/kb/find-version-flash-player.html' target='_blank'>clicking here</a>.
+</p>
+<p>
+<strong>Mobile:</strong>
+Available on mobile devices, including iOS and most Android devices.
+</p>
+</div>
+</div>
+</div>
+<div id='content_right'>
+<div data-default-user-photo='https://dvojaj7u7jwrp.cloudfront.net/user/images/303851/thumbnail/0.png?1427721131' id='sidestage'>
+<span style='display:none'><img alt="Error_x" src="../../../d2tp1vr1gg6ixe.cloudfront.net/assets/sidestage/error_x-8f16bd933c429947f68358b03ef00de3.gif" /></span>
+<div id='toolbar'>
+<div class='left_section'></div>
+<div class='center_section'>
+<div class='hitchhiking_icon' onclick='if($("#hitchhiking_badge").length &amp;&amp; Stageit){Stageit.stage.sidestage.view_hitchhiker_profile();}'>
+</div>
+<div class='private_message'>
+<img alt="Private_message" id="private_message_icon" src="../../../d2tp1vr1gg6ixe.cloudfront.net/assets/sidestage/private_message-dba1ea3c2d762be7526ddc37f8bd70fb.png" />
+<div id='private_message_unread_count'></div>
+<div id='private_chat_menu'>
+<div id='private_chat_menu_nipple'></div>
+<div id='private_menu_contents'>
+<div class='menu_header'>Private Messages</div>
+<ul id='private_chat_menu_items'></ul>
+</div>
+</div>
+</div>
+<div class='main_chat_room_icon'><a href="javascript:void(0)" onclick="Stageit.stage.sidestage.sidepage_manager.navigate_to_page(&quot;chat_page_stageit_show&quot;); Stageit.stage.sidestage.hide_hitchhiker_alert();"><img alt="Chat_icon" src="../../../d2tp1vr1gg6ixe.cloudfront.net/assets/sidestage/chat_icon-b66a86fcbd8de8123682089a84426aa0.png" title="Main Chat" /></a></div>
+</div>
+<div class='right_section'>
+<div class='fans'><a href="javascript:void(0)" onclick="Stageit.stage.sidestage.toggle_fan_roster();"><img alt="Humanoid" onmouseout="this.src=&#x27;https://d2tp1vr1gg6ixe.cloudfront.net/assets/sidestage/humanoid-96aa3d2465b1eb8677f26468745c86eb.png&#x27;" onmouseover="this.src=&#x27;https://d2tp1vr1gg6ixe.cloudfront.net/assets/sidestage/humanoid_hover-c6724c668742d8f140ad216229a01d4c.png&#x27;" src="../../../d2tp1vr1gg6ixe.cloudfront.net/assets/sidestage/humanoid-96aa3d2465b1eb8677f26468745c86eb.png" title="Other Fans" /></a></div>
+</div>
+</div>
+<div id='sidestage_content'>
+<div id='hitchhiker_alert_box'>
+<div class='hidden' data-count='0' id='hitchhiker_alert'>
+<a class='queue_open'>
+<div class='lead'>
+0 users need a ride!
+</div>
+<div>Click here to see who's hitchhiking</div>
+</a>
+<a class='alert-close ui-dialog-titlebar-close ui-corner-all' href='#' role='button'>
+<span class='ui-icon ui-icon-closethick'></span>
+</a>
+</div>
+</div>
+<div id='admin_alerts'>
+<ul class='messages'></ul>
+</div>
+<div class='sidestage_page' id='hitchhiker_profile'>
+<div class='hitchhiker_profile_info'></div>
+<div class='hitchhiking_sort'></div>
+</div>
+<div class='sidestage_page' id='hidden_hitchhiker_profile'>
+<div class='hitchhiker_profile_info'></div>
+<div class='hitchhiking_sort'></div>
+</div>
+<div class='sidestage_page' id='fan_roster'>
+<div class='header'>
+<div class='back_button'>
+<img alt="Back_arrow" class="back_button_arrow" src="../../../d2tp1vr1gg6ixe.cloudfront.net/assets/sidestage/back_arrow-a34aecf8d5e87bce65eb6650dee7459a.png" />
+Back
+</div>
+Fans
+</div>
+<div class='search_filter'>
+<input id='fan_roster_query' placeholder='Search fans in this chat...'>
+</div>
+<ul></ul>
+</div>
+<div class='sidestage_page' id='login_page'>
+<div class='header'>
+<div class='back_button'>
+<img alt="Back_arrow" class="back_button_arrow" src="../../../d2tp1vr1gg6ixe.cloudfront.net/assets/sidestage/back_arrow-a34aecf8d5e87bce65eb6650dee7459a.png" />
+Back
+</div>
+Sign in
+</div>
+<div id='login_errors'>
+<div class='error'>
+<span><img alt="Error_x" src="../../../d2tp1vr1gg6ixe.cloudfront.net/assets/sidestage/error_x-8f16bd933c429947f68358b03ef00de3.gif" /></span>
+<span class='msg'></span>
+</div>
+</div>
+<div class='separator'></div>
+<div class='stageit_signin'>
+<h3>Please sign in.</h3>
+<form accept-charset="UTF-8" action="https://www.stageit.com/site/user_session/create_from_sidestage" class="new_user_session" data-remote="true" id="new_user_session" method="post"><div style="margin:0;padding:0;display:inline"><input name="utf8" type="hidden" value="&#x2713;" /><input name="authenticity_token" type="hidden" value="7me/f9B5QkETyhHPhHQUDq//wx7Q9r22TS28NUgORuY=" /></div><div class='row'>
+<input autocomplete="on" class="text" id="user_session_email" maxlength="60" name="user_session[email]" placeholder="Username or Email" size="15" type="text" />
+</div>
+<div class='row'>
+<input autocomplete="on" class="text" id="user_session_password" maxlength="60" name="user_session[password]" placeholder="Password" size="15" type="password" />
+</div>
+<div id='login-button'>
+<input class="stageit_button" name="commit" type="submit" value="Sign in" />
+</div>
+<div class='forgot_password'>
+<a href="#" onclick="forgotten_open()">Forgot your password?</a>
+</div>
+</form>
+
+</div>
+<div class='separator'></div>
+<div id='sidestage_signin_footer'>
+<a href="https://www.facebook.com/v2.8/dialog/oauth?client_id=296364270389381&amp;display=page&amp;redirect_uri=https%3A%2F%2Fwww.stageit.com%2Fauth%2Ffacebook%2Fcallback&amp;response_type=code&amp;scope=email&amp;state=e5446aadd28633a495d559e58afc378d7b6d4cdb1c962a7f" class="zocial facebook">Sign in with Facebook</a>
+<div class='separator'></div>
+<div class='row'>
+<a href="../../signup.html">Dont have an account? Click here to sign up.</a>
+</div>
+</div>
+</div>
+<script>
+  $('#sidestage_content #new_user_session').submit(function() {
+    $.ajax({
+      url: 'https://www.stageit.com/site/user_session/create_from_sidestage',
+      crossDomain: true,
+      data: $('#sidestage_content #new_user_session').serializeArray(),
+      type: "POST",
+      xhrFields: {withCredentials: true},
+      success: function(response) {
+        eval(response);
+      }
+    });
+    return false;
+  });
+</script>
+
+<div class='hidden' id='sidestage_photo_browser'></div>
+</div>
+</div>
+
+<div class='caveat'>You are watching content created by the performer. Stageit provides the online platform and is not responsible for production of the show.</div>
+</div>
+<div style="display:none;"><div class="popup" data-autoOpen="false" data-bgiframe="true" data-height="" data-modal="true" data-resizable="false" data-width="" id="user_information_popup" title="User Information"><div class='popup_contents wide_popup'></div>
+<div class='popup_footer'>
+<div class='right'>
+<span class='stageit_button' onclick="$('#user_information_popup').dialog('close'); return false;">Close</span>
+</div>
+</div>
+</div></div><script id='user_information_template' type='text/x-handlebars-template'>
+<div class='supporter_info'>
+<table id='supporter_table'>
+<tbody>
+<tr>
+<td>Username:</td>
+<td>{{user.login}}</td>
+</tr>
+<tr>
+<td>First Name:</td>
+<td>{{user.top_supporter_info.first_name}}</td>
+</tr>
+<tr>
+<td>Last Name:</td>
+<td>{{user.top_supporter_info.last_name}}</td>
+</tr>
+<tr>
+<td>Email Address:</td>
+<td>{{user.top_supporter_info.email}}</td>
+</tr>
+<tr>
+<td>Phone Number:</td>
+<td>{{user.top_supporter_info.phone}}</td>
+</tr>
+<tr>
+<td>Address:</td>
+<td class='address_box'>
+{{user.top_supporter_info.address}}
+<br>
+{{user.top_supporter_info.building}}
+<br>
+{{user.top_supporter_info.city}}, {{user.top_supporter_info.state}} {{user.top_supporter_info.zip}} {{user.top_supporter_info.country}}
+</td>
+</tr>
+<tr>
+<td>Other:</td>
+<td>{{user.top_supporter_info.other}}</td>
+</tr>
+</tbody>
+</table>
+</div>
+</script>
+
+</div>
+
+<div id='content_inner_bottom'>
+
+</div>
+</div>
+<div id='content_wrapper_right'>
+
+</div>
+</div>
+<div id='content_wrapper_bottom'>
+
+</div>
+</div>
+<footer>
+<div class='container'>
+<div class='row'>
+<div class='chunk'>
+<h5>About</h5>
+<a href="../../static/static_pages/what_is_stageit.html">What is Stageit?</a>
+<br>
+<a href="../../shows.html">Browse all shows</a>
+<br>
+<a href="../../static/static_pages/our_company.html">Our Company</a>
+<br>
+<a href="../../static/static_pages/our_artists.html">Our Artists</a>
+<br>
+<a href="../../static/static_pages/press.html">Press</a>
+<br>
+<a href="../../static/static_pages/jobs.html">Jobs at Stageit</a>
+</div>
+<div class='chunk'>
+<h5>Help</h5>
+<a href="../../static/contact.html">Contact Us</a>
+<br>
+<a href="https://stageit.zendesk.com/hc/en-us/sections/203198283-General-" target="_blank">FAQ</a>
+<br>
+</div>
+<div class='chunk'>
+<h5>Community</h5>
+<a href="http://eepurl.com/cTNOo">Newsletter</a>
+<br>
+<a href="http://twitter.com/stageit/">Twitter</a>
+<br>
+<a href="http://www.facebook.com/stageit">Facebook</a>
+<br>
+</div>
+<div class='signoff'>
+A front row seat to a backstage experience.
+©2020 Stageit All Rights Reserved.
+</div>
+</div>
+<div class='row'>
+<div class='chunk'>
+<h5>Performer Tips</h5>
+<a href="../../static/static_pages/how_to_stageit.html">Show Ideas</a>
+<br>
+<a href="../../static/static_pages/broadcasting_tips.html">Broadcasting Tips</a>
+<br>
+<a href="../../static/static_pages/how_to_soundcheck.html">How To Soundcheck</a>
+<br>
+<a href="../../static/static_pages/reward_top_supporters.html">Rewarding Top Supporters</a>
+<br>
+<a href="../../static/static_pages/marketing_tips.html">Marketing Tips</a>
+<br>
+<a href="../../static/static_pages/how_to_get_paid.html">How To Get Paid</a>
+<br>
+<br>
+</div>
+<div class='chunk'>
+<h5>Legal</h5>
+<a href="../../static/static_pages/terms_of_service.html">Terms of Service</a>
+<br>
+<a href="../../static/static_pages/terms_of_sale.html">Terms of Sale</a>
+<br>
+<a href="../../static/static_pages/broadcaster_agreement.html">Broadcaster Agreement</a>
+<br>
+<a href="../../static/static_pages/privacy_policy.html">Privacy Policy</a>
+</div>
+<div style="display:none;"><div class="popup" data-autoOpen="false" data-bgiframe="true" data-height="auto" data-modal="true" data-resizable="false" data-width="auto" id="popup"><div id="popup_wrapper"></div></div></div></div>
+</div>
+</footer>
+</div>
+
+<div style="display:none;"><div class="popup" data-autoOpen="false" data-bgiframe="true" data-height="" data-modal="true" data-resizable="false" data-width="" id="redemption_popup" title="Redeem"><form accept-charset="UTF-8" action="https://www.stageit.com/redemptions/redeem" class="new_redemption" data-remote="true" id="new_redemption" method="post"><div style="margin:0;padding:0;display:inline"><input name="utf8" type="hidden" value="&#x2713;" /><input name="_method" type="hidden" value="put" /><input name="authenticity_token" type="hidden" value="7me/f9B5QkETyhHPhHQUDq//wx7Q9r22TS28NUgORuY=" /></div><input name='format' type='hidden' value='json'>
+<div class='popup_contents wide_popup'>
+<div class='popup_text'>
+Enter your redemption code below:
+</div>
+<div class='popup_subtext'>
+Redemption codes can be found in emails or other messages pertaining to gifts.
+</div>
+<div class='redemption_code'>
+<input class="field" data-url-exists="/redemptions/exists" id="redemption_code" name="redemption[code]" placeholder="Paste or type your code here" required="required" size="30" type="text" />
+</div>
+</div>
+<div class='popup_footer'>
+<div class='right'>
+<input class='stageit_button grey_button cancel_button' type='button' value='Cancel'>
+<input class="stageit_button continue_button" disabled="disabled" name="commit" type="submit" value="Continue" />
+</div>
+</div>
+</form>
+
+</div></div><div style="display:none;"><div class="popup" data-autoOpen="false" data-bgiframe="true" data-height="" data-modal="true" data-resizable="false" data-width="" id="redemption_gift_details_popup" title="Gift Details"><div id="redemption_gift_details_popup_wrapper"></div></div></div><script id='redemption_gift_details_popup_template' type='text/x-handlebars-template'>
+<div class='popup_contents wide_popup'>
+<div class='popup_text'>
+You have successfully redeemed the following:
+</div>
+<div class='gift_details_popup'>
+{{#if performance.available}}
+<div class='detail_bar'>
+1 Ticket to a live streaming show on Stageit.com{{#if extra_notes}} & {{extra_notes}} extra Notes{{/if}}
+</div>
+{{else}}
+<div class='detail_bar_canceled'>
+Canceled or Ended Performance:
+</div>
+{{/if}}
+<div class='ticket_info'>
+<div class='performance_pic'>
+<a href="{{performance.url}}"><img alt='{{performance.title}}' src='{{performance.image}}'>
+</a></div>
+<div class='upcoming_middle'>
+<div class='title'>
+<h2>
+<div class='truncate'>
+<a href="{{performance.url}}">{{performance.title}}
+</a></div>
+</h2>
+</div>
+<div class='info'>
+<div class='truncate'>
+{{performance.user}}
+</div>
+<div>
+{{performance.time}} - {{performance.length_minutes}} Min Show - {{performance.price}}
+</div>
+</div>
+</div>
+</div>
+{{#if extra_notes}}
+<div class='extra_notes'>
+<img alt="note icon" src="../../../d2tp1vr1gg6ixe.cloudfront.net/assets/note_large-b04ffdbfa4f054d0d7af12bfc97729e6.png" />
+<span class='extra_note_info'>
+<h3>
+{{extra_notes}} Notes
+</h3>
+<p>
+Use Notes to tip performers or buy tickets to any Stageit show.
+</p>
+</span>
+</div>
+{{/if}}
+</div>
+</div>
+<div class='popup_footer'>
+<div class='right'>
+<input class='stageit_button close_button' type='button' value='Close'>
+</div>
+</div>
+</script>
+<div style="display:none;"><div class="popup" data-autoOpen="false" data-bgiframe="true" data-height="" data-modal="true" data-resizable="false" data-width="" id="redemption_error_popup" title="Redemption Error"><div class='popup_contents wide_popup'>
+<div class='error_message'></div>
+</div>
+</div></div>
+<script src="../../../platform.twitter.com/widgets.js" type="text/javascript"></script>
+<script>
+  var urls = {};
+</script>
+
+<script src="../../../d2tp1vr1gg6ixe.cloudfront.net/assets/application-f8ed7b2e85b734c2f9f671e548c237ad.js" type="text/javascript"></script>
+<script>
+  function show_youtube_trailer() {
+    $("#performer_video_popup").dialog("open");
+    $("#performer_video_popup .popup_contents").html("<iframe title=\"YouTube video player\" width=425 height=349 src=\"&autoplay=1\" frameborder=\"0\"></iframe>");
+    $("#performer_video_popup").bind("dialogclose", function(event, ui){
+      $("#performer_video_popup .popup_contents").html("");
+    });
+  }
+  
+  var own_show = "false" == "true";
+</script>
+<script>
+  $(function(){
+    Stageit.settings.profile_image_host  = "dvojaj7u7jwrp.cloudfront.net";
+    Stageit.settings.profile_image_path  = "user\/images";
+    Stageit.settings.pubnub_relay_host  = "70867.html\/\/relay.stageit.com\/";
+  });
+  
+  (function () {
+    'use strict';
+  
+    var setIfDifferent = function (el, newText) {
+      var elText = el.text().trim();
+      if (elText != newText) {
+        el.text(newText);
+      }
+    }
+  
+    var AdminArea = {
+      titleEl: $("#admin_div .admin_title"),
+      contentEl: $("#admin_content"),
+      signedInCountEl: $("#number_people_present"),
+      signedInAndGuestCountEl: $("#pubnub_occupancy"),
+      show: function () {
+        this.contentEl.slideDown(200);
+  
+        this.admin_presence_count_timer = setInterval(function () {
+          Stageit.performance_pubnub.get_presence(function (data) {
+            var uuids = data.uuids;
+            var signedInCount = 0;
+            var duplicates = 0;
+            var logins = {};
+            var reusableUserObj = new SI.User({});
+  
+            // console.log('all duplicates, signed in, guests and self', uuids.length);
+  
+            _.each(uuids, function (uuid, index, uuids) {
+              var parsed = reusableUserObj.parse_pubnub_id(uuid)
+              var login = parsed && parsed.login
+              var duplicate = login && (login in logins)
+  
+              if (duplicate) {
+                // console.log('duplicates', login);
+                duplicates += 1;
+              } else if (login) {
+                // console.log('signed in', login);
+                signedInCount += 1;
+                logins[login] = null;
+              }
+            })
+  
+            if (signedInCount > 0) signedInCount -= 1; // minus current user
+            window.SI.AdminArea.setSignedInCount(signedInCount);
+  
+            window.SI.AdminArea.setSignedInAndGuestCount(uuids.length - duplicates);
+          }, true)
+        }, 1000)
+      },
+      hide: function () {
+        this.contentEl.slideUp(200);
+  
+        this.admin_presence_count_timer && window.clearInterval(this.admin_presence_count_timer);
+      },
+      toggle: function () {
+        this.isVisible() ?
+          this.hide() :
+          this.show()
+      },
+      isVisible: function () {
+        return this.contentEl.is(":visible") == true
+      },
+      admin_presence_count_timer: null,
+      setSignedInCount: function (count) {
+        setIfDifferent(this.signedInCountEl, count)
+      },
+      setSignedInAndGuestCount: function (count) {
+        setIfDifferent(this.signedInAndGuestCountEl, count)
+      }
+    }
+  
+    window.SI.AdminArea = AdminArea
+  })()
+  
+  window.SI.AdminArea.titleEl.on("click", function(e) {
+    window.SI.AdminArea.toggle()
+  });
+</script>
+<script>
+  $(function(){
+    Stageit.current_user = new SI.User({
+      id: 0,
+      login: "",
+      is_admin: false,
+      private_channel: "",
+      is_performer: false,
+      current_supporter_rank: null,
+      photo_id: null,
+      profile_image_name: "",
+      avatar_thumb_url: null,
+      avatar_small_url: null,
+      facebook_link: "",
+      twitter_link: "",
+      youtube_link: "",
+      website_link: "",
+      instagram_link: "",
+      user_id: 0,
+      user_name: "",
+      location: ""
+    });
+  });
+</script>
+<script>
+  $(function(){
+  
+    Stageit.performance_pubnub = new SI.Pubnub("sub-c-3a77e2cf-caee-11e1-8c56-0b47e2ce4080", "true");
+    Stageit.private_pubnub = new SI.Pubnub("sub-c-3a77e2cf-caee-11e1-8c56-0b47e2ce4080", "true");
+  
+    var raw_json = {"id":506043,"login":"melaniehorsnell","user_name":"Melanie Horsnell","location":null,"is_performer":true,"is_admin":false,"gender":"","avatar_thumb_url":"https:\/\/dvojaj7u7jwrp.cloudfront.net\/user\/images\/396921\/thumbnail\/profilepic.?1584146491","avatar_small_url":"https:\/\/dvojaj7u7jwrp.cloudfront.net\/user\/images\/396921\/small\/profilepic.?1584146491","avatar_feature_url":"https:\/\/dvojaj7u7jwrp.cloudfront.net\/user\/images\/396921\/feature\/profilepic.?1584146491","facebook_link":null,"twitter_link":null,"youtube_link":null,"website_link":null,"instagram_link":null,"social_links_present":false,"private_channel":"","photo_id":396921,"profile_image_name":"profilepic","photos":[{"url":"https:\/\/dvojaj7u7jwrp.cloudfront.net\/user\/images\/396921\/feature\/profilepic.?1584146491"}],"genres":"","followers":3};
+    var performer_user = new SI.User(raw_json);
+  
+    var performance = new SI.Performance({
+      id: 70867,
+      title: "Tiny house concert",
+      channel: "production_performance_70867",
+      chat_enabled: true,
+      performer: performer_user,
+      started: false,
+      show_start_url: "/site/performance/70867/start.js",
+      ticketless: false,
+      enable_rate_limiting: false,
+      min_delay: 2.0,
+      max_delay: 2.0,
+      update_url: "/site/performance/70867/update"
+    });
+  
+    Stageit.stage = new SI.AudienceStage({
+      performance: performance,
+      ticket_nag_popup_url: "/site/performance/70867/ticket_nag_popup",
+      show_starting_buy_ticket_popup_url: "/site/performance/70867/show_starting_buy_ticket_popup"
+    });
+  
+    var raw_json = [];
+    Stageit.stage.load_top_supporter_info(raw_json);
+  
+    $("#top-users").on('mouseenter', 'li', $.fn.hoverable_profile_callback('top_supporter_qtip', true))
+  
+    Stageit.performance_pubnub.connect(Stageit.current_user);
+    Stageit.private_pubnub.connect(Stageit.current_user);
+  });
+</script>
+<script>
+  $(function() {
+    $( "#after_stage" ).tabs();
+  });
+</script>
+
+
+<script id='error_template' type='text/x-handlebars-template'>
+<div class='pretty_error' style='height: auto'>
+<div class='error'>
+{{#errors}}
+<span><img alt="Error_x" src="../../../d2tp1vr1gg6ixe.cloudfront.net/assets/sidestage/error_x-8f16bd933c429947f68358b03ef00de3.gif" /></span>
+<span class='msg'>{{.}}</span>
+<br>
+{{/errors}}
+</div>
+</div>
+</script>
+
+</body>
+<div id='flash'></div>
+
+<!-- Mirrored from www.stageit.com/melanie_horsnell/tiny_house_concert/70867 by HTTrack Website Copier/3.x [XR&CO'2014], Thu, 26 Mar 2020 07:09:08 GMT -->
+</html>

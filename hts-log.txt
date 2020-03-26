@@ -1,0 +1,46 @@
+HTTrack3.49-2+htsswf+htsjava launched on Thu, 26 Mar 2020 12:25:12 at https://www.stageit.com/ +*.png +*.gif +*.jpg +*.jpeg +*.css +*.js -ad.doubleclick.net/* -mime:application/foobar
+(winhttrack -qwC2%Ps2u1%s%uN0%I0p3DaK0H0%kf2A25000%f#f -F "Mozilla/4.5 (compatible; HTTrack 3.0x; Windows 98)" -%F "<!-- Mirrored from %s%s by HTTrack Website Copier/3.x [XR&CO'2014], %s -->" -%l "en, *" https://www.stageit.com/ -O1 "F:\project\upwork\upwork4" +*.png +*.gif +*.jpg +*.jpeg +*.css +*.js -ad.doubleclick.net/* -mime:application/foobar )
+
+Information, Warnings and Errors reported for this mirror:
+note:	the hts-log.txt file, and hts-cache folder, may contain sensitive information,
+	such as username/password authentication for websites mirrored in this project
+	do not share these files/folders if you want these information to remain private
+
+12:25:14	Warning: 	Found for https://www.stageit.com/
+12:25:14	Warning: 	File has moved from https://www.stageit.com/ to https://www.stageit.com/site/landing
+12:25:49	Error: 	"Bad Request" (400) at link www.googletagmanager.com/gtm.js?id= (from https://www.stageit.com/site/landing)
+12:27:47	Error: 	"Not Found" (404) at link https://d2tp1vr1gg6ixe.cloudfront.net/images/mCSB_buttons.png (from https://d2tp1vr1gg6ixe.cloudfront.net/assets/landing-ee45c7a225cac5eff727551e78593f86.css)
+12:27:48	Error: 	"Not Found" (404) at link https://dvojaj7u7jwrp.cloudfront.net/images/fb_logo.jpg (from https://www.stageit.com/signup)
+12:35:33	Error: 	"Not Found" (404) at link a4.mzstatic.com/us/r30/Music6/v4/e2/99/0b/e2990b9a-aa49-4ae9-560c-ddcf1aabc775/887158708459_Cover.100x100-75.jpg (from https://www.stageit.com/the_dollyrots/our_albums_go_acoustic_because_i_m_awesome/70208)
+12:35:33	Error: 	"Not Found" (404) at link a3.mzstatic.com/us/r30/Music/v4/29/4f/c2/294fc23f-db5a-81cb-2b4a-754eaadd4084/707541506298_cover.100x100-75.jpg (from https://www.stageit.com/the_dollyrots/our_albums_go_acoustic_because_i_m_awesome/70208)
+12:44:37	Error: 	"Not Found" (404) at link a2.mzstatic.com/us/r30/Music/e7/d8/10/mzi.bzczwtcr.100x100-75.jpg (from https://www.stageit.com/jason_manns/there_s_absolutely_no_way_this_is_still_march_show_1/72380)
+12:49:53	Error: 	"Not Found" (404) at link a55.phobos.apple.com/us/r30/Music/0b/bc/55/mzi.walwqdud.100x100-75.jpg (from https://www.stageit.com/danika_the_jeb/the_show_must_go_on_line_week_3/72215)
+12:49:53	Error: 	"Not Found" (404) at link a1301.phobos.apple.com/us/r30/Music/6f/93/81/mzi.fxmkdiuw.100x100-75.jpg (from https://www.stageit.com/danika_the_jeb/the_show_must_go_on_line_week_3/72215)
+12:49:53	Error: 	"Not Found" (404) at link a459.phobos.apple.com/us/r30/Music/70/6c/8b/mzi.wdupgeqs.100x100-75.jpg (from https://www.stageit.com/danika_the_jeb/the_show_must_go_on_line_week_3/72215)
+12:52:30	Error: 	"Not Found" (404) at link a3.mzstatic.com/us/r30/Music/v4/cd/47/c3/cd47c31f-19ca-e848-495c-8dfbfd7567e0/886444272384.100x100-75.jpg (from https://www.stageit.com/vinnie_caruana/vc_live_in_his_living_room/71967)
+12:52:30	Error: 	"Not Found" (404) at link a1.mzstatic.com/us/r30/Music/v4/89/4f/48/894f4864-666b-eb58-4661-1b153047e8e4/Cover.100x100-75.jpg (from https://www.stageit.com/vinnie_caruana/vc_live_in_his_living_room/71967)
+12:52:30	Error: 	"Not Found" (404) at link a1.mzstatic.com/us/r30/Music/v4/d0/4b/3d/d04b3d67-6dbe-8200-afce-b6cf62219817/Artwork.100x100-75.jpg (from https://www.stageit.com/david_ramirez/david_ramirez_and_chill/69819)
+12:55:00	Error: 	"Not Found" (404) at link a4.mzstatic.com/us/r30/Features/v4/48/5b/12/485b1216-b052-e9a9-55c9-4efb6212526b/dj.ustcnxxg.100x100-75.jpg (from https://www.stageit.com/andy_allo/songs_from_superconductor/71260)
+12:55:00	Error: 	"Not Found" (404) at link a2.mzstatic.com/us/r30/Music/43/0c/45/mzi.lwwvnnbs.100x100-75.jpg (from https://www.stageit.com/andy_allo/songs_from_superconductor/71260)
+12:58:16	Error: 	"Not Found" (404) at link a2.mzstatic.com/us/r30/Music2/v4/8a/e4/04/8ae40429-8174-f73a-c2ee-4ec537fc035a/887516975882.100x100-75.jpg (from https://www.stageit.com/celeste_kellogg/quarantine_concert/71445)
+12:58:16	Error: 	"Not Found" (404) at link a4.mzstatic.com/us/r30/Music/v4/d8/52/8e/d8528ec8-b092-04be-a135-db6de20b9b25/884501735490.100x100-75.jpg (from https://www.stageit.com/celeste_kellogg/quarantine_concert/71445)
+12:58:16	Error: 	"Not Found" (404) at link a3.mzstatic.com/us/r30/Music/36/86/cf/mzi.bsoguldj.100x100-75.jpg (from https://www.stageit.com/griffin_house/friday_family_and_kids_concert_with_griffin_house_hunkered_down_show_2/72070)
+12:58:16	Error: 	"Not Found" (404) at link a2.mzstatic.com/us/r1000/021/Music/c6/13/72/mzi.cpdlsddj.100x100-75.jpg (from https://www.stageit.com/griffin_house/friday_family_and_kids_concert_with_griffin_house_hunkered_down_show_2/72070)
+12:58:16	Error: 	"Not Found" (404) at link a1.mzstatic.com/us/r30/Music/96/c9/42/mzi.jcxdzhcb.100x100-75.jpg (from https://www.stageit.com/griffin_house/friday_family_and_kids_concert_with_griffin_house_hunkered_down_show_2/72070)
+13:00:32	Error: 	"Not Found" (404) at link a3.mzstatic.com/us/r30/Music/y2004/m03/d30/h18/s05.wnftsuov.100x100-75.jpg (from https://www.stageit.com/tim_farrell/mi_casa_tu_casa_concert_series/70741)
+13:00:32	Error: 	"Not Found" (404) at link a1.mzstatic.com/us/r30/Music/y2004/m03/d30/h18/s05.eorgbwif.100x100-75.jpg (from https://www.stageit.com/tim_farrell/mi_casa_tu_casa_concert_series/70741)
+13:00:32	Error: 	"Not Found" (404) at link a4.mzstatic.com/us/r30/Music/18/11/04/mzi.pomwiplh.100x100-75.jpg (from https://www.stageit.com/tim_farrell/mi_casa_tu_casa_concert_series/70741)
+13:03:16	Error: 	"Not Found" (404) at link a5.mzstatic.com/us/r30/Music/y2004/m11/d19/h11/s05.bozbsqcq.100x100-75.jpg (from https://www.stageit.com/mem_nahadr/femme_fractale_an_opera_of_reflection/69148)
+13:03:16	Error: 	"Not Found" (404) at link a4.mzstatic.com/us/r30/Music/v4/8c/ab/7d/8cab7dd1-812c-7cde-84b6-7f810256aa76/884502736762.100x100-75.jpg (from https://www.stageit.com/mem_nahadr/femme_fractale_an_opera_of_reflection/69148)
+13:03:16	Error: 	"Not Found" (404) at link a3.mzstatic.com/us/r30/Music/75/1a/70/mzi.wxfvrshx.100x100-75.jpg (from https://www.stageit.com/alfa/kids_jam/72159)
+13:03:16	Error: 	"Not Found" (404) at link a1.mzstatic.com/us/r30/Music/v4/b2/01/16/b20116c0-d8f6-fac8-1d89-a0a20b55baa8/859708289381_cover.100x100-75.jpg (from https://www.stageit.com/alfa/kids_jam/72159)
+13:03:16	Error: 	"Not Found" (404) at link a3.mzstatic.com/us/r30/Music/ca/5f/30/mzi.mflwkvsv.100x100-75.jpg (from https://www.stageit.com/alfa/kids_jam/72159)
+13:05:19	Error: 	"Not Found" (404) at link a5.mzstatic.com/us/r30/Music/v4/68/2a/2a/682a2aad-7692-8406-bd95-5aa7de750c6a/859704756368.100x100-75.jpg (from https://www.stageit.com/mem_nahadr/nahadr_montgomery_con_cert_for_madwoman_multimedia_jazz/69789)
+13:06:23	Error: 	"Not Found" (404) at link a3.mzstatic.com/us/r30/Music/73/77/65/mzi.jyithfql.100x100-75.jpg (from https://www.stageit.com/zak_schaffer/the_second_stuck_at_home_show/70901)
+13:06:56	Error: 	"Not Found" (404) at link a2.mzstatic.com/us/r30/Music6/v4/e4/23/8a/e4238ae6-b1cd-746a-6dbe-f4cb4bb178d5/640213863414_cover.100x100-75.jpg (from https://www.stageit.com/gary_quinn/quinn_s_quarantined_country_corner/72432)
+13:07:24	Error: 	"Not Found" (404) at link a1.mzstatic.com/us/r30/Music2/v4/f1/b2/8c/f1b28c30-792d-eaf6-980f-99a6237af375/natalie_gelman.100x100-75.jpg (from https://www.stageit.com/natalie_gelman/quarantunes_concert/72469)
+13:07:24	Error: 	"Not Found" (404) at link a2.mzstatic.com/us/r30/Music/eb/b6/27/mzi.txifbltt.100x100-75.jpg (from https://www.stageit.com/natalie_gelman/quarantunes_concert/72469)
+13:07:24	Error: 	"Not Found" (404) at link a2.mzstatic.com/us/r30/Music6/v4/23/3f/c5/233fc5c5-7765-3789-c2de-47dd8b92c12a/888174527048.100x100-75.jpg (from https://www.stageit.com/natalie_gelman/quarantunes_concert/72469)
+
+HTTrack Website Copier/3.49-2 mirror complete in 42 minutes 12 seconds : 2230 links scanned, 2194 files written (227607420 bytes overall) [201876651 bytes received at 79730 bytes/sec], 43934895 bytes transferred using HTTP compression in 551 files, ratio 30%, 31.5 requests per connection
+(33 errors, 2 warnings, 0 messages)

@@ -1,0 +1,554 @@
+<!DOCTYPE html>
+<html lang='en' xmlns:fb='http://ogp.me/ns/fb#'>
+
+<!-- Mirrored from www.stageit.com/shows?page=28&show_filter=all_shows&time_filter=sold by HTTrack Website Copier/3.x [XR&CO'2014], Thu, 26 Mar 2020 07:30:58 GMT -->
+<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=utf-8" /><!-- /Added by HTTrack -->
+<head>
+<script type="text/javascript">window.NREUM||(NREUM={});NREUM.info={"beacon":"bam.nr-data.net","errorBeacon":"bam.nr-data.net","licenseKey":"43b01e0566","applicationID":"124249","transactionName":"IF5YRkNXVFwARRtWEwxGRVduS1BfEkQbRwkMRg==","queueTime":1,"applicationTime":83,"agent":""}</script>
+<script type="text/javascript">(window.NREUM||(NREUM={})).loader_config={xpid:"VwEFV1JACQEEVlVb",licenseKey:"43b01e0566",applicationID:"124249"};window.NREUM||(NREUM={}),__nr_require=function(t,e,n){function r(n){if(!e[n]){var o=e[n]={exports:{}};t[n][0].call(o.exports,function(e){var o=t[n][1][e];return r(o||e)},o,o.exports)}return e[n].exports}if("function"==typeof __nr_require)return __nr_require;for(var o=0;o<n.length;o++)r(n[o]);return r}({1:[function(t,e,n){function r(t){try{s.console&&console.log(t)}catch(e){}}var o,i=t("ee"),a=t(18),s={};try{o=localStorage.getItem("__nr_flags").split(","),console&&"function"==typeof console.log&&(s.console=!0,o.indexOf("dev")!==-1&&(s.dev=!0),o.indexOf("nr_dev")!==-1&&(s.nrDev=!0))}catch(c){}s.nrDev&&i.on("internal-error",function(t){r(t.stack)}),s.dev&&i.on("fn-err",function(t,e,n){r(n.stack)}),s.dev&&(r("NR AGENT IN DEVELOPMENT MODE"),r("flags: "+a(s,function(t,e){return t}).join(", ")))},{}],2:[function(t,e,n){function r(t,e,n,r,s){try{p?p-=1:o(s||new UncaughtException(t,e,n),!0)}catch(f){try{i("ierr",[f,c.now(),!0])}catch(d){}}return"function"==typeof u&&u.apply(this,a(arguments))}function UncaughtException(t,e,n){this.message=t||"Uncaught error with no additional information",this.sourceURL=e,this.line=n}function o(t,e){var n=e?null:c.now();i("err",[t,n])}var i=t("handle"),a=t(19),s=t("ee"),c=t("loader"),f=t("gos"),u=window.onerror,d=!1,l="nr@seenError",p=0;c.features.err=!0,t(1),window.onerror=r;try{throw new Error}catch(h){"stack"in h&&(t(6),t(5),"addEventListener"in window&&t(3),c.xhrWrappable&&t(7),d=!0)}s.on("fn-start",function(t,e,n){d&&(p+=1)}),s.on("fn-err",function(t,e,n){d&&!n[l]&&(f(n,l,function(){return!0}),this.thrown=!0,o(n))}),s.on("fn-end",function(){d&&!this.thrown&&p>0&&(p-=1)}),s.on("internal-error",function(t){i("ierr",[t,c.now(),!0])})},{}],3:[function(t,e,n){function r(t){for(var e=t;e&&!e.hasOwnProperty(u);)e=Object.getPrototypeOf(e);e&&o(e)}function o(t){s.inPlace(t,[u,d],"-",i)}function i(t,e){return t[1]}var a=t("ee").get("events"),s=t("wrap-function")(a,!0),c=t("gos"),f=XMLHttpRequest,u="addEventListener",d="removeEventListener";e.exports=a,"getPrototypeOf"in Object?(r(document),r(window),r(f.prototype)):f.prototype.hasOwnProperty(u)&&(o(window),o(f.prototype)),a.on(u+"-start",function(t,e){var n=t[1],r=c(n,"nr@wrapped",function(){function t(){if("function"==typeof n.handleEvent)return n.handleEvent.apply(n,arguments)}var e={object:t,"function":n}[typeof n];return e?s(e,"fn-",null,e.name||"anonymous"):n});this.wrapped=t[1]=r}),a.on(d+"-start",function(t){t[1]=this.wrapped||t[1]})},{}],4:[function(t,e,n){function r(t,e,n){var r=t[e];"function"==typeof r&&(t[e]=function(){var t=i(arguments),e={};o.emit(n+"before-start",[t],e);var a;e[m]&&e[m].dt&&(a=e[m].dt);var s=r.apply(this,t);return o.emit(n+"start",[t,a],s),s.then(function(t){return o.emit(n+"end",[null,t],s),t},function(t){throw o.emit(n+"end",[t],s),t})})}var o=t("ee").get("fetch"),i=t(19),a=t(18);e.exports=o;var s=window,c="fetch-",f=c+"body-",u=["arrayBuffer","blob","json","text","formData"],d=s.Request,l=s.Response,p=s.fetch,h="prototype",m="nr@context";d&&l&&p&&(a(u,function(t,e){r(d[h],e,f),r(l[h],e,f)}),r(s,"fetch",c),o.on(c+"end",function(t,e){var n=this;if(e){var r=e.headers.get("content-length");null!==r&&(n.rxSize=r),o.emit(c+"done",[null,e],n)}else o.emit(c+"done",[t],n)}))},{}],5:[function(t,e,n){var r=t("ee").get("raf"),o=t("wrap-function")(r),i="equestAnimationFrame";e.exports=r,o.inPlace(window,["r"+i,"mozR"+i,"webkitR"+i,"msR"+i],"raf-"),r.on("raf-start",function(t){t[0]=o(t[0],"fn-")})},{}],6:[function(t,e,n){function r(t,e,n){t[0]=a(t[0],"fn-",null,n)}function o(t,e,n){this.method=n,this.timerDuration=isNaN(t[1])?0:+t[1],t[0]=a(t[0],"fn-",this,n)}var i=t("ee").get("timer"),a=t("wrap-function")(i),s="setTimeout",c="setInterval",f="clearTimeout",u="-start",d="-";e.exports=i,a.inPlace(window,[s,"setImmediate"],s+d),a.inPlace(window,[c],c+d),a.inPlace(window,[f,"clearImmediate"],f+d),i.on(c+u,r),i.on(s+u,o)},{}],7:[function(t,e,n){function r(t,e){d.inPlace(e,["onreadystatechange"],"fn-",s)}function o(){var t=this,e=u.context(t);t.readyState>3&&!e.resolved&&(e.resolved=!0,u.emit("xhr-resolved",[],t)),d.inPlace(t,w,"fn-",s)}function i(t){y.push(t),h&&(b?b.then(a):v?v(a):(E=-E,O.data=E))}function a(){for(var t=0;t<y.length;t++)r([],y[t]);y.length&&(y=[])}function s(t,e){return e}function c(t,e){for(var n in t)e[n]=t[n];return e}t(3);var f=t("ee"),u=f.get("xhr"),d=t("wrap-function")(u),l=NREUM.o,p=l.XHR,h=l.MO,m=l.PR,v=l.SI,g="readystatechange",w=["onload","onerror","onabort","onloadstart","onloadend","onprogress","ontimeout"],y=[];e.exports=u;var x=window.XMLHttpRequest=function(t){var e=new p(t);try{u.emit("new-xhr",[e],e),e.addEventListener(g,o,!1)}catch(n){try{u.emit("internal-error",[n])}catch(r){}}return e};if(c(p,x),x.prototype=p.prototype,d.inPlace(x.prototype,["open","send"],"-xhr-",s),u.on("send-xhr-start",function(t,e){r(t,e),i(e)}),u.on("open-xhr-start",r),h){var b=m&&m.resolve();if(!v&&!m){var E=1,O=document.createTextNode(E);new h(a).observe(O,{characterData:!0})}}else f.on("fn-end",function(t){t[0]&&t[0].type===g||a()})},{}],8:[function(t,e,n){function r(t){if(!i(t))return null;var e=window.NREUM;if(!e.loader_config)return null;var n=(e.loader_config.accountID||"").toString()||null,r=(e.loader_config.agentID||"").toString()||null,s=(e.loader_config.trustKey||"").toString()||null;if(!n||!r)return null;var c=a.generateCatId(),f=a.generateCatId(),u=Date.now(),d=o(c,f,u,n,r,s);return{header:d,guid:c,traceId:f,timestamp:u}}function o(t,e,n,r,o,i){var a="btoa"in window&&"function"==typeof window.btoa;if(!a)return null;var s={v:[0,1],d:{ty:"Browser",ac:r,ap:o,id:t,tr:e,ti:n}};return i&&r!==i&&(s.d.tk=i),btoa(JSON.stringify(s))}function i(t){var e=!1,n=!1,r={};if("init"in NREUM&&"distributed_tracing"in NREUM.init&&(r=NREUM.init.distributed_tracing,n=!!r.enabled),n)if(t.sameOrigin)e=!0;else if(r.allowed_origins instanceof Array)for(var o=0;o<r.allowed_origins.length;o++){var i=s(r.allowed_origins[o]);if(t.hostname===i.hostname&&t.protocol===i.protocol&&t.port===i.port){e=!0;break}}return n&&e}var a=t(16),s=t(10);e.exports={generateTracePayload:r,shouldGenerateTrace:i}},{}],9:[function(t,e,n){function r(t){var e=this.params,n=this.metrics;if(!this.ended){this.ended=!0;for(var r=0;r<l;r++)t.removeEventListener(d[r],this.listener,!1);e.aborted||(n.duration=a.now()-this.startTime,this.loadCaptureCalled||4!==t.readyState?null==e.status&&(e.status=0):i(this,t),n.cbTime=this.cbTime,u.emit("xhr-done",[t],t),s("xhr",[e,n,this.startTime]))}}function o(t,e){var n=c(e),r=t.params;r.host=n.hostname+":"+n.port,r.pathname=n.pathname,t.parsedOrigin=c(e),t.sameOrigin=t.parsedOrigin.sameOrigin}function i(t,e){t.params.status=e.status;var n=v(e,t.lastSize);if(n&&(t.metrics.rxSize=n),t.sameOrigin){var r=e.getResponseHeader("X-NewRelic-App-Data");r&&(t.params.cat=r.split(", ").pop())}t.loadCaptureCalled=!0}var a=t("loader");if(a.xhrWrappable){var s=t("handle"),c=t(10),f=t(8).generateTracePayload,u=t("ee"),d=["load","error","abort","timeout"],l=d.length,p=t("id"),h=t(14),m=t(13),v=t(11),g=window.XMLHttpRequest;a.features.xhr=!0,t(7),t(4),u.on("new-xhr",function(t){var e=this;e.totalCbs=0,e.called=0,e.cbTime=0,e.end=r,e.ended=!1,e.xhrGuids={},e.lastSize=null,e.loadCaptureCalled=!1,t.addEventListener("load",function(n){i(e,t)},!1),h&&(h>34||h<10)||window.opera||t.addEventListener("progress",function(t){e.lastSize=t.loaded},!1)}),u.on("open-xhr-start",function(t){this.params={method:t[0]},o(this,t[1]),this.metrics={}}),u.on("open-xhr-end",function(t,e){"loader_config"in NREUM&&"xpid"in NREUM.loader_config&&this.sameOrigin&&e.setRequestHeader("X-NewRelic-ID",NREUM.loader_config.xpid);var n=f(this.parsedOrigin);n&&n.header&&(e.setRequestHeader("newrelic",n.header),this.dt=n)}),u.on("send-xhr-start",function(t,e){var n=this.metrics,r=t[0],o=this;if(n&&r){var i=m(r);i&&(n.txSize=i)}this.startTime=a.now(),this.listener=function(t){try{"abort"!==t.type||o.loadCaptureCalled||(o.params.aborted=!0),("load"!==t.type||o.called===o.totalCbs&&(o.onloadCalled||"function"!=typeof e.onload))&&o.end(e)}catch(n){try{u.emit("internal-error",[n])}catch(r){}}};for(var s=0;s<l;s++)e.addEventListener(d[s],this.listener,!1)}),u.on("xhr-cb-time",function(t,e,n){this.cbTime+=t,e?this.onloadCalled=!0:this.called+=1,this.called!==this.totalCbs||!this.onloadCalled&&"function"==typeof n.onload||this.end(n)}),u.on("xhr-load-added",function(t,e){var n=""+p(t)+!!e;this.xhrGuids&&!this.xhrGuids[n]&&(this.xhrGuids[n]=!0,this.totalCbs+=1)}),u.on("xhr-load-removed",function(t,e){var n=""+p(t)+!!e;this.xhrGuids&&this.xhrGuids[n]&&(delete this.xhrGuids[n],this.totalCbs-=1)}),u.on("addEventListener-end",function(t,e){e instanceof g&&"load"===t[0]&&u.emit("xhr-load-added",[t[1],t[2]],e)}),u.on("removeEventListener-end",function(t,e){e instanceof g&&"load"===t[0]&&u.emit("xhr-load-removed",[t[1],t[2]],e)}),u.on("fn-start",function(t,e,n){e instanceof g&&("onload"===n&&(this.onload=!0),("load"===(t[0]&&t[0].type)||this.onload)&&(this.xhrCbStart=a.now()))}),u.on("fn-end",function(t,e){this.xhrCbStart&&u.emit("xhr-cb-time",[a.now()-this.xhrCbStart,this.onload,e],e)}),u.on("fetch-before-start",function(t){var e,n=t[1]||{};"string"==typeof t[0]?e=t[0]:t[0]&&t[0].url&&(e=t[0].url),e&&(this.parsedOrigin=c(e),this.sameOrigin=this.parsedOrigin.sameOrigin);var r=f(this.parsedOrigin);if(r&&r.header){var o=r.header;if("string"==typeof t[0]){var i={};for(var a in n)i[a]=n[a];i.headers=new Headers(n.headers||{}),i.headers.set("newrelic",o),this.dt=r,t.length>1?t[1]=i:t.push(i)}else t[0]&&t[0].headers&&(t[0].headers.append("newrelic",o),this.dt=r)}})}},{}],10:[function(t,e,n){var r={};e.exports=function(t){if(t in r)return r[t];var e=document.createElement("a"),n=window.location,o={};e.href=t,o.port=e.port;var i=e.href.split("://");!o.port&&i[1]&&(o.port=i[1].split("index.html")[0].split("@").pop().split(":")[1]),o.port&&"0"!==o.port||(o.port="https"===i[0]?"443":"80"),o.hostname=e.hostname||n.hostname,o.pathname=e.pathname,o.protocol=i[0],"/"!==o.pathname.charAt(0)&&(o.pathname="/"+o.pathname);var a=!e.protocol||":"===e.protocol||e.protocol===n.protocol,s=e.hostname===document.domain&&e.port===n.port;return o.sameOrigin=a&&(!e.hostname||s),"/"===o.pathname&&(r[t]=o),o}},{}],11:[function(t,e,n){function r(t,e){var n=t.responseType;return"json"===n&&null!==e?e:"arraybuffer"===n||"blob"===n||"json"===n?o(t.response):"text"===n||"document"===n||""===n||void 0===n?o(t.responseText):void 0}var o=t(13);e.exports=r},{}],12:[function(t,e,n){function r(){}function o(t,e,n){return function(){return i(t,[f.now()].concat(s(arguments)),e?null:this,n),e?void 0:this}}var i=t("handle"),a=t(18),s=t(19),c=t("ee").get("tracer"),f=t("loader"),u=NREUM;"undefined"==typeof window.newrelic&&(newrelic=u);var d=["setPageViewName","setCustomAttribute","setErrorHandler","finished","addToTrace","inlineHit","addRelease"],l="api-",p=l+"ixn-";a(d,function(t,e){u[e]=o(l+e,!0,"api")}),u.addPageAction=o(l+"addPageAction",!0),u.setCurrentRouteName=o(l+"routeName",!0),e.exports=newrelic,u.interaction=function(){return(new r).get()};var h=r.prototype={createTracer:function(t,e){var n={},r=this,o="function"==typeof e;return i(p+"tracer",[f.now(),t,n],r),function(){if(c.emit((o?"":"no-")+"fn-start",[f.now(),r,o],n),o)try{return e.apply(this,arguments)}catch(t){throw c.emit("fn-err",[arguments,this,t],n),t}finally{c.emit("fn-end",[f.now()],n)}}}};a("actionText,setName,setAttribute,save,ignore,onEnd,getContext,end,get".split(","),function(t,e){h[e]=o(p+e)}),newrelic.noticeError=function(t,e){"string"==typeof t&&(t=new Error(t)),i("err",[t,f.now(),!1,e])}},{}],13:[function(t,e,n){e.exports=function(t){if("string"==typeof t&&t.length)return t.length;if("object"==typeof t){if("undefined"!=typeof ArrayBuffer&&t instanceof ArrayBuffer&&t.byteLength)return t.byteLength;if("undefined"!=typeof Blob&&t instanceof Blob&&t.size)return t.size;if(!("undefined"!=typeof FormData&&t instanceof FormData))try{return JSON.stringify(t).length}catch(e){return}}}},{}],14:[function(t,e,n){var r=0,o=navigator.userAgent.match(/Firefox[\/\s](\d+\.\d+)/);o&&(r=+o[1]),e.exports=r},{}],15:[function(t,e,n){function r(t,e){var n=t.getEntries();n.forEach(function(t){"first-paint"===t.name?c("timing",["fp",Math.floor(t.startTime)]):"first-contentful-paint"===t.name&&c("timing",["fcp",Math.floor(t.startTime)])})}function o(t,e){var n=t.getEntries();n.length>0&&c("lcp",[n[n.length-1]])}function i(t){if(t instanceof u&&!l){var e,n=Math.round(t.timeStamp);e=n>1e12?Date.now()-n:f.now()-n,l=!0,c("timing",["fi",n,{type:t.type,fid:e}])}}if(!("init"in NREUM&&"page_view_timing"in NREUM.init&&"enabled"in NREUM.init.page_view_timing&&NREUM.init.page_view_timing.enabled===!1)){var a,s,c=t("handle"),f=t("loader"),u=NREUM.o.EV;if("PerformanceObserver"in window&&"function"==typeof window.PerformanceObserver){a=new PerformanceObserver(r),s=new PerformanceObserver(o);try{a.observe({entryTypes:["paint"]}),s.observe({entryTypes:["largest-contentful-paint"]})}catch(d){}}if("addEventListener"in document){var l=!1,p=["click","keydown","mousedown","pointerdown","touchstart"];p.forEach(function(t){document.addEventListener(t,i,!1)})}}},{}],16:[function(t,e,n){function r(){function t(){return e?15&e[n++]:16*Math.random()|0}var e=null,n=0,r=window.crypto||window.msCrypto;r&&r.getRandomValues&&(e=r.getRandomValues(new Uint8Array(31)));for(var o,i="xxxxxxxx-xxxx-4xxx-yxxx-xxxxxxxxxxxx",a="",s=0;s<i.length;s++)o=i[s],"x"===o?a+=t().toString(16):"y"===o?(o=3&t()|8,a+=o.toString(16)):a+=o;return a}function o(){function t(){return e?15&e[n++]:16*Math.random()|0}var e=null,n=0,r=window.crypto||window.msCrypto;r&&r.getRandomValues&&Uint8Array&&(e=r.getRandomValues(new Uint8Array(31)));for(var o=[],i=0;i<16;i++)o.push(t().toString(16));return o.join("")}e.exports={generateUuid:r,generateCatId:o}},{}],17:[function(t,e,n){function r(t,e){if(!o)return!1;if(t!==o)return!1;if(!e)return!0;if(!i)return!1;for(var n=i.split("."),r=e.split("."),a=0;a<r.length;a++)if(r[a]!==n[a])return!1;return!0}var o=null,i=null,a=/Version\/(\S+)\s+Safari/;if(navigator.userAgent){var s=navigator.userAgent,c=s.match(a);c&&s.indexOf("Chrome")===-1&&s.indexOf("Chromium")===-1&&(o="Safari",i=c[1])}e.exports={agent:o,version:i,match:r}},{}],18:[function(t,e,n){function r(t,e){var n=[],r="",i=0;for(r in t)o.call(t,r)&&(n[i]=e(r,t[r]),i+=1);return n}var o=Object.prototype.hasOwnProperty;e.exports=r},{}],19:[function(t,e,n){function r(t,e,n){e||(e=0),"undefined"==typeof n&&(n=t?t.length:0);for(var r=-1,o=n-e||0,i=Array(o<0?0:o);++r<o;)i[r]=t[e+r];return i}e.exports=r},{}],20:[function(t,e,n){e.exports={exists:"undefined"!=typeof window.performance&&window.performance.timing&&"undefined"!=typeof window.performance.timing.navigationStart}},{}],ee:[function(t,e,n){function r(){}function o(t){function e(t){return t&&t instanceof r?t:t?c(t,s,i):i()}function n(n,r,o,i){if(!l.aborted||i){t&&t(n,r,o);for(var a=e(o),s=m(n),c=s.length,f=0;f<c;f++)s[f].apply(a,r);var d=u[y[n]];return d&&d.push([x,n,r,a]),a}}function p(t,e){w[t]=m(t).concat(e)}function h(t,e){var n=w[t];if(n)for(var r=0;r<n.length;r++)n[r]===e&&n.splice(r,1)}function m(t){return w[t]||[]}function v(t){return d[t]=d[t]||o(n)}function g(t,e){f(t,function(t,n){e=e||"feature",y[n]=e,e in u||(u[e]=[])})}var w={},y={},x={on:p,addEventListener:p,removeEventListener:h,emit:n,get:v,listeners:m,context:e,buffer:g,abort:a,aborted:!1};return x}function i(){return new r}function a(){(u.api||u.feature)&&(l.aborted=!0,u=l.backlog={})}var s="nr@context",c=t("gos"),f=t(18),u={},d={},l=e.exports=o();l.backlog=u},{}],gos:[function(t,e,n){function r(t,e,n){if(o.call(t,e))return t[e];var r=n();if(Object.defineProperty&&Object.keys)try{return Object.defineProperty(t,e,{value:r,writable:!0,enumerable:!1}),r}catch(i){}return t[e]=r,r}var o=Object.prototype.hasOwnProperty;e.exports=r},{}],handle:[function(t,e,n){function r(t,e,n,r){o.buffer([t],r),o.emit(t,e,n)}var o=t("ee").get("handle");e.exports=r,r.ee=o},{}],id:[function(t,e,n){function r(t){var e=typeof t;return!t||"object"!==e&&"function"!==e?-1:t===window?0:a(t,i,function(){return o++})}var o=1,i="nr@id",a=t("gos");e.exports=r},{}],loader:[function(t,e,n){function r(){if(!E++){var t=b.info=NREUM.info,e=p.getElementsByTagName("script")[0];if(setTimeout(u.abort,3e4),!(t&&t.licenseKey&&t.applicationID&&e))return u.abort();f(y,function(e,n){t[e]||(t[e]=n)}),c("mark",["onload",a()+b.offset],null,"api");var n=p.createElement("script");n.src="https://"+t.agent,e.parentNode.insertBefore(n,e)}}function o(){"complete"===p.readyState&&i()}function i(){c("mark",["domContent",a()+b.offset],null,"api")}function a(){return O.exists&&performance.now?Math.round(performance.now()):(s=Math.max((new Date).getTime(),s))-b.offset}var s=(new Date).getTime(),c=t("handle"),f=t(18),u=t("ee"),d=t(17),l=window,p=l.document,h="addEventListener",m="attachEvent",v=l.XMLHttpRequest,g=v&&v.prototype;NREUM.o={ST:setTimeout,SI:l.setImmediate,CT:clearTimeout,XHR:v,REQ:l.Request,EV:l.Event,PR:l.Promise,MO:l.MutationObserver};var w=""+location,y={beacon:"bam.nr-data.net",errorBeacon:"bam.nr-data.net",agent:"js-agent.newrelic.com/nr-1167.min.js"},x=v&&g&&g[h]&&!/CriOS/.test(navigator.userAgent),b=e.exports={offset:s,now:a,origin:w,features:{},xhrWrappable:x,userAgent:d};t(12),t(15),p[h]?(p[h]("DOMContentLoaded",i,!1),l[h]("load",r,!1)):(p[m]("onreadystatechange",o),l[m]("onload",r)),c("mark",["firstbyte",s],null,"api");var E=0,O=t(20)},{}],"wrap-function":[function(t,e,n){function r(t){return!(t&&t instanceof Function&&t.apply&&!t[a])}var o=t("ee"),i=t(19),a="nr@original",s=Object.prototype.hasOwnProperty,c=!1;e.exports=function(t,e){function n(t,e,n,o){function nrWrapper(){var r,a,s,c;try{a=this,r=i(arguments),s="function"==typeof n?n(r,a):n||{}}catch(f){l([f,"",[r,a,o],s])}u(e+"start",[r,a,o],s);try{return c=t.apply(a,r)}catch(d){throw u(e+"err",[r,a,d],s),d}finally{u(e+"end",[r,a,c],s)}}return r(t)?t:(e||(e=""),nrWrapper[a]=t,d(t,nrWrapper),nrWrapper)}function f(t,e,o,i){o||(o="");var a,s,c,f="-"===o.charAt(0);for(c=0;c<e.length;c++)s=e[c],a=t[s],r(a)||(t[s]=n(a,f?s+o:o,i,s))}function u(n,r,o){if(!c||e){var i=c;c=!0;try{t.emit(n,r,o,e)}catch(a){l([a,n,r,o])}c=i}}function d(t,e){if(Object.defineProperty&&Object.keys)try{var n=Object.keys(t);return n.forEach(function(n){Object.defineProperty(e,n,{get:function(){return t[n]},set:function(e){return t[n]=e,e}})}),e}catch(r){l([r])}for(var o in t)s.call(t,o)&&(e[o]=t[o]);return e}function l(e){try{t.emit("internal-error",e)}catch(n){}}return t||(t=o),n.inPlace=f,n.flag=a,n}},{}]},{},["loader",2,9]);</script>
+<script src="../d2tp1vr1gg6ixe.cloudfront.net/assets/header-7484814f936f893bb9ab737b7eead5e6.js" type="text/javascript"></script>
+<title>Stageit | A front row seat to a backstage experience.&trade;</title>
+<meta content="authenticity_token" name="csrf-param" />
+<meta content="ncuRC15rGcDCdd0bDO+fRx3gxHAXfCTXRQr8n5qf4jc=" name="csrf-token" />
+<meta content='Stageit is an online venue for LIVE &amp;amp; interactive virtual concerts providing fans with a front row seat to a backstage experience. &amp;trade;' name='description'>
+<meta content='stageit, live music, live concerts, live experience, interactive virtual concerts' name='keywords'>
+<link href='https://d2tp1vr1gg6ixe.cloudfront.net/assets/favicon16x16-7e4f0564805d7f1d7e4faca5659a09b5.ico' rel='shortcut icon' type='image/x-icon'>
+
+<link href='https://fonts.googleapis.com/css?family=Cabin' rel='stylesheet' type='text/css'>
+<link href='https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300,700' rel='stylesheet' type='text/css'>
+<link href="../d2tp1vr1gg6ixe.cloudfront.net/assets/application-b62d269f61cbb20001633b4fdbf30a26.css" media="screen" rel="stylesheet" type="text/css" />
+
+<link href="../d2tp1vr1gg6ixe.cloudfront.net/assets/browse_shows/browse_shows-1f6684895c06b0d58d08dc43260401a0.css" media="screen" rel="stylesheet" type="text/css" />
+<meta content='296364270389381' property='fb:app_id'>
+<meta content='website' property='og:type'>
+<meta content='https://www.stageit.com/shows' property='og:url'>
+<meta content='Stageit | A front row seat to a backstage experience.™' property='og:title'>
+
+<script id='gift_error_template' type='text/x-handlebars-template'>
+<div class='error'>
+<span><img alt="Error_x" src="../d2tp1vr1gg6ixe.cloudfront.net/assets/sidestage/error_x-8f16bd933c429947f68358b03ef00de3.gif" /></span>
+<span class='msg'>{{text}}</span>
+</div>
+</script>
+
+<meta property='og:image' content='https://dvojaj7u7jwrp.cloudfront.net/images/fb_logo.jpg' /><link rel='image_src' href='../dvojaj7u7jwrp.cloudfront.net/images/fb_logo.jpg' />
+<style type='text/css'>
+
+</style>
+
+</head>
+<body class='browse_shows show' data-ng-app='stageit.desktop' id='browse_shows_show'>
+<!-- Google Tag Manager -->
+<noscript><iframe src="http://www.googletagmanager.com/ns.html?id=GTM-MXN3GQ"
+height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+'../www.googletagmanager.com/gtm5445.html?id='+i+dl;f.parentNode.insertBefore(j,f);
+})(window,document,'script','dataLayer','GTM-MXN3GQ');</script>
+<!-- End Google Tag Manager -->
+
+<div data-app-bundle-id="1005042012" data-environment="production" data-is-ssl-required="true" data-pubnub-relay-host="https://relay.stageit.com/" data-pubnub-sub-key="sub-c-3a77e2cf-caee-11e1-8c56-0b47e2ce4080" data-server-url="https://www.stageit.com/" id="constants"></div>
+<div data-privacy-policy="/static/static_pages/privacy_policy" data-terms-of-service="/static/static_pages/terms_of_service" id="paths"></div>
+
+<div data-api-version="v2.8" data-app-id="296364270389381" id="facebook_data"></div>
+
+<div class='woahbar_alerts'>
+<div class='woahbar' style='display:none;'>
+<span>
+Your version of Internet Explorer is not supported.
+<a class='woahbar-link' href='http://www.google.com/chrome' target='_blank'>
+Please click here to download Google Chrome.
+</a>
+<a class='close-notify'>
+<img alt="Woahbar-up-arrow" class="woahbar-up-arrow" src="../d2tp1vr1gg6ixe.cloudfront.net/assets/woahbar-up-arrow-0af96a14d37ed140facf65c090a84913.png" />
+</a>
+</span>
+</div>
+
+</div>
+<div id='fb-root'></div>
+<div id='page_wrapper'>
+<div id='header_wrapper'>
+<div id='header'>
+<div id='header'>
+<div id='search'>
+<a href="index.html"><img alt="Stageit - A front row seat to a backstage experience." src="../d2tp1vr1gg6ixe.cloudfront.net/assets/header/banner_logo-4f8a1539223b1356f380b8203d955b40.png" /></a>
+<script id='autocomplete_show_item' type='text/x-handlebars-template'>
+{{#performers_category}}
+<a href='{{item.url}}'>
+<div class='name'>
+{{item.name}}
+{{#if item.verified}}
+<img alt="Verified-artist" class="verified small" src="../d2tp1vr1gg6ixe.cloudfront.net/assets/profile/verified-artist-ecb64ec83c51bb34833daabd8402f293.png" />
+
+{{/if}}
+</div>
+<div class='genres'>
+{{item.genres}}
+</div>
+</a>
+{{/performers_category}}
+{{#upcoming_shows_category}}
+<a href='{{item.url}}'>
+<div class='name'>
+{{item.name}}
+{{#if item.verified}}
+<img alt="Verified-artist" class="verified small" src="../d2tp1vr1gg6ixe.cloudfront.net/assets/profile/verified-artist-ecb64ec83c51bb34833daabd8402f293.png" />
+
+{{/if}}
+</div>
+<div class='title truncate'>
+{{item.title}}
+</div>
+<div class='genres'>
+{{item.genres}}
+</div>
+</a>
+{{/upcoming_shows_category}}
+</script>
+<div id='query_box'><input id="q" name="q" placeholder="Search Stageit Performers, Shows &amp; Genres" type="text" /></div>
+</div>
+<div id='header_divider_end'></div>
+<div id='user_account'>
+<div id='welcome_content'>
+<div id='welcome'>
+Welcome to Stageit
+</div>
+<ul class='horizontal' id='user_account_actions'>
+<li><a href="signup.html" id="signup_link">Join Stageit</a></li>
+<li><a href="login.html" id="login_link">Sign in</a></li>
+<li class='facebook_connect_link'><a href="https://www.facebook.com/v2.8/dialog/oauth?client_id=296364270389381&amp;display=page&amp;redirect_uri=https%3A%2F%2Fwww.stageit.com%2Fauth%2Ffacebook%2Fcallback&amp;response_type=code&amp;scope=email&amp;state=7bf46a0ccb8b75970df7254eb424f18e483db020adda08c5"><img alt="Facebook_connect_tiny" src="../d2tp1vr1gg6ixe.cloudfront.net/assets/facebook/facebook_connect_tiny-1eb5e2e3020921b301dc9a1795306fce.png" /></a></li>
+</ul>
+</div>
+</div>
+<div id='header_divider_middle'></div>
+</div>
+
+</div>
+<div id='navigation_bar'>
+<ul class='horizontal' id='navigation'>
+<li><a href="index.html">Home</a></li>
+<li><a href="static/static_pages/what_is_stageit.html">What is StageIt?</a></li>
+<li><a href="static/static_pages/our_artists.html">Our Artists</a></li>
+</ul>
+</div>
+</div>
+<div id='content_wrapper'>
+<noscript>
+<div class='jswarning'>Stageit requires a browser with JavaScript support. If you have JavaScript disabled, please enable it and try refreshing this page.</div>
+</noscript>
+
+<div id='content_wrapper_top'>
+
+</div>
+<div id='notification_wrapper'>
+
+</div>
+<div id='content_container'>
+<div id='content_wrapper_left'>
+
+</div>
+<div id='content'>
+<div id='content_inner_header'>
+
+</div>
+<div id='narrow_content'>
+<div class='section_header'>
+<h1>Upcoming Stageit Shows</h1>
+<input class='search_field' id='shows_search' name='q' placeholder='Search Stageit shows' type='text'>
+</div>
+<div id='shows'>
+<div class='shows_wrapper'>
+<div class='error_results'>
+Sorry, something went wrong. Try to perform a new search.
+</div>
+<div class='no_results'>
+Sorry, there are no results to display. Try removing some filters or refining your search.
+</div>
+<ul>
+<li class='small_show show_list' data-is-started='false' data-performance-id='70465' data-start-time='1585609200000'>
+<a href="brian_collins/the_living_room_show_8_an_acoustic_evening_of_true_stories_tall_tales_songs_for_the_soul/70465.html" class="show_square"><img alt="The Living Room Show 8 (An Acoustic Evening of True Stories, Tall Tales, &amp; Songs for the Soul)" class="small_show_image" src="../dvojaj7u7jwrp.cloudfront.net/user/images/397439/small/Brian_Collins_Taylor_Guitars31dc.jpg?1584223866" />
+</a><div class='small_info'>
+<a href="brian_collins/the_living_room_show_8_an_acoustic_evening_of_true_stories_tall_tales_songs_for_the_soul/70465.html" class="headliner"><h4>
+Brian Collins
+</h4>
+<div class='title'>
+The Living Room Show 8 (An Acoustic Evening of...
+</div>
+</a><div class='date'>
+<span>Mar 30 AT  4:00PM PDT</span>
+</div>
+</div>
+<div class='enter_venue'>
+<form action="https://www.stageit.com/brian_collins/the_living_room_show_8_an_acoustic_evening_of_true_stories_tall_tales_songs_for_the_soul/70465" class="button_to" method="get"><div><input class="enter_button" id="enter_button_70465" name="enter" type="submit" value="Enter Venue" /></div></form>
+</div>
+</li>
+<li class='small_show show_list' data-is-started='false' data-performance-id='70864' data-start-time='1585611900000'>
+<a href="melanie_horsnell/tiny_house_concert_live_from_candelo/70864.html" class="show_square"><img alt="Tiny house concert live from Candelo" class="small_show_image" src="https://dvojaj7u7jwrp.cloudfront.net/user/images/396921/small/profilepic.?1584146491" />
+</a><div class='small_info'>
+<a href="melanie_horsnell/tiny_house_concert_live_from_candelo/70864.html" class="headliner"><h4>
+Melanie Horsnell
+</h4>
+<div class='title'>
+Tiny house concert live from Candelo
+</div>
+</a><div class='date'>
+<span>Mar 30 AT  4:45PM PDT</span>
+</div>
+</div>
+<div class='enter_venue'>
+<form action="https://www.stageit.com/melanie_horsnell/tiny_house_concert_live_from_candelo/70864" class="button_to" method="get"><div><input class="enter_button" id="enter_button_70864" name="enter" type="submit" value="Enter Venue" /></div></form>
+</div>
+</li>
+<li class='small_show show_list' data-is-started='false' data-performance-id='69796' data-start-time='1585674000000'>
+<a href="tenka_aka_deniss_pashkevich/tenka_live/69796.html" class="show_square"><img alt="TENKA live" class="small_show_image" src="../dvojaj7u7jwrp.cloudfront.net/user/images/399083/small/F4C3F4B9-C606-44E0-9D75-6BE5268D5AF1-2cf56.jpg?1584389983" />
+</a><div class='small_info'>
+<a href="tenka_aka_deniss_pashkevich/tenka_live/69796.html" class="headliner"><h4>
+TENKA aka Deniss Pashkevich 
+</h4>
+<div class='title'>
+TENKA live
+</div>
+</a><div class='date'>
+<span>Mar 31 AT 10:00AM PDT</span>
+</div>
+</div>
+<div class='enter_venue'>
+<form action="https://www.stageit.com/tenka_aka_deniss_pashkevich/tenka_live/69796" class="button_to" method="get"><div><input class="enter_button" id="enter_button_69796" name="enter" type="submit" value="Enter Venue" /></div></form>
+</div>
+</li>
+<li class='small_show show_list' data-is-started='false' data-performance-id='70892' data-start-time='1585699200000'>
+<a href="lisa_balkwill/worship_with_me/70892.html" class="show_square"><img alt="Worship With Me!" class="small_show_image" src="https://dvojaj7u7jwrp.cloudfront.net/user/images/408716/small/profilepic.?1584668146" />
+</a><div class='small_info'>
+<a href="lisa_balkwill/worship_with_me/70892.html" class="headliner"><h4>
+Lisa Balkwill
+</h4>
+<div class='title'>
+Worship With Me!
+</div>
+</a><div class='date'>
+<span>Mar 31 AT  5:00PM PDT</span>
+</div>
+</div>
+<div class='enter_venue'>
+<form action="https://www.stageit.com/lisa_balkwill/worship_with_me/70892" class="button_to" method="get"><div><input class="enter_button" id="enter_button_70892" name="enter" type="submit" value="Enter Venue" /></div></form>
+</div>
+</li>
+<li class='small_show show_list' data-is-started='false' data-performance-id='72265' data-start-time='1585758600000'>
+<a href="simone_nobili/my_first_show_the_music_i_love/72265.html" class="show_square"><img alt="My first show - The music I love" class="small_show_image" src="../dvojaj7u7jwrp.cloudfront.net/user/images/357901/small/breedlove_99783.jpg?1488871645" />
+</a><div class='small_info'>
+<a href="simone_nobili/my_first_show_the_music_i_love/72265.html" class="headliner"><h4>
+Simone Nobili
+</h4>
+<div class='title'>
+My first show - The music I love
+</div>
+</a><div class='date'>
+<span>Apr  1 AT  9:30AM PDT</span>
+</div>
+</div>
+<div class='enter_venue'>
+<form action="https://www.stageit.com/simone_nobili/my_first_show_the_music_i_love/72265" class="button_to" method="get"><div><input class="enter_button" id="enter_button_72265" name="enter" type="submit" value="Enter Venue" /></div></form>
+</div>
+</li>
+<li class='small_show show_list' data-is-started='false' data-performance-id='71931' data-start-time='1586032200000'>
+<a href="clare_free/live_from_the_living_room/71931.html" class="show_square"><img alt="Live From The Living Room" class="small_show_image" src="../dvojaj7u7jwrp.cloudfront.net/user/images/399616/small/Clare_Free_2_By_Adam_Kennedy_at_HRH_Blues_2019_for_web8f91.jpg?1584396447" />
+</a><div class='small_info'>
+<a href="clare_free/live_from_the_living_room/71931.html" class="headliner"><h4>
+Clare Free
+</h4>
+<div class='title'>
+Live From The Living Room
+</div>
+</a><div class='date'>
+<span>Apr  4 AT  1:30PM PDT</span>
+</div>
+</div>
+<div class='enter_venue'>
+<form action="https://www.stageit.com/clare_free/live_from_the_living_room/71931" class="button_to" method="get"><div><input class="enter_button" id="enter_button_71931" name="enter" type="submit" value="Enter Venue" /></div></form>
+</div>
+</li>
+<li class='small_show show_list' data-is-started='false' data-performance-id='71932' data-start-time='1586041200000'>
+<a href="branden_james/the_phantom_of_the_greatest_showman/71932.html" class="show_square"><img alt="The Phantom of the Greatest Showman" class="small_show_image" src="../dvojaj7u7jwrp.cloudfront.net/user/images/420357/small/stageit_pica404.jpg?1584984480" />
+</a><div class='small_info'>
+<a href="branden_james/the_phantom_of_the_greatest_showman/71932.html" class="headliner"><h4>
+Branden &amp; James
+</h4>
+<div class='title'>
+The Phantom of the Greatest Showman
+</div>
+</a><div class='date'>
+<span>Apr  4 AT  4:00PM PDT</span>
+</div>
+</div>
+<div class='enter_venue'>
+<form action="https://www.stageit.com/branden_james/the_phantom_of_the_greatest_showman/71932" class="button_to" method="get"><div><input class="enter_button" id="enter_button_71932" name="enter" type="submit" value="Enter Venue" /></div></form>
+</div>
+</li>
+<li class='small_show show_list' data-is-started='false' data-performance-id='69519' data-start-time='1586063400000'>
+<a href="sara_jelley/couch_sessions/69519.html" class="show_square"><img alt="Couch Sessions" class="small_show_image" src="../dvojaj7u7jwrp.cloudfront.net/user/images/397664/small/67566540_10157498370787070_5824585727710593024_o32d0.jpg?1584245479" />
+</a><div class='small_info'>
+<a href="sara_jelley/couch_sessions/69519.html" class="headliner"><h4>
+Sara Jelley
+</h4>
+<div class='title'>
+Couch Sessions
+</div>
+</a><div class='date'>
+<span>Apr  4 AT 10:10PM PDT</span>
+</div>
+</div>
+<div class='enter_venue'>
+<form action="https://www.stageit.com/sara_jelley/couch_sessions/69519" class="button_to" method="get"><div><input class="enter_button" id="enter_button_69519" name="enter" type="submit" value="Enter Venue" /></div></form>
+</div>
+</li>
+<li class='small_show show_list' data-is-started='false' data-performance-id='70865' data-start-time='1586220300000'>
+<a href="melanie_horsnell/tiny_house_concert/70865.html" class="show_square"><img alt="Tiny house concert" class="small_show_image" src="https://dvojaj7u7jwrp.cloudfront.net/user/images/396921/small/profilepic.?1584146491" />
+</a><div class='small_info'>
+<a href="melanie_horsnell/tiny_house_concert/70865.html" class="headliner"><h4>
+Melanie Horsnell
+</h4>
+<div class='title'>
+Tiny house concert
+</div>
+</a><div class='date'>
+<span>Apr  6 AT  5:45PM PDT</span>
+</div>
+</div>
+<div class='enter_venue'>
+<form action="https://www.stageit.com/melanie_horsnell/tiny_house_concert/70865" class="button_to" method="get"><div><input class="enter_button" id="enter_button_70865" name="enter" type="submit" value="Enter Venue" /></div></form>
+</div>
+</li>
+<li class='small_show show_list' data-is-started='false' data-performance-id='72234' data-start-time='1586365200000'>
+<a href="betty_bitschlap/the_skinny_b_tch_cabernet_just_announced/72234.html" class="show_square"><img alt="The Skinny B!tch Cabernet **JUST ANNOUNCED**" class="small_show_image" src="../dvojaj7u7jwrp.cloudfront.net/user/images/424346/small/Screen_Shot_2020-03-24_at_7.32.17_PM3c94.png?1585103582" />
+</a><div class='small_info'>
+<a href="betty_bitschlap/the_skinny_b_tch_cabernet_just_announced/72234.html" class="headliner"><h4>
+BETTY BITSCHLAP
+<img alt="Verified-artist" class="verified regular" data-tooltip-animation="true" data-tooltip-append-to-body="true" data-tooltip-class="black-tooltip" data-tooltip="This artist is verified" src="../d2tp1vr1gg6ixe.cloudfront.net/assets/profile/verified-artist-ecb64ec83c51bb34833daabd8402f293.png" />
+
+</h4>
+<div class='title'>
+The Skinny B!tch Cabernet **JUST ANNOUNCED**
+</div>
+</a><div class='date'>
+<span>Apr  8 AT 10:00AM PDT</span>
+</div>
+</div>
+<div class='enter_venue'>
+<form action="https://www.stageit.com/betty_bitschlap/the_skinny_b_tch_cabernet_just_announced/72234" class="button_to" method="get"><div><input class="enter_button" id="enter_button_72234" name="enter" type="submit" value="Enter Venue" /></div></form>
+</div>
+</li>
+
+</ul>
+<div class="pagination"><a class="previous_page" rel="prev" href="shows1921.html?page=27&amp;show_filter=all_shows&amp;time_filter=sold">Previous</a> <a rel="start" href="showsc54c.html?page=1&amp;show_filter=all_shows&amp;time_filter=sold">1</a> <span class="gap">&hellip;</span> <a href="shows376c.html?page=26&amp;show_filter=all_shows&amp;time_filter=sold">26</a> <a rel="prev" href="shows1921.html?page=27&amp;show_filter=all_shows&amp;time_filter=sold">27</a> <em class="current">28</em> <a rel="next" href="shows2a36.html?page=29&amp;show_filter=all_shows&amp;time_filter=sold">29</a> <a href="showsba3f.html?page=30&amp;show_filter=all_shows&amp;time_filter=sold">30</a> <span class="gap">&hellip;</span> <a href="shows46e3.html?page=46&amp;show_filter=all_shows&amp;time_filter=sold">46</a> <a class="next_page" rel="next" href="shows2a36.html?page=29&amp;show_filter=all_shows&amp;time_filter=sold">Next</a></div>
+</div>
+
+</div>
+</div>
+<div id='filter_column'>
+<div class='filter_section' id='sort_by'>
+<h2>Sort By:</h2>
+<button class='filter_button filter_selected' name='time' type='button' value='sold'>What's Hot</button>
+<button class='filter_button filter_inactive' name='time' type='button' value='upcoming'>Show Time</button>
+</div>
+<div class='filter_section' id='show_me'>
+<h2>Show Me:</h2>
+<button class='filter_button filter_inactive category_filter filter_button_wide' name='sort' value='main_stage'>Main Stage</button>
+<button class='filter_button filter_inactive category_filter' name='sort' value='featured'>Featured</button>
+<button class='filter_button filter_inactive category_filter' name='sort' value='staff_picks'>Staff Picks</button>
+<button class='filter_button filter_inactive category_filter' name='sort' value='fan_picks'>Fan Picks</button>
+<button class='filter_button filter_inactive category_filter' name='sort' value='mobile_picks'>Mobile</button>
+<button class='filter_button filter_selected filter_button_wide' id='all_shows' name='sort' value='all_shows'>All Shows</button>
+</div>
+</div>
+
+<div id='content_inner_bottom'>
+
+</div>
+</div>
+<div id='content_wrapper_right'>
+
+</div>
+</div>
+<div id='content_wrapper_bottom'>
+
+</div>
+</div>
+<footer>
+<div class='container'>
+<div class='row'>
+<div class='chunk'>
+<h5>About</h5>
+<a href="static/static_pages/what_is_stageit.html">What is Stageit?</a>
+<br>
+<a href="shows.html">Browse all shows</a>
+<br>
+<a href="static/static_pages/our_company.html">Our Company</a>
+<br>
+<a href="static/static_pages/our_artists.html">Our Artists</a>
+<br>
+<a href="static/static_pages/press.html">Press</a>
+<br>
+<a href="static/static_pages/jobs.html">Jobs at Stageit</a>
+</div>
+<div class='chunk'>
+<h5>Help</h5>
+<a href="static/contact.html">Contact Us</a>
+<br>
+<a href="https://stageit.zendesk.com/hc/en-us/sections/203198283-General-" target="_blank">FAQ</a>
+<br>
+</div>
+<div class='chunk'>
+<h5>Community</h5>
+<a href="http://eepurl.com/cTNOo">Newsletter</a>
+<br>
+<a href="http://twitter.com/stageit/">Twitter</a>
+<br>
+<a href="http://www.facebook.com/stageit">Facebook</a>
+<br>
+</div>
+<div class='signoff'>
+A front row seat to a backstage experience.
+©2020 Stageit All Rights Reserved.
+</div>
+</div>
+<div class='row'>
+<div class='chunk'>
+<h5>Performer Tips</h5>
+<a href="static/static_pages/how_to_stageit.html">Show Ideas</a>
+<br>
+<a href="static/static_pages/broadcasting_tips.html">Broadcasting Tips</a>
+<br>
+<a href="static/static_pages/how_to_soundcheck.html">How To Soundcheck</a>
+<br>
+<a href="static/static_pages/reward_top_supporters.html">Rewarding Top Supporters</a>
+<br>
+<a href="static/static_pages/marketing_tips.html">Marketing Tips</a>
+<br>
+<a href="static/static_pages/how_to_get_paid.html">How To Get Paid</a>
+<br>
+<br>
+</div>
+<div class='chunk'>
+<h5>Legal</h5>
+<a href="static/static_pages/terms_of_service.html">Terms of Service</a>
+<br>
+<a href="static/static_pages/terms_of_sale.html">Terms of Sale</a>
+<br>
+<a href="static/static_pages/broadcaster_agreement.html">Broadcaster Agreement</a>
+<br>
+<a href="static/static_pages/privacy_policy.html">Privacy Policy</a>
+</div>
+<div style="display:none;"><div class="popup" data-autoOpen="false" data-bgiframe="true" data-height="auto" data-modal="true" data-resizable="false" data-width="auto" id="popup"><div id="popup_wrapper"></div></div></div></div>
+</div>
+</footer>
+</div>
+
+<div style="display:none;"><div class="popup" data-autoOpen="false" data-bgiframe="true" data-height="" data-modal="true" data-resizable="false" data-width="" id="redemption_popup" title="Redeem"><form accept-charset="UTF-8" action="https://www.stageit.com/redemptions/redeem" class="new_redemption" data-remote="true" id="new_redemption" method="post"><div style="margin:0;padding:0;display:inline"><input name="utf8" type="hidden" value="&#x2713;" /><input name="_method" type="hidden" value="put" /><input name="authenticity_token" type="hidden" value="ncuRC15rGcDCdd0bDO+fRx3gxHAXfCTXRQr8n5qf4jc=" /></div><input name='format' type='hidden' value='json'>
+<div class='popup_contents wide_popup'>
+<div class='popup_text'>
+Enter your redemption code below:
+</div>
+<div class='popup_subtext'>
+Redemption codes can be found in emails or other messages pertaining to gifts.
+</div>
+<div class='redemption_code'>
+<input class="field" data-url-exists="/redemptions/exists" id="redemption_code" name="redemption[code]" placeholder="Paste or type your code here" required="required" size="30" type="text" />
+</div>
+</div>
+<div class='popup_footer'>
+<div class='right'>
+<input class='stageit_button grey_button cancel_button' type='button' value='Cancel'>
+<input class="stageit_button continue_button" disabled="disabled" name="commit" type="submit" value="Continue" />
+</div>
+</div>
+</form>
+
+</div></div><div style="display:none;"><div class="popup" data-autoOpen="false" data-bgiframe="true" data-height="" data-modal="true" data-resizable="false" data-width="" id="redemption_gift_details_popup" title="Gift Details"><div id="redemption_gift_details_popup_wrapper"></div></div></div><script id='redemption_gift_details_popup_template' type='text/x-handlebars-template'>
+<div class='popup_contents wide_popup'>
+<div class='popup_text'>
+You have successfully redeemed the following:
+</div>
+<div class='gift_details_popup'>
+{{#if performance.available}}
+<div class='detail_bar'>
+1 Ticket to a live streaming show on Stageit.com{{#if extra_notes}} & {{extra_notes}} extra Notes{{/if}}
+</div>
+{{else}}
+<div class='detail_bar_canceled'>
+Canceled or Ended Performance:
+</div>
+{{/if}}
+<div class='ticket_info'>
+<div class='performance_pic'>
+<a href="{{performance.url}}"><img alt='{{performance.title}}' src='{{performance.image}}'>
+</a></div>
+<div class='upcoming_middle'>
+<div class='title'>
+<h2>
+<div class='truncate'>
+<a href="{{performance.url}}">{{performance.title}}
+</a></div>
+</h2>
+</div>
+<div class='info'>
+<div class='truncate'>
+{{performance.user}}
+</div>
+<div>
+{{performance.time}} - {{performance.length_minutes}} Min Show - {{performance.price}}
+</div>
+</div>
+</div>
+</div>
+{{#if extra_notes}}
+<div class='extra_notes'>
+<img alt="note icon" src="../d2tp1vr1gg6ixe.cloudfront.net/assets/note_large-b04ffdbfa4f054d0d7af12bfc97729e6.png" />
+<span class='extra_note_info'>
+<h3>
+{{extra_notes}} Notes
+</h3>
+<p>
+Use Notes to tip performers or buy tickets to any Stageit show.
+</p>
+</span>
+</div>
+{{/if}}
+</div>
+</div>
+<div class='popup_footer'>
+<div class='right'>
+<input class='stageit_button close_button' type='button' value='Close'>
+</div>
+</div>
+</script>
+<div style="display:none;"><div class="popup" data-autoOpen="false" data-bgiframe="true" data-height="" data-modal="true" data-resizable="false" data-width="" id="redemption_error_popup" title="Redemption Error"><div class='popup_contents wide_popup'>
+<div class='error_message'></div>
+</div>
+</div></div>
+<script src="../platform.twitter.com/widgets.js" type="text/javascript"></script>
+<script>
+  var urls = {};
+</script>
+
+<script src="../d2tp1vr1gg6ixe.cloudfront.net/assets/application-f8ed7b2e85b734c2f9f671e548c237ad.js" type="text/javascript"></script>
+
+
+<script id='error_template' type='text/x-handlebars-template'>
+<div class='pretty_error' style='height: auto'>
+<div class='error'>
+{{#errors}}
+<span><img alt="Error_x" src="../d2tp1vr1gg6ixe.cloudfront.net/assets/sidestage/error_x-8f16bd933c429947f68358b03ef00de3.gif" /></span>
+<span class='msg'>{{.}}</span>
+<br>
+{{/errors}}
+</div>
+</div>
+</script>
+
+</body>
+<div id='flash'></div>
+
+<!-- Mirrored from www.stageit.com/shows?page=28&show_filter=all_shows&time_filter=sold by HTTrack Website Copier/3.x [XR&CO'2014], Thu, 26 Mar 2020 07:31:12 GMT -->
+</html>
