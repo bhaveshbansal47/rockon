@@ -9,24 +9,6 @@
   <script src="js/amazon-cognito-auth.min.js"></script>
   <script src="https://sdk.amazonaws.com/js/aws-sdk-2.7.16.min.js"></script> 
   <script type="text/javascript" src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
-  <script type="text/javascript">
-    //Bucket Configurations
-    var bucketName = "stageitstageit";
-    var bucketRegion = "ap-south-1";
-    var IdentityPoolId = "1b4f82e8-9014-4b41-ba7d-9ddd70712fc8";
-    
-     AWS.config.update({
-                    region: bucketRegion,
-                    credentials: new AWS.CognitoIdentityCredentials({
-                        IdentityPoolId: IdentityPoolId
-                    })
-                });
-    
-                var s3 = new AWS.S3({
-                    apiVersion: '2006-03-01',
-                    params: {Bucket: bucketName}
-            });
-    </script>
   <script src="js/amazon-cognito-identity.min.js"></script>  
   <script src="js/config.js"></script>
 <script type="text/javascript">window.NREUM||(NREUM={});NREUM.info={"beacon":"bam.nr-data.net","errorBeacon":"bam.nr-data.net","licenseKey":"43b01e0566","applicationID":"124249","transactionName":"IF5YRkNXVFwARRtBEgZDRR1fXU8=","queueTime":1,"applicationTime":31,"agent":""}</script>
@@ -187,7 +169,7 @@ Signing up is free and easy. Just fill out your info below.
 <div id='signup_form'>
 <div class='left_col signup_form_column'>
 <form accept-charset="UTF-8" action="https://www.stageit.com/site/users" class="new_user" data-remote="true" id="new_user" method="post" onsubmit="$(&#x27;.error&#x27;).html(&#x27;&#x27;);" style="margin:2px;"><div style="margin:0;padding:0;display:inline"><input name="utf8" type="hidden" value="&#x2713;" /><input name="authenticity_token" type="hidden" value="9UjjLX233fl6QzYWQY5vAd37Prwb0eNqG9KdPhe1pLY=" /></div>
-  <div class="error" id="errortitle">hello</div>
+  <div class="error" id="errortitle"></div>
   <h3>
 Enter your information.
 </h3>
@@ -451,37 +433,29 @@ Use Notes to tip performers or buy tickets to any Stageit show.
   var password;
   var username;
   var poolData;
+  var profileurl;
     
   function registerButton() {
+    var bucketName = "stageitstageit";
+    var bucketRegion = "ap-south-1";
+    var IdentityPoolId = "ap-south-1:1b4f82e8-9014-4b41-ba7d-9ddd70712fc8";
+    
+     AWS.config.update({
+                    region: bucketRegion,
+                    credentials: new AWS.CognitoIdentityCredentials({
+                        IdentityPoolId: IdentityPoolId
+                    })
+                });
+    
+                var s3 = new AWS.S3({
+                    apiVersion: '2006-03-01',
+                    params: {Bucket: bucketName}
+            });
     var files = document.getElementById('user_photo_id').files;
     if(document.getElementById('user_photo_id').value == ""){
       document.getElementById("errortitle").innerHTML = "Please upload image";
       throw "Please upload image";
     };
-
-    if (files) 
-   {
-     var file = files[0];
-     var fileName = files.name;
-     var filePath = 'image' + fileName;
-     var fileUrl = 'https://' + bucketRegion + '.amazonaws.com/stageitstageit/' +  filePath;
-     s3.upload({
-        Key: filePath,
-        Body: file,
-        ACL: 'public-read'
-        }, function(err, data) {
-        if(err) {
-        console.log('error');
-        }
-        alert('Successfully Uploaded!');
-        }).on('httpUploadProgress', function (progress) {
-        var uploaded = parseInt((progress.loaded * 100) / progress.total);
-        console.log(uploaded);
-      });
-   }else{
-    document.getElementById("errortitle").innerHTML = "Please upload image";
-      throw "Please upload image";
-   }
     if(document.getElementById("user_login").value == ""){
       document.getElementById("errortitle").innerHTML = "Please enter username";
       throw "Please enter username";
@@ -558,10 +532,39 @@ Use Notes to tip performers or buy tickets to any Stageit show.
     }
     cognitoUser = result.user;
     console.log(cognitoUser);
-    //change elements of page
-    document.getElementById("errortitle").innerHTML = "successful registration";
+    //change elements of pag
+   
     
   });
+  var uploaded;
+  
+  if (files) 
+   {
+     var file = files[0];
+     var fileName = username.split("@")[0] + ".jpg";
+     var filePath = 'image/' + fileName;
+     var fileUrl = 'https://' + bucketRegion + '.amazonaws.com/stageitstageit/' +  filePath;
+     s3.upload({
+        Key: filePath,
+        Body: file,
+        ACL: 'public-read'
+        }, function(err, data) {
+        if(err) {
+        console.log(err);
+        }
+        console.log('Successfully Uploaded!');
+        }).on('httpUploadProgress', function (progress) {
+        uploaded = parseInt((progress.loaded * 100) / progress.total);
+        console.log(uploaded);
+        if(uploaded == 100){
+        window.location.assign("static/confirm.html");
+      }
+      });
+      
+   }else{
+    document.getElementById("errortitle").innerHTML = "Please upload image";
+      throw "Please upload image";
+   }
   }
 
 </script>
