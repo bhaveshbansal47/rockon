@@ -1,0 +1,864 @@
+<!DOCTYPE html>
+
+<!-- saved from url=(0024)https://www.stageit.com/ -->
+<html lang="en" xmlns:fb="http://ogp.me/ns/fb#" class="overthrow-enabled"><head>
+  <script src="js/amazon-cognito-identity.min.js"></script>  
+<script src="js/config.js"></script>
+
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"><style type="text/css">.ng-animate.item:not(.left):not(.right){-webkit-transition:0s ease-in-out left;transition:0s ease-in-out left}</style><style type="text/css">@charset "UTF-8";[ng\:cloak],[ng-cloak],[data-ng-cloak],[x-ng-cloak],.ng-cloak,.x-ng-cloak,.ng-hide:not(.ng-hide-animate){display:none !important;}ng\:form{display:block;}</style>
+
+<script type="text/javascript" src="./Stageit _ A front row seat to a backstage experience.™_files/43b01e0566"></script><script src="./Stageit _ A front row seat to a backstage experience.™_files/nr-1167.min.js.download"></script><script src="./Stageit _ A front row seat to a backstage experience.™_files/sdk.js.download" async="" crossorigin="anonymous"></script><script type="text/javascript" async="" src="./Stageit _ A front row seat to a backstage experience.™_files/analytics.js.download"></script><script async="" src="./Stageit _ A front row seat to a backstage experience.™_files/gtm.js.download"></script><script type="text/javascript">window.NREUM||(NREUM={});NREUM.info={"beacon":"bam.nr-data.net","errorBeacon":"bam.nr-data.net","licenseKey":"43b01e0566","applicationID":"124249","transactionName":"IF5YRkNXVFwARRtcDg5UGUFZV08=","queueTime":1,"applicationTime":325,"agent":""}</script>
+<script type="text/javascript">(window.NREUM||(NREUM={})).loader_config={xpid:"VwEFV1JACQEEVlVb",licenseKey:"43b01e0566",applicationID:"124249"};window.NREUM||(NREUM={}),__nr_require=function(t,e,n){function r(n){if(!e[n]){var o=e[n]={exports:{}};t[n][0].call(o.exports,function(e){var o=t[n][1][e];return r(o||e)},o,o.exports)}return e[n].exports}if("function"==typeof __nr_require)return __nr_require;for(var o=0;o<n.length;o++)r(n[o]);return r}({1:[function(t,e,n){function r(t){try{s.console&&console.log(t)}catch(e){}}var o,i=t("ee"),a=t(18),s={};try{o=localStorage.getItem("__nr_flags").split(","),console&&"function"==typeof console.log&&(s.console=!0,o.indexOf("dev")!==-1&&(s.dev=!0),o.indexOf("nr_dev")!==-1&&(s.nrDev=!0))}catch(c){}s.nrDev&&i.on("internal-error",function(t){r(t.stack)}),s.dev&&i.on("fn-err",function(t,e,n){r(n.stack)}),s.dev&&(r("NR AGENT IN DEVELOPMENT MODE"),r("flags: "+a(s,function(t,e){return t}).join(", ")))},{}],2:[function(t,e,n){function r(t,e,n,r,s){try{p?p-=1:o(s||new UncaughtException(t,e,n),!0)}catch(f){try{i("ierr",[f,c.now(),!0])}catch(d){}}return"function"==typeof u&&u.apply(this,a(arguments))}function UncaughtException(t,e,n){this.message=t||"Uncaught error with no additional information",this.sourceURL=e,this.line=n}function o(t,e){var n=e?null:c.now();i("err",[t,n])}var i=t("handle"),a=t(19),s=t("ee"),c=t("loader"),f=t("gos"),u=window.onerror,d=!1,l="nr@seenError",p=0;c.features.err=!0,t(1),window.onerror=r;try{throw new Error}catch(h){"stack"in h&&(t(6),t(5),"addEventListener"in window&&t(3),c.xhrWrappable&&t(7),d=!0)}s.on("fn-start",function(t,e,n){d&&(p+=1)}),s.on("fn-err",function(t,e,n){d&&!n[l]&&(f(n,l,function(){return!0}),this.thrown=!0,o(n))}),s.on("fn-end",function(){d&&!this.thrown&&p>0&&(p-=1)}),s.on("internal-error",function(t){i("ierr",[t,c.now(),!0])})},{}],3:[function(t,e,n){function r(t){for(var e=t;e&&!e.hasOwnProperty(u);)e=Object.getPrototypeOf(e);e&&o(e)}function o(t){s.inPlace(t,[u,d],"-",i)}function i(t,e){return t[1]}var a=t("ee").get("events"),s=t("wrap-function")(a,!0),c=t("gos"),f=XMLHttpRequest,u="addEventListener",d="removeEventListener";e.exports=a,"getPrototypeOf"in Object?(r(document),r(window),r(f.prototype)):f.prototype.hasOwnProperty(u)&&(o(window),o(f.prototype)),a.on(u+"-start",function(t,e){var n=t[1],r=c(n,"nr@wrapped",function(){function t(){if("function"==typeof n.handleEvent)return n.handleEvent.apply(n,arguments)}var e={object:t,"function":n}[typeof n];return e?s(e,"fn-",null,e.name||"anonymous"):n});this.wrapped=t[1]=r}),a.on(d+"-start",function(t){t[1]=this.wrapped||t[1]})},{}],4:[function(t,e,n){function r(t,e,n){var r=t[e];"function"==typeof r&&(t[e]=function(){var t=i(arguments),e={};o.emit(n+"before-start",[t],e);var a;e[m]&&e[m].dt&&(a=e[m].dt);var s=r.apply(this,t);return o.emit(n+"start",[t,a],s),s.then(function(t){return o.emit(n+"end",[null,t],s),t},function(t){throw o.emit(n+"end",[t],s),t})})}var o=t("ee").get("fetch"),i=t(19),a=t(18);e.exports=o;var s=window,c="fetch-",f=c+"body-",u=["arrayBuffer","blob","json","text","formData"],d=s.Request,l=s.Response,p=s.fetch,h="prototype",m="nr@context";d&&l&&p&&(a(u,function(t,e){r(d[h],e,f),r(l[h],e,f)}),r(s,"fetch",c),o.on(c+"end",function(t,e){var n=this;if(e){var r=e.headers.get("content-length");null!==r&&(n.rxSize=r),o.emit(c+"done",[null,e],n)}else o.emit(c+"done",[t],n)}))},{}],5:[function(t,e,n){var r=t("ee").get("raf"),o=t("wrap-function")(r),i="equestAnimationFrame";e.exports=r,o.inPlace(window,["r"+i,"mozR"+i,"webkitR"+i,"msR"+i],"raf-"),r.on("raf-start",function(t){t[0]=o(t[0],"fn-")})},{}],6:[function(t,e,n){function r(t,e,n){t[0]=a(t[0],"fn-",null,n)}function o(t,e,n){this.method=n,this.timerDuration=isNaN(t[1])?0:+t[1],t[0]=a(t[0],"fn-",this,n)}var i=t("ee").get("timer"),a=t("wrap-function")(i),s="setTimeout",c="setInterval",f="clearTimeout",u="-start",d="-";e.exports=i,a.inPlace(window,[s,"setImmediate"],s+d),a.inPlace(window,[c],c+d),a.inPlace(window,[f,"clearImmediate"],f+d),i.on(c+u,r),i.on(s+u,o)},{}],7:[function(t,e,n){function r(t,e){d.inPlace(e,["onreadystatechange"],"fn-",s)}function o(){var t=this,e=u.context(t);t.readyState>3&&!e.resolved&&(e.resolved=!0,u.emit("xhr-resolved",[],t)),d.inPlace(t,w,"fn-",s)}function i(t){y.push(t),h&&(b?b.then(a):v?v(a):(E=-E,O.data=E))}function a(){for(var t=0;t<y.length;t++)r([],y[t]);y.length&&(y=[])}function s(t,e){return e}function c(t,e){for(var n in t)e[n]=t[n];return e}t(3);var f=t("ee"),u=f.get("xhr"),d=t("wrap-function")(u),l=NREUM.o,p=l.XHR,h=l.MO,m=l.PR,v=l.SI,g="readystatechange",w=["onload","onerror","onabort","onloadstart","onloadend","onprogress","ontimeout"],y=[];e.exports=u;var x=window.XMLHttpRequest=function(t){var e=new p(t);try{u.emit("new-xhr",[e],e),e.addEventListener(g,o,!1)}catch(n){try{u.emit("internal-error",[n])}catch(r){}}return e};if(c(p,x),x.prototype=p.prototype,d.inPlace(x.prototype,["open","send"],"-xhr-",s),u.on("send-xhr-start",function(t,e){r(t,e),i(e)}),u.on("open-xhr-start",r),h){var b=m&&m.resolve();if(!v&&!m){var E=1,O=document.createTextNode(E);new h(a).observe(O,{characterData:!0})}}else f.on("fn-end",function(t){t[0]&&t[0].type===g||a()})},{}],8:[function(t,e,n){function r(t){if(!i(t))return null;var e=window.NREUM;if(!e.loader_config)return null;var n=(e.loader_config.accountID||"").toString()||null,r=(e.loader_config.agentID||"").toString()||null,s=(e.loader_config.trustKey||"").toString()||null;if(!n||!r)return null;var c=a.generateCatId(),f=a.generateCatId(),u=Date.now(),d=o(c,f,u,n,r,s);return{header:d,guid:c,traceId:f,timestamp:u}}function o(t,e,n,r,o,i){var a="btoa"in window&&"function"==typeof window.btoa;if(!a)return null;var s={v:[0,1],d:{ty:"Browser",ac:r,ap:o,id:t,tr:e,ti:n}};return i&&r!==i&&(s.d.tk=i),btoa(JSON.stringify(s))}function i(t){var e=!1,n=!1,r={};if("init"in NREUM&&"distributed_tracing"in NREUM.init&&(r=NREUM.init.distributed_tracing,n=!!r.enabled),n)if(t.sameOrigin)e=!0;else if(r.allowed_origins instanceof Array)for(var o=0;o<r.allowed_origins.length;o++){var i=s(r.allowed_origins[o]);if(t.hostname===i.hostname&&t.protocol===i.protocol&&t.port===i.port){e=!0;break}}return n&&e}var a=t(16),s=t(10);e.exports={generateTracePayload:r,shouldGenerateTrace:i}},{}],9:[function(t,e,n){function r(t){var e=this.params,n=this.metrics;if(!this.ended){this.ended=!0;for(var r=0;r<l;r++)t.removeEventListener(d[r],this.listener,!1);e.aborted||(n.duration=a.now()-this.startTime,this.loadCaptureCalled||4!==t.readyState?null==e.status&&(e.status=0):i(this,t),n.cbTime=this.cbTime,u.emit("xhr-done",[t],t),s("xhr",[e,n,this.startTime]))}}function o(t,e){var n=c(e),r=t.params;r.host=n.hostname+":"+n.port,r.pathname=n.pathname,t.parsedOrigin=c(e),t.sameOrigin=t.parsedOrigin.sameOrigin}function i(t,e){t.params.status=e.status;var n=v(e,t.lastSize);if(n&&(t.metrics.rxSize=n),t.sameOrigin){var r=e.getResponseHeader("X-NewRelic-App-Data");r&&(t.params.cat=r.split(", ").pop())}t.loadCaptureCalled=!0}var a=t("loader");if(a.xhrWrappable){var s=t("handle"),c=t(10),f=t(8).generateTracePayload,u=t("ee"),d=["load","error","abort","timeout"],l=d.length,p=t("id"),h=t(14),m=t(13),v=t(11),g=window.XMLHttpRequest;a.features.xhr=!0,t(7),t(4),u.on("new-xhr",function(t){var e=this;e.totalCbs=0,e.called=0,e.cbTime=0,e.end=r,e.ended=!1,e.xhrGuids={},e.lastSize=null,e.loadCaptureCalled=!1,t.addEventListener("load",function(n){i(e,t)},!1),h&&(h>34||h<10)||window.opera||t.addEventListener("progress",function(t){e.lastSize=t.loaded},!1)}),u.on("open-xhr-start",function(t){this.params={method:t[0]},o(this,t[1]),this.metrics={}}),u.on("open-xhr-end",function(t,e){"loader_config"in NREUM&&"xpid"in NREUM.loader_config&&this.sameOrigin&&e.setRequestHeader("X-NewRelic-ID",NREUM.loader_config.xpid);var n=f(this.parsedOrigin);n&&n.header&&(e.setRequestHeader("newrelic",n.header),this.dt=n)}),u.on("send-xhr-start",function(t,e){var n=this.metrics,r=t[0],o=this;if(n&&r){var i=m(r);i&&(n.txSize=i)}this.startTime=a.now(),this.listener=function(t){try{"abort"!==t.type||o.loadCaptureCalled||(o.params.aborted=!0),("load"!==t.type||o.called===o.totalCbs&&(o.onloadCalled||"function"!=typeof e.onload))&&o.end(e)}catch(n){try{u.emit("internal-error",[n])}catch(r){}}};for(var s=0;s<l;s++)e.addEventListener(d[s],this.listener,!1)}),u.on("xhr-cb-time",function(t,e,n){this.cbTime+=t,e?this.onloadCalled=!0:this.called+=1,this.called!==this.totalCbs||!this.onloadCalled&&"function"==typeof n.onload||this.end(n)}),u.on("xhr-load-added",function(t,e){var n=""+p(t)+!!e;this.xhrGuids&&!this.xhrGuids[n]&&(this.xhrGuids[n]=!0,this.totalCbs+=1)}),u.on("xhr-load-removed",function(t,e){var n=""+p(t)+!!e;this.xhrGuids&&this.xhrGuids[n]&&(delete this.xhrGuids[n],this.totalCbs-=1)}),u.on("addEventListener-end",function(t,e){e instanceof g&&"load"===t[0]&&u.emit("xhr-load-added",[t[1],t[2]],e)}),u.on("removeEventListener-end",function(t,e){e instanceof g&&"load"===t[0]&&u.emit("xhr-load-removed",[t[1],t[2]],e)}),u.on("fn-start",function(t,e,n){e instanceof g&&("onload"===n&&(this.onload=!0),("load"===(t[0]&&t[0].type)||this.onload)&&(this.xhrCbStart=a.now()))}),u.on("fn-end",function(t,e){this.xhrCbStart&&u.emit("xhr-cb-time",[a.now()-this.xhrCbStart,this.onload,e],e)}),u.on("fetch-before-start",function(t){var e,n=t[1]||{};"string"==typeof t[0]?e=t[0]:t[0]&&t[0].url&&(e=t[0].url),e&&(this.parsedOrigin=c(e),this.sameOrigin=this.parsedOrigin.sameOrigin);var r=f(this.parsedOrigin);if(r&&r.header){var o=r.header;if("string"==typeof t[0]){var i={};for(var a in n)i[a]=n[a];i.headers=new Headers(n.headers||{}),i.headers.set("newrelic",o),this.dt=r,t.length>1?t[1]=i:t.push(i)}else t[0]&&t[0].headers&&(t[0].headers.append("newrelic",o),this.dt=r)}})}},{}],10:[function(t,e,n){var r={};e.exports=function(t){if(t in r)return r[t];var e=document.createElement("a"),n=window.location,o={};e.href=t,o.port=e.port;var i=e.href.split("://");!o.port&&i[1]&&(o.port=i[1].split("/")[0].split("@").pop().split(":")[1]),o.port&&"0"!==o.port||(o.port="https"===i[0]?"443":"80"),o.hostname=e.hostname||n.hostname,o.pathname=e.pathname,o.protocol=i[0],"/"!==o.pathname.charAt(0)&&(o.pathname="/"+o.pathname);var a=!e.protocol||":"===e.protocol||e.protocol===n.protocol,s=e.hostname===document.domain&&e.port===n.port;return o.sameOrigin=a&&(!e.hostname||s),"/"===o.pathname&&(r[t]=o),o}},{}],11:[function(t,e,n){function r(t,e){var n=t.responseType;return"json"===n&&null!==e?e:"arraybuffer"===n||"blob"===n||"json"===n?o(t.response):"text"===n||"document"===n||""===n||void 0===n?o(t.responseText):void 0}var o=t(13);e.exports=r},{}],12:[function(t,e,n){function r(){}function o(t,e,n){return function(){return i(t,[f.now()].concat(s(arguments)),e?null:this,n),e?void 0:this}}var i=t("handle"),a=t(18),s=t(19),c=t("ee").get("tracer"),f=t("loader"),u=NREUM;"undefined"==typeof window.newrelic&&(newrelic=u);var d=["setPageViewName","setCustomAttribute","setErrorHandler","finished","addToTrace","inlineHit","addRelease"],l="api-",p=l+"ixn-";a(d,function(t,e){u[e]=o(l+e,!0,"api")}),u.addPageAction=o(l+"addPageAction",!0),u.setCurrentRouteName=o(l+"routeName",!0),e.exports=newrelic,u.interaction=function(){return(new r).get()};var h=r.prototype={createTracer:function(t,e){var n={},r=this,o="function"==typeof e;return i(p+"tracer",[f.now(),t,n],r),function(){if(c.emit((o?"":"no-")+"fn-start",[f.now(),r,o],n),o)try{return e.apply(this,arguments)}catch(t){throw c.emit("fn-err",[arguments,this,t],n),t}finally{c.emit("fn-end",[f.now()],n)}}}};a("actionText,setName,setAttribute,save,ignore,onEnd,getContext,end,get".split(","),function(t,e){h[e]=o(p+e)}),newrelic.noticeError=function(t,e){"string"==typeof t&&(t=new Error(t)),i("err",[t,f.now(),!1,e])}},{}],13:[function(t,e,n){e.exports=function(t){if("string"==typeof t&&t.length)return t.length;if("object"==typeof t){if("undefined"!=typeof ArrayBuffer&&t instanceof ArrayBuffer&&t.byteLength)return t.byteLength;if("undefined"!=typeof Blob&&t instanceof Blob&&t.size)return t.size;if(!("undefined"!=typeof FormData&&t instanceof FormData))try{return JSON.stringify(t).length}catch(e){return}}}},{}],14:[function(t,e,n){var r=0,o=navigator.userAgent.match(/Firefox[\/\s](\d+\.\d+)/);o&&(r=+o[1]),e.exports=r},{}],15:[function(t,e,n){function r(t,e){var n=t.getEntries();n.forEach(function(t){"first-paint"===t.name?c("timing",["fp",Math.floor(t.startTime)]):"first-contentful-paint"===t.name&&c("timing",["fcp",Math.floor(t.startTime)])})}function o(t,e){var n=t.getEntries();n.length>0&&c("lcp",[n[n.length-1]])}function i(t){if(t instanceof u&&!l){var e,n=Math.round(t.timeStamp);e=n>1e12?Date.now()-n:f.now()-n,l=!0,c("timing",["fi",n,{type:t.type,fid:e}])}}if(!("init"in NREUM&&"page_view_timing"in NREUM.init&&"enabled"in NREUM.init.page_view_timing&&NREUM.init.page_view_timing.enabled===!1)){var a,s,c=t("handle"),f=t("loader"),u=NREUM.o.EV;if("PerformanceObserver"in window&&"function"==typeof window.PerformanceObserver){a=new PerformanceObserver(r),s=new PerformanceObserver(o);try{a.observe({entryTypes:["paint"]}),s.observe({entryTypes:["largest-contentful-paint"]})}catch(d){}}if("addEventListener"in document){var l=!1,p=["click","keydown","mousedown","pointerdown","touchstart"];p.forEach(function(t){document.addEventListener(t,i,!1)})}}},{}],16:[function(t,e,n){function r(){function t(){return e?15&e[n++]:16*Math.random()|0}var e=null,n=0,r=window.crypto||window.msCrypto;r&&r.getRandomValues&&(e=r.getRandomValues(new Uint8Array(31)));for(var o,i="xxxxxxxx-xxxx-4xxx-yxxx-xxxxxxxxxxxx",a="",s=0;s<i.length;s++)o=i[s],"x"===o?a+=t().toString(16):"y"===o?(o=3&t()|8,a+=o.toString(16)):a+=o;return a}function o(){function t(){return e?15&e[n++]:16*Math.random()|0}var e=null,n=0,r=window.crypto||window.msCrypto;r&&r.getRandomValues&&Uint8Array&&(e=r.getRandomValues(new Uint8Array(31)));for(var o=[],i=0;i<16;i++)o.push(t().toString(16));return o.join("")}e.exports={generateUuid:r,generateCatId:o}},{}],17:[function(t,e,n){function r(t,e){if(!o)return!1;if(t!==o)return!1;if(!e)return!0;if(!i)return!1;for(var n=i.split("."),r=e.split("."),a=0;a<r.length;a++)if(r[a]!==n[a])return!1;return!0}var o=null,i=null,a=/Version\/(\S+)\s+Safari/;if(navigator.userAgent){var s=navigator.userAgent,c=s.match(a);c&&s.indexOf("Chrome")===-1&&s.indexOf("Chromium")===-1&&(o="Safari",i=c[1])}e.exports={agent:o,version:i,match:r}},{}],18:[function(t,e,n){function r(t,e){var n=[],r="",i=0;for(r in t)o.call(t,r)&&(n[i]=e(r,t[r]),i+=1);return n}var o=Object.prototype.hasOwnProperty;e.exports=r},{}],19:[function(t,e,n){function r(t,e,n){e||(e=0),"undefined"==typeof n&&(n=t?t.length:0);for(var r=-1,o=n-e||0,i=Array(o<0?0:o);++r<o;)i[r]=t[e+r];return i}e.exports=r},{}],20:[function(t,e,n){e.exports={exists:"undefined"!=typeof window.performance&&window.performance.timing&&"undefined"!=typeof window.performance.timing.navigationStart}},{}],ee:[function(t,e,n){function r(){}function o(t){function e(t){return t&&t instanceof r?t:t?c(t,s,i):i()}function n(n,r,o,i){if(!l.aborted||i){t&&t(n,r,o);for(var a=e(o),s=m(n),c=s.length,f=0;f<c;f++)s[f].apply(a,r);var d=u[y[n]];return d&&d.push([x,n,r,a]),a}}function p(t,e){w[t]=m(t).concat(e)}function h(t,e){var n=w[t];if(n)for(var r=0;r<n.length;r++)n[r]===e&&n.splice(r,1)}function m(t){return w[t]||[]}function v(t){return d[t]=d[t]||o(n)}function g(t,e){f(t,function(t,n){e=e||"feature",y[n]=e,e in u||(u[e]=[])})}var w={},y={},x={on:p,addEventListener:p,removeEventListener:h,emit:n,get:v,listeners:m,context:e,buffer:g,abort:a,aborted:!1};return x}function i(){return new r}function a(){(u.api||u.feature)&&(l.aborted=!0,u=l.backlog={})}var s="nr@context",c=t("gos"),f=t(18),u={},d={},l=e.exports=o();l.backlog=u},{}],gos:[function(t,e,n){function r(t,e,n){if(o.call(t,e))return t[e];var r=n();if(Object.defineProperty&&Object.keys)try{return Object.defineProperty(t,e,{value:r,writable:!0,enumerable:!1}),r}catch(i){}return t[e]=r,r}var o=Object.prototype.hasOwnProperty;e.exports=r},{}],handle:[function(t,e,n){function r(t,e,n,r){o.buffer([t],r),o.emit(t,e,n)}var o=t("ee").get("handle");e.exports=r,r.ee=o},{}],id:[function(t,e,n){function r(t){var e=typeof t;return!t||"object"!==e&&"function"!==e?-1:t===window?0:a(t,i,function(){return o++})}var o=1,i="nr@id",a=t("gos");e.exports=r},{}],loader:[function(t,e,n){function r(){if(!E++){var t=b.info=NREUM.info,e=p.getElementsByTagName("script")[0];if(setTimeout(u.abort,3e4),!(t&&t.licenseKey&&t.applicationID&&e))return u.abort();f(y,function(e,n){t[e]||(t[e]=n)}),c("mark",["onload",a()+b.offset],null,"api");var n=p.createElement("script");n.src="https://"+t.agent,e.parentNode.insertBefore(n,e)}}function o(){"complete"===p.readyState&&i()}function i(){c("mark",["domContent",a()+b.offset],null,"api")}function a(){return O.exists&&performance.now?Math.round(performance.now()):(s=Math.max((new Date).getTime(),s))-b.offset}var s=(new Date).getTime(),c=t("handle"),f=t(18),u=t("ee"),d=t(17),l=window,p=l.document,h="addEventListener",m="attachEvent",v=l.XMLHttpRequest,g=v&&v.prototype;NREUM.o={ST:setTimeout,SI:l.setImmediate,CT:clearTimeout,XHR:v,REQ:l.Request,EV:l.Event,PR:l.Promise,MO:l.MutationObserver};var w=""+location,y={beacon:"bam.nr-data.net",errorBeacon:"bam.nr-data.net",agent:"js-agent.newrelic.com/nr-1167.min.js"},x=v&&g&&g[h]&&!/CriOS/.test(navigator.userAgent),b=e.exports={offset:s,now:a,origin:w,features:{},xhrWrappable:x,userAgent:d};t(12),t(15),p[h]?(p[h]("DOMContentLoaded",i,!1),l[h]("load",r,!1)):(p[m]("onreadystatechange",o),l[m]("onload",r)),c("mark",["firstbyte",s],null,"api");var E=0,O=t(20)},{}],"wrap-function":[function(t,e,n){function r(t){return!(t&&t instanceof Function&&t.apply&&!t[a])}var o=t("ee"),i=t(19),a="nr@original",s=Object.prototype.hasOwnProperty,c=!1;e.exports=function(t,e){function n(t,e,n,o){function nrWrapper(){var r,a,s,c;try{a=this,r=i(arguments),s="function"==typeof n?n(r,a):n||{}}catch(f){l([f,"",[r,a,o],s])}u(e+"start",[r,a,o],s);try{return c=t.apply(a,r)}catch(d){throw u(e+"err",[r,a,d],s),d}finally{u(e+"end",[r,a,c],s)}}return r(t)?t:(e||(e=""),nrWrapper[a]=t,d(t,nrWrapper),nrWrapper)}function f(t,e,o,i){o||(o="");var a,s,c,f="-"===o.charAt(0);for(c=0;c<e.length;c++)s=e[c],a=t[s],r(a)||(t[s]=n(a,f?s+o:o,i,s))}function u(n,r,o){if(!c||e){var i=c;c=!0;try{t.emit(n,r,o,e)}catch(a){l([a,n,r,o])}c=i}}function d(t,e){if(Object.defineProperty&&Object.keys)try{var n=Object.keys(t);return n.forEach(function(n){Object.defineProperty(e,n,{get:function(){return t[n]},set:function(e){return t[n]=e,e}})}),e}catch(r){l([r])}for(var o in t)s.call(t,o)&&(e[o]=t[o]);return e}function l(e){try{t.emit("internal-error",e)}catch(n){}}return t||(t=o),n.inPlace=f,n.flag=a,n}},{}]},{},["loader",2,9]);</script>
+<script src="./Stageit _ A front row seat to a backstage experience.™_files/header-7484814f936f893bb9ab737b7eead5e6.js.download" type="text/javascript"></script><style type="text/css"></style>
+<title>Stageit | A front row seat to a backstage experience.™</title>
+<meta content="authenticity_token" name="csrf-param">
+<meta content="qsjnBbhR4tigvxUqQyEgQWV8zL65mNC+xQMHWegxZSg=" name="csrf-token">
+<meta content="Stageit is an online venue for LIVE &amp;amp; interactive virtual concerts providing fans with a front row seat to a backstage experience. &amp;trade;" name="description">
+<meta content="stageit, live music, live concerts, live experience, interactive virtual concerts" name="keywords">
+<link href="https://d2tp1vr1gg6ixe.cloudfront.net/assets/favicon16x16-7e4f0564805d7f1d7e4faca5659a09b5.ico" rel="shortcut icon" type="image/x-icon">
+
+<link href="./Stageit _ A front row seat to a backstage experience.™_files/css" rel="stylesheet" type="text/css">
+<link href="./Stageit _ A front row seat to a backstage experience.™_files/css(1)" rel="stylesheet" type="text/css">
+<link href="./Stageit _ A front row seat to a backstage experience.™_files/application-b62d269f61cbb20001633b4fdbf30a26.css" media="screen" rel="stylesheet" type="text/css">
+
+<link href="./Stageit _ A front row seat to a backstage experience.™_files/home-b19c11efa5c5c7da849109a63bd4483e.css" media="screen" rel="stylesheet" type="text/css">
+<meta content="Stageit is an online venue for LIVE and interactive virtual concerts providing fans with a front row seat to a backstage experience.™" property="og:description">
+<meta content="296364270389381" property="fb:app_id">
+<meta content="website" property="og:type">
+<meta content="https://www.stageit.com/" property="og:url">
+<meta content="Stageit | A front row seat to a backstage experience.™" property="og:title">
+
+
+<script id="gift_error_template" type="text/x-handlebars-template">
+<div class='error'>
+<span><img alt="Error_x" src="https://d2tp1vr1gg6ixe.cloudfront.net/assets/sidestage/error_x-8f16bd933c429947f68358b03ef00de3.gif" /></span>
+<span class='msg'>{{text}}</span>
+</div>
+</script>
+
+<meta property="og:image" content="https://dvojaj7u7jwrp.cloudfront.net/images/fb_logo.jpg"><link rel="image_src" href="https://dvojaj7u7jwrp.cloudfront.net/images/fb_logo.jpg">
+<style type="text/css">
+
+</style>
+
+<style type="text/css">.fancybox-margin{margin-right:15px;}</style><style type="text/css">.fancybox-margin{margin-right:15px;}</style><script id="facebook-jssdk" async="" src="./Stageit _ A front row seat to a backstage experience.™_files/sdk.js(1).download"></script><style type="text/css">.fb_hidden{position:absolute;top:-10000px;z-index:10001}.fb_reposition{overflow:hidden;position:relative}.fb_invisible{display:none}.fb_reset{background:none;border:0;border-spacing:0;color:#000;cursor:auto;direction:ltr;font-family:"lucida grande", tahoma, verdana, arial, sans-serif;font-size:11px;font-style:normal;font-variant:normal;font-weight:normal;letter-spacing:normal;line-height:1;margin:0;overflow:visible;padding:0;text-align:left;text-decoration:none;text-indent:0;text-shadow:none;text-transform:none;visibility:visible;white-space:normal;word-spacing:normal}.fb_reset>div{overflow:hidden}@keyframes fb_transform{from{opacity:0;transform:scale(.95)}to{opacity:1;transform:scale(1)}}.fb_animate{animation:fb_transform .3s forwards}
+.fb_dialog{background:rgba(82, 82, 82, .7);position:absolute;top:-10000px;z-index:10001}.fb_dialog_advanced{border-radius:8px;padding:10px}.fb_dialog_content{background:#fff;color:#373737}.fb_dialog_close_icon{background:url(https://static.xx.fbcdn.net/rsrc.php/v3/yq/r/IE9JII6Z1Ys.png) no-repeat scroll 0 0 transparent;cursor:pointer;display:block;height:15px;position:absolute;right:18px;top:17px;width:15px}.fb_dialog_mobile .fb_dialog_close_icon{left:5px;right:auto;top:5px}.fb_dialog_padding{background-color:transparent;position:absolute;width:1px;z-index:-1}.fb_dialog_close_icon:hover{background:url(https://static.xx.fbcdn.net/rsrc.php/v3/yq/r/IE9JII6Z1Ys.png) no-repeat scroll 0 -15px transparent}.fb_dialog_close_icon:active{background:url(https://static.xx.fbcdn.net/rsrc.php/v3/yq/r/IE9JII6Z1Ys.png) no-repeat scroll 0 -30px transparent}.fb_dialog_iframe{line-height:0}.fb_dialog_content .dialog_title{background:#6d84b4;border:1px solid #365899;color:#fff;font-size:14px;font-weight:bold;margin:0}.fb_dialog_content .dialog_title>span{background:url(https://static.xx.fbcdn.net/rsrc.php/v3/yd/r/Cou7n-nqK52.gif) no-repeat 5px 50%;float:left;padding:5px 0 7px 26px}body.fb_hidden{height:100%;left:0;margin:0;overflow:visible;position:absolute;top:-10000px;transform:none;width:100%}.fb_dialog.fb_dialog_mobile.loading{background:url(https://static.xx.fbcdn.net/rsrc.php/v3/ya/r/3rhSv5V8j3o.gif) white no-repeat 50% 50%;min-height:100%;min-width:100%;overflow:hidden;position:absolute;top:0;z-index:10001}.fb_dialog.fb_dialog_mobile.loading.centered{background:none;height:auto;min-height:initial;min-width:initial;width:auto}.fb_dialog.fb_dialog_mobile.loading.centered #fb_dialog_loader_spinner{width:100%}.fb_dialog.fb_dialog_mobile.loading.centered .fb_dialog_content{background:none}.loading.centered #fb_dialog_loader_close{clear:both;color:#fff;display:block;font-size:18px;padding-top:20px}#fb-root #fb_dialog_ipad_overlay{background:rgba(0, 0, 0, .4);bottom:0;left:0;min-height:100%;position:absolute;right:0;top:0;width:100%;z-index:10000}#fb-root #fb_dialog_ipad_overlay.hidden{display:none}.fb_dialog.fb_dialog_mobile.loading iframe{visibility:hidden}.fb_dialog_mobile .fb_dialog_iframe{position:sticky;top:0}.fb_dialog_content .dialog_header{background:linear-gradient(from(#738aba), to(#2c4987));border-bottom:1px solid;border-color:#043b87;box-shadow:white 0 1px 1px -1px inset;color:#fff;font:bold 14px Helvetica, sans-serif;text-overflow:ellipsis;text-shadow:rgba(0, 30, 84, .296875) 0 -1px 0;vertical-align:middle;white-space:nowrap}.fb_dialog_content .dialog_header table{height:43px;width:100%}.fb_dialog_content .dialog_header td.header_left{font-size:12px;padding-left:5px;vertical-align:middle;width:60px}.fb_dialog_content .dialog_header td.header_right{font-size:12px;padding-right:5px;vertical-align:middle;width:60px}.fb_dialog_content .touchable_button{background:linear-gradient(from(#4267B2), to(#2a4887));background-clip:padding-box;border:1px solid #29487d;border-radius:3px;display:inline-block;line-height:18px;margin-top:3px;max-width:85px;padding:4px 12px;position:relative}.fb_dialog_content .dialog_header .touchable_button input{background:none;border:none;color:#fff;font:bold 12px Helvetica, sans-serif;margin:2px -12px;padding:2px 6px 3px 6px;text-shadow:rgba(0, 30, 84, .296875) 0 -1px 0}.fb_dialog_content .dialog_header .header_center{color:#fff;font-size:16px;font-weight:bold;line-height:18px;text-align:center;vertical-align:middle}.fb_dialog_content .dialog_content{background:url(https://static.xx.fbcdn.net/rsrc.php/v3/y9/r/jKEcVPZFk-2.gif) no-repeat 50% 50%;border:1px solid #4a4a4a;border-bottom:0;border-top:0;height:150px}.fb_dialog_content .dialog_footer{background:#f5f6f7;border:1px solid #4a4a4a;border-top-color:#ccc;height:40px}#fb_dialog_loader_close{float:left}.fb_dialog.fb_dialog_mobile .fb_dialog_close_button{text-shadow:rgba(0, 30, 84, .296875) 0 -1px 0}.fb_dialog.fb_dialog_mobile .fb_dialog_close_icon{visibility:hidden}#fb_dialog_loader_spinner{animation:rotateSpinner 1.2s linear infinite;background-color:transparent;background-image:url(https://static.xx.fbcdn.net/rsrc.php/v3/yD/r/t-wz8gw1xG1.png);background-position:50% 50%;background-repeat:no-repeat;height:24px;width:24px}@keyframes rotateSpinner{0%{transform:rotate(0deg)}100%{transform:rotate(360deg)}}
+.fb_iframe_widget{display:inline-block;position:relative}.fb_iframe_widget span{display:inline-block;position:relative;text-align:justify}.fb_iframe_widget iframe{position:absolute}.fb_iframe_widget_fluid_desktop,.fb_iframe_widget_fluid_desktop span,.fb_iframe_widget_fluid_desktop iframe{max-width:100%}.fb_iframe_widget_fluid_desktop iframe{min-width:220px;position:relative}.fb_iframe_widget_lift{z-index:1}.fb_iframe_widget_fluid{display:inline}.fb_iframe_widget_fluid span{width:100%}</style></head>
+<body class="home show ng-scope" data-ng-app="stageit.desktop" id="home_show">
+<!-- Google Tag Manager -->
+<!-- <noscript><iframe src="//www.googletagmanager.com/ns.html?id=GTM-MXN3GQ"
+height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+'//www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+})(window,document,'script','dataLayer','GTM-MXN3GQ');</script> -->
+<!-- End Google Tag Manager -->
+
+<div data-app-bundle-id="1005042012" data-environment="production" data-is-ssl-required="true" data-pubnub-relay-host="https://relay.stageit.com/" data-pubnub-sub-key="sub-c-3a77e2cf-caee-11e1-8c56-0b47e2ce4080" data-server-url="https://www.stageit.com/" id="constants"></div>
+<div data-privacy-policy="/static/static_pages/privacy_policy" data-terms-of-service="/static/static_pages/terms_of_service" id="paths"></div>
+
+<div data-api-version="v2.8" data-app-id="296364270389381" id="facebook_data"></div>
+
+<div class="woahbar_alerts">
+<div class="woahbar" style="display:none;">
+<span>
+Your version of Internet Explorer is not supported.
+<a class="woahbar-link" href="https://www.google.com/chrome" target="_blank">
+Please click here to download Google Chrome.
+</a>
+<a class="close-notify">
+<img alt="Woahbar-up-arrow" class="woahbar-up-arrow" src="./Stageit _ A front row seat to a backstage experience.™_files/woahbar-up-arrow-0af96a14d37ed140facf65c090a84913.png">
+</a>
+</span>
+</div>
+
+</div>
+<div id="fb-root" class=" fb_reset"><div style="position: absolute; top: -10000px; width: 0px; height: 0px;"><div></div></div></div>
+<div id="page_wrapper">
+<div id="header_wrapper">
+<div id="header">
+<div id="header">
+<div id="search">
+<a href="Stageit _ A front row seat to a backstage experience.™.html"><img alt="Stageit - A front row seat to a backstage experience." src="./Stageit _ A front row seat to a backstage experience.™_files/banner_logo-4f8a1539223b1356f380b8203d955b40.png"></a>
+<script id="autocomplete_show_item" type="text/x-handlebars-template">
+{{#performers_category}}
+<a href='{{item.url}}'>
+<div class='name'>
+{{item.name}}
+{{#if item.verified}}
+<img alt="Verified-artist" class="verified small" src="https://d2tp1vr1gg6ixe.cloudfront.net/assets/profile/verified-artist-ecb64ec83c51bb34833daabd8402f293.png" />
+
+{{/if}}
+</div>
+<div class='genres'>
+{{item.genres}}
+</div>
+</a>
+{{/performers_category}}
+{{#upcoming_shows_category}}
+<a href='{{item.url}}'>
+<div class='name'>
+{{item.name}}
+{{#if item.verified}}
+<img alt="Verified-artist" class="verified small" src="https://d2tp1vr1gg6ixe.cloudfront.net/assets/profile/verified-artist-ecb64ec83c51bb34833daabd8402f293.png" />
+
+{{/if}}
+</div>
+<div class='title truncate'>
+{{item.title}}
+</div>
+<div class='genres'>
+{{item.genres}}
+</div>
+</a>
+{{/upcoming_shows_category}}
+</script>
+<div id="query_box"><input id="q" name="q" placeholder="Search Stageit Performers, Shows &amp; Genres" type="text" class="ui-autocomplete-input" autocomplete="off"><span role="status" aria-live="polite" class="ui-helper-hidden-accessible"></span><ul class="ui-autocomplete ui-menu ui-widget ui-widget-content ui-corner-all" id="ui-id-5" tabindex="0" style="z-index: 1; display: none;"></ul></div>
+</div>
+<div id="header_divider_end"></div>
+<div id="user_account">
+  <div id="user_account_avatar" style="display: none;">
+    <a href="/bhavesh12"><img alt="bhavesh12" class="user_photo" src="https://dvojaj7u7jwrp.cloudfront.net/user/images/303853/thumbnail/1.png?1427721133"></a>
+    </div>
+<div id="welcome_content">
+<div id="welcome">
+Welcome to Stageit
+</div>
+<ul class="horizontal" id="user_account_actions">
+<li><a href="../signup.html" id="signup_link" style="display: none;">Join Stageit</a></li>
+<li><a href="../login.html" id="login_link" style="display: none;">Sign in</a></li>
+<!-- <li><button id="logout_link" onclick="signOut()" style="display: none; margin-top: 10px; background-color: green; border: none;" >Log Out</button></li> -->
+<li><a href="../login.html" id="logout_link" style="display: none;" onclick="signOut()">Logout</a></li>
+<li class="facebook_connect_link" id="facebook_connect_link" style="display: none;"><a href="https://www.stageit.com/auth/facebook/redirect"><img alt="Facebook_connect_tiny" src="./Stageit _ A front row seat to a backstage experience.™_files/facebook_connect_tiny-1eb5e2e3020921b301dc9a1795306fce.png"></a></li>
+</ul>
+</div>
+</div>
+<div id="header_divider_middle"></div>
+</div>
+
+</div>
+<div id="navigation_bar">
+<ul class="horizontal" id="navigation">
+<li><a href="Stageit _ A front row seat to a backstage experience.™.html">Home</a></li>
+<li><a href="../static/static_pages/what_is_stageit.html">What is StageIt?</a></li>
+<li><a href="../static/static_pages/our_artists.html">Our Artists</a></li>
+</ul>
+</div>
+</div>
+<div id="content_wrapper">
+<noscript>
+<div class='jswarning'>Stageit requires a browser with JavaScript support. If you have JavaScript disabled, please enable it and try refreshing this page.</div>
+</noscript>
+
+<div id="content_wrapper_top">
+
+</div>
+<div id="notification_wrapper">
+
+</div>
+<div id="content_container">
+<div id="content_wrapper_left">
+
+</div>
+<div id="content">
+<div id="content_inner_header">
+
+</div>
+<div id="carousel">
+<div class="left_banner"></div>
+<div id="carousel-banner">
+<div class="banner" data-banner_id="1026" data-comment="See All Shows! " data-performance_url="https://www.stageit.com/DigitalDragFest" style="display: none;">
+<a href="https://www.stageit.com/DigitalDragFest"><img alt="See All Shows! " border="0" src="./Stageit _ A front row seat to a backstage experience.™_files/6a65b092-d9e8-4791-bb6d-14f6f5f1d759.jpg"></a>
+</div>
+<div class="banner" data-banner_id="1024" data-comment="See All Shows! " data-performance_url="https://www.stageit.com/ShutInandSing" style="display: none;">
+<a href="https://www.stageit.com/ShutInandSing"><img alt="See All Shows! " border="0" src="./Stageit _ A front row seat to a backstage experience.™_files/8a8007f4-157c-4063-9da5-785d245512b7.png"></a>
+</div>
+<div class="banner" data-banner_id="1025" data-comment="Multiple Shows!" data-performance_url="https://www.stageit.com/byrneandkelly" data-start_day="21" data-start_month="3" data-start_year="2020" style="">
+<a href="https://www.stageit.com/byrneandkelly"><img alt="Multiple Shows!" border="0" src="./Stageit _ A front row seat to a backstage experience.™_files/5fbb9211-887d-43c9-856a-e212d76f6d53.png"></a>
+</div>
+<div class="banner" data-banner_id="1022" data-comment="Multiple Shows!" data-performance_url="https://www.stageit.com/JanetDevlin" data-start_day="26" data-start_month="3" data-start_year="2020" style="display:none;">
+<a href="https://www.stageit.com/JanetDevlin"><img alt="Multiple Shows!" border="0" src="./Stageit _ A front row seat to a backstage experience.™_files/03febeb9-6d91-496f-b059-74fc1576e2f2.jpg"></a>
+</div>
+<div id="banner_overlay" style="top: 250px; display: block;">
+<div id="show_time">Multiple Shows!</div>
+<a href="https://www.stageit.com/byrneandkelly" class="stageit_button ui-button ui-widget ui-state-default ui-corner-all ui-button-text-only" role="button" aria-disabled="false"><span class="ui-button-text">LEARN MORE</span></a>
+</div>
+</div>
+<div id="carousel-image">
+<ul id="thumb_carousel">
+
+
+<li data-banner_id="1025">
+<div class="thumb">
+<a href="https://www.stageit.com/byrneandkelly"><img alt="Multiple Shows!" height="99" src="./Stageit _ A front row seat to a backstage experience.™_files/6732b343-a93a-476c-a4fa-4490fcffe9c8.png" width="190"></a>
+</div>
+</li>
+<li data-banner_id="1022">
+<div class="thumb">
+<a href="https://www.stageit.com/JanetDevlin"><img alt="Multiple Shows!" height="99" src="./Stageit _ A front row seat to a backstage experience.™_files/e4f31eeb-6d1f-48e6-bc90-53ae78df9b18.jpg" width="190"></a>
+</div>
+</li>
+<li data-banner_id="1026">
+<div class="thumb">
+<a href="https://www.stageit.com/DigitalDragFest"><img alt="See All Shows! " height="99" src="./Stageit _ A front row seat to a backstage experience.™_files/3a34cfe2-5021-4467-b07b-f35c2e5cd0c8.jpg" width="190"></a>
+</div>
+</li><li data-banner_id="1024">
+<div class="thumb">
+<a href="https://www.stageit.com/ShutInandSing"><img alt="See All Shows! " height="99" src="./Stageit _ A front row seat to a backstage experience.™_files/c0525436-1ee0-4f23-8069-37b504e94fb6.png" width="190"></a>
+</div>
+</li></ul>
+<div class="carousel_up" style="display: none;"></div>
+<div class="carousel_down" style="display: none;"></div>
+</div>
+</div>
+
+<div id="home_shadow"></div>
+<div class="top_label">
+<div class="featured_label">Featured Shows</div>
+<div class="view_all">
+<a href="https://www.stageit.com/shows?show_filter=featured">View All Featured Shows</a>
+</div>
+</div>
+<div id="featured_container">
+<img alt="Left_overlay" class="left_overlay" src="./Stageit _ A front row seat to a backstage experience.™_files/left_overlay-7f54e4720089735155f7243dc3099851.png">
+<img alt="Right_overlay" class="right_overlay" src="./Stageit _ A front row seat to a backstage experience.™_files/right_overlay-272f8366665a8e633fc6b3d7d91a3157.png">
+<div class="featured_scrollable mCustomScrollbar _mCS_1"><div class="mCustomScrollBox mCS-light mCSB_horizontal" id="mCSB_1" style="position:relative; height:100%; overflow:hidden; max-width:100%;"><div class="mCSB_container" style="position: relative; left: 0px; width: 3439px;">
+<div class="featured_show" data-is-started="false" data-performance-id="69213" data-start-time="1584817200000">
+<a href="https://www.stageit.com/michael_mcdermott/quarantine_dream_chapter_1/69213" class="show_square"><img alt="Quarantine Dream - Chapter 1" class="featured_show_image" src="./Stageit _ A front row seat to a backstage experience.™_files/Screen_Shot_2018-06-17_at_2.17.14_PM.png">
+</a><div class="featured_info">
+<a href="https://www.stageit.com/michael_mcdermott/quarantine_dream_chapter_1/69213" class="headliner"><h2>
+Michael McDermott
+<img alt="Verified-artist" class="verified big" data-tooltip-animation="true" data-tooltip-append-to-body="true" data-tooltip-class="black-tooltip" data-tooltip="This artist is verified" src="./Stageit _ A front row seat to a backstage experience.™_files/verified-artist-ecb64ec83c51bb34833daabd8402f293.png">
+
+</h2>
+</a><div class="date">
+Mar 21 AT 12:00PM PDT
+</div>
+<div class="title">
+Quarantine Dream - Chapter 1
+</div>
+</div>
+</div>
+<div class="featured_show" data-is-started="false" data-performance-id="70855" data-start-time="1584907200000">
+<a href="https://www.stageit.com/emmetcahill_irishtenor/free_song_request_show/70855" class="show_square"><img alt="Free Song Request show " class="featured_show_image" src="./Stageit _ A front row seat to a backstage experience.™_files/8IeS41QFbTZ-aO8fJ23qrpf8tmgkthHiGfPNQkfhY7c_wB0VjekG4ZeXjrGrwz8yUIbVKXyYsfvyfqTvArSjb3g.jpeg">
+</a><div class="featured_info">
+<a href="https://www.stageit.com/emmetcahill_irishtenor/free_song_request_show/70855" class="headliner"><h2>
+EmmetCahill_IrishTenor
+</h2>
+</a><div class="date">
+Mar 22 AT  1:00PM PDT
+</div>
+<div class="title">
+Free Song Request show 
+</div>
+</div>
+</div>
+<div class="featured_show" data-is-started="false" data-performance-id="70309" data-start-time="1584918000000">
+<a href="https://www.stageit.com/a_session_in_the_pub_in_donegal_ireland/a_session_in_the_pub_in_donegal_ireland/70309" class="show_square"><img alt="A Session in The Pub! in Donegal, Ireland." class="featured_show_image" src="./Stageit _ A front row seat to a backstage experience.™_files/KEITHFLOWER2.jpeg">
+</a><div class="featured_info">
+<a href="https://www.stageit.com/a_session_in_the_pub_in_donegal_ireland/a_session_in_the_pub_in_donegal_ireland/70309" class="headliner"><h2>
+A Session in The Pub! in Donegal, Ireland.
+<img alt="Verified-artist" class="verified big" data-tooltip-animation="true" data-tooltip-append-to-body="true" data-tooltip-class="black-tooltip" data-tooltip="This artist is verified" src="./Stageit _ A front row seat to a backstage experience.™_files/verified-artist-ecb64ec83c51bb34833daabd8402f293.png">
+
+</h2>
+</a><div class="date">
+Mar 22 AT  4:00PM PDT
+</div>
+<div class="title">
+A Session in The Pub! in Donegal, Ireland.
+</div>
+</div>
+</div>
+<div class="featured_show" data-is-started="false" data-performance-id="69874" data-start-time="1584921600000">
+<a href="https://www.stageit.com/lee_dewyze_social_distancing_show/we_are_all_practicing_social_distancing_but_music_can_bring_us_together/69874" class="show_square"><img alt="We are all practicing social distancing, but music can bring us together :)" class="featured_show_image" src="./Stageit _ A front row seat to a backstage experience.™_files/images.jpg">
+</a><div class="featured_info">
+<a href="https://www.stageit.com/lee_dewyze_social_distancing_show/we_are_all_practicing_social_distancing_but_music_can_bring_us_together/69874" class="headliner"><h2>
+Lee DeWyze Social Distancing Show
+<img alt="Verified-artist" class="verified big" data-tooltip-animation="true" data-tooltip-append-to-body="true" data-tooltip-class="black-tooltip" data-tooltip="This artist is verified" src="./Stageit _ A front row seat to a backstage experience.™_files/verified-artist-ecb64ec83c51bb34833daabd8402f293.png">
+
+</h2>
+</a><div class="date">
+Mar 22 AT  5:00PM PDT
+</div>
+<div class="title">
+We are all practicing social distancing, but...
+</div>
+</div>
+</div>
+<div class="featured_show" data-is-started="false" data-performance-id="69214" data-start-time="1584925200000">
+<a href="https://www.stageit.com/michael_mcdermott/quarantine_dream_chapter_2/69214" class="show_square"><img alt="Quarantine Dream - Chapter 2" class="featured_show_image" src="./Stageit _ A front row seat to a backstage experience.™_files/michael-mcdermott-WEB-promo-2020-photo-credit-darin-back.jpg">
+</a><div class="featured_info">
+<a href="https://www.stageit.com/michael_mcdermott/quarantine_dream_chapter_2/69214" class="headliner"><h2>
+Michael McDermott
+<img alt="Verified-artist" class="verified big" data-tooltip-animation="true" data-tooltip-append-to-body="true" data-tooltip-class="black-tooltip" data-tooltip="This artist is verified" src="./Stageit _ A front row seat to a backstage experience.™_files/verified-artist-ecb64ec83c51bb34833daabd8402f293.png">
+
+</h2>
+</a><div class="date">
+Mar 22 AT  6:00PM PDT
+</div>
+<div class="title">
+Quarantine Dream - Chapter 2
+</div>
+</div>
+</div>
+<div class="featured_show" data-is-started="false" data-performance-id="70911" data-start-time="1585360800000">
+<a href="https://www.stageit.com/alaska/the_corona_cabaret_sold_out/70911" class="show_square"><img alt="The Corona Cabaret **SOLD OUT**" class="featured_show_image" src="./Stageit _ A front row seat to a backstage experience.™_files/Screen_Shot_2020-03-19_at_10.30.38_PM.png">
+</a><div class="featured_sold_out">
+<a href="https://www.stageit.com/alaska/the_corona_cabaret_sold_out/70911"><img alt="Sold_out" src="./Stageit _ A front row seat to a backstage experience.™_files/sold_out-1917a5ec9f8c05b6df6bf8c96889a68b.png">
+</a></div>
+<div class="featured_info">
+<a href="https://www.stageit.com/alaska/the_corona_cabaret_sold_out/70911" class="headliner"><h2>
+ALASKA
+<img alt="Verified-artist" class="verified big" data-tooltip-animation="true" data-tooltip-append-to-body="true" data-tooltip-class="black-tooltip" data-tooltip="This artist is verified" src="./Stageit _ A front row seat to a backstage experience.™_files/verified-artist-ecb64ec83c51bb34833daabd8402f293.png">
+
+</h2>
+</a><div class="date">
+Mar 27 AT  7:00PM PDT
+</div>
+<div class="title">
+The Corona Cabaret **SOLD OUT**
+</div>
+</div>
+</div>
+<div class="featured_show" data-is-started="false" data-performance-id="69277" data-start-time="1585443600000">
+<a href="https://www.stageit.com/heather_lynne_horton/let_s_pretend/69277" class="show_square"><img alt="Let&#39;s Pretend..." class="featured_show_image" src="./Stageit _ A front row seat to a backstage experience.™_files/1551486_10201989884623152_87139980_n.jpg">
+</a><div class="featured_info">
+<a href="https://www.stageit.com/heather_lynne_horton/let_s_pretend/69277" class="headliner"><h2>
+Heather Lynne Horton
+<img alt="Verified-artist" class="verified big" data-tooltip-animation="true" data-tooltip-append-to-body="true" data-tooltip-class="black-tooltip" data-tooltip="This artist is verified" src="./Stageit _ A front row seat to a backstage experience.™_files/verified-artist-ecb64ec83c51bb34833daabd8402f293.png">
+
+</h2>
+</a><div class="date">
+Mar 28 AT  6:00PM PDT
+</div>
+<div class="title">
+Let's Pretend...
+</div>
+</div>
+</div>
+<div class="featured_show" data-is-started="false" data-performance-id="69289" data-start-time="1586048400000">
+<a href="https://www.stageit.com/michael_mcdermott/the_westies_out_on_parole/69289" class="show_square"><img alt="The Westies- Out On Parole" class="featured_show_image" src="./Stageit _ A front row seat to a backstage experience.™_files/Westies_duo_McDermott.jpg">
+</a><div class="featured_info">
+<a href="https://www.stageit.com/michael_mcdermott/the_westies_out_on_parole/69289" class="headliner"><h2>
+Michael McDermott
+<img alt="Verified-artist" class="verified big" data-tooltip-animation="true" data-tooltip-append-to-body="true" data-tooltip-class="black-tooltip" data-tooltip="This artist is verified" src="./Stageit _ A front row seat to a backstage experience.™_files/verified-artist-ecb64ec83c51bb34833daabd8402f293.png">
+
+</h2>
+</a><div class="date">
+Apr  4 AT  6:00PM PDT
+</div>
+<div class="title">
+The Westies- Out On Parole
+</div>
+</div>
+</div>
+<div class="featured_show" data-is-started="false" data-performance-id="68954" data-start-time="1587076200000">
+<a href="https://www.stageit.com/rebecca_harkin/live_online_concert/68954" class="show_square"><img alt="LIVE ONLINE CONCERT!" class="featured_show_image" src="./Stageit _ A front row seat to a backstage experience.™_files/Artwork_single_date.jpg">
+</a><div class="featured_info">
+<a href="https://www.stageit.com/rebecca_harkin/live_online_concert/68954" class="headliner"><h2>
+Rebecca Harkin 
+</h2>
+</a><div class="date">
+Apr 16 AT  3:30PM PDT
+</div>
+<div class="title">
+LIVE ONLINE CONCERT!
+</div>
+</div>
+</div>
+</div><div class="mCSB_scrollTools" style="position: absolute; display: block;"><div class="mCSB_draggerContainer"><div class="mCSB_dragger" style="position: absolute; width: 252px; left: 0px;" oncontextmenu="return false;"><div class="mCSB_dragger_bar" style="position:relative;"></div></div><div class="mCSB_draggerRail"></div></div></div></div></div>
+</div>
+<div id="home_shadow"></div>
+<div class="top_label">
+<div class="staff_label">Staff Picks</div>
+<div class="view_all">
+<a href="https://www.stageit.com/shows?show_filter=staff_picks">View All Staff Picks</a>
+</div>
+</div>
+<div id="staff_container">
+<img alt="Left_overlay_small" class="left_overlay" src="./Stageit _ A front row seat to a backstage experience.™_files/left_overlay_small-2b6e8fc8e13f8fc49dfddbbe5bb1954e.png">
+<img alt="Right_overlay_small" class="right_overlay" src="./Stageit _ A front row seat to a backstage experience.™_files/right_overlay_small-0bfda84c77f498953386cc7fd431f7c4.png">
+<div class="staff_scrollable mCustomScrollbar _mCS_2"><div class="mCustomScrollBox mCS-light mCSB_horizontal" id="mCSB_2" style="position:relative; height:100%; overflow:hidden; max-width:100%;"><div class="mCSB_container" style="position: relative; left: 0px; width: 2840px;">
+<div class="staff_show" data-is-started="false" data-performance-id="69826" data-start-time="1584813600000">
+<a href="https://www.stageit.com/mtasaccess/jodie_steele_online_concert/69826" class="show_square"><img alt="Jodie Steele Online Concert" class="staff_show_image" src="./Stageit _ A front row seat to a backstage experience.™_files/unnamed_(2).jpg">
+</a><div class="staff_info">
+<a href="https://www.stageit.com/mtasaccess/jodie_steele_online_concert/69826" class="headliner"><h2>
+MTASACCESS
+</h2>
+</a><div class="date">
+Mar 21 AT 11:00AM PDT
+</div>
+</div>
+</div>
+<div class="staff_show" data-is-started="false" data-performance-id="69212" data-start-time="1584835200000">
+<a href="https://www.stageit.com/jessica_meuse/an_acoustic_evening_with_jess/69212" class="show_square"><img alt="An Acoustic Evening with Jess" class="staff_show_image" src="./Stageit _ A front row seat to a backstage experience.™_files/IMG_6318_(PL2).jpg">
+</a><div class="staff_info">
+<a href="https://www.stageit.com/jessica_meuse/an_acoustic_evening_with_jess/69212" class="headliner"><h2>
+Jessica Meuse 
+</h2>
+</a><div class="date">
+Mar 21 AT  5:00PM PDT
+</div>
+</div>
+</div>
+<div class="staff_show" data-is-started="false" data-performance-id="69602" data-start-time="1584835200000">
+<a href="https://www.stageit.com/alyssatrahan/raising_money_to_pay_my_rent/69602" class="show_square"><img alt="Raising money to pay my rent!" class="staff_show_image" src="./Stageit _ A front row seat to a backstage experience.™_files/Crop_Head_shot.jpg">
+</a><div class="staff_info">
+<a href="https://www.stageit.com/alyssatrahan/raising_money_to_pay_my_rent/69602" class="headliner"><h2>
+AlyssaTrahan
+</h2>
+</a><div class="date">
+Mar 21 AT  5:00PM PDT
+</div>
+</div>
+</div>
+<div class="staff_show" data-is-started="false" data-performance-id="70203" data-start-time="1584838800000">
+<a href="https://www.stageit.com/jefferson_graham/plays_the_music_of_sting/70203" class="show_square"><img alt="Plays the music of Sting" class="staff_show_image" src="./Stageit _ A front row seat to a backstage experience.™_files/over2.jpg">
+</a><div class="staff_info">
+<a href="https://www.stageit.com/jefferson_graham/plays_the_music_of_sting/70203" class="headliner"><h2>
+Jefferson Graham
+</h2>
+</a><div class="date">
+Mar 21 AT  6:00PM PDT
+</div>
+<div class="tix_remaining">
+<img alt="Ticket_small" src="./Stageit _ A front row seat to a backstage experience.™_files/ticket_small-99273ee8b8a978d73ad8bbfd3ac0385a.png">
+<span class="tix_remaining_copy">
+10 Tickets Remaining!
+</span>
+</div>
+</div>
+</div>
+<div class="staff_show" data-is-started="false" data-performance-id="70435" data-start-time="1584918000000">
+<a href="https://www.stageit.com/jeffrey_gaines/jeffrey_gaines_weekly_concert_series/70435" class="show_square"><img alt="JEFFREY GAINES WEEKLY CONCERT SERIES" class="staff_show_image" src="./Stageit _ A front row seat to a backstage experience.™_files/GAINES.jpg">
+</a><div class="staff_info">
+<a href="https://www.stageit.com/jeffrey_gaines/jeffrey_gaines_weekly_concert_series/70435" class="headliner"><h2>
+JEFFREY GAINES
+</h2>
+</a><div class="date">
+Mar 22 AT  4:00PM PDT
+</div>
+</div>
+</div>
+<div class="staff_show" data-is-started="false" data-performance-id="70613" data-start-time="1585076400000">
+<a href="https://www.stageit.com/robert_vincent/undertheappletree_live/70613" class="show_square"><img alt="#UnderTheAppleTree LIVE" class="staff_show_image" src="./Stageit _ A front row seat to a backstage experience.™_files/UTAT_Logo_Square.jpg">
+</a><div class="staff_info">
+<a href="https://www.stageit.com/robert_vincent/undertheappletree_live/70613" class="headliner"><h2>
+Robert Vincent
+</h2>
+</a><div class="date">
+Mar 24 AT 12:00PM PDT
+</div>
+</div>
+</div>
+<div class="staff_show" data-is-started="false" data-performance-id="69155" data-start-time="1585166400000">
+<a href="https://www.stageit.com/jenn_bostic/back_in_the_usa_take_my_hand_tour_recap/69155" class="show_square"><img alt="Back in the USA, Take My Hand Tour Recap" class="staff_show_image" src="./Stageit _ A front row seat to a backstage experience.™_files/sara-kauss-photography-4207-final.jpg">
+</a><div class="staff_info">
+<a href="https://www.stageit.com/jenn_bostic/back_in_the_usa_take_my_hand_tour_recap/69155" class="headliner"><h2>
+Jenn Bostic
+<img alt="Verified-artist" class="verified big" data-tooltip-animation="true" data-tooltip-append-to-body="true" data-tooltip-class="black-tooltip" data-tooltip="This artist is verified" src="./Stageit _ A front row seat to a backstage experience.™_files/verified-artist-ecb64ec83c51bb34833daabd8402f293.png">
+
+</h2>
+</a><div class="date">
+Mar 25 AT  1:00PM PDT
+</div>
+</div>
+</div>
+<div class="staff_show" data-is-started="false" data-performance-id="70536" data-start-time="1585184400000">
+<a href="https://www.stageit.com/the_war_and_treaty/hearts_town_conference_and_concert/70536" class="show_square"><img alt=" Hearts Town Conference and Concert" class="staff_show_image" src="./Stageit _ A front row seat to a backstage experience.™_files/THe_War_and_Treaty.jpg">
+</a><div class="staff_info">
+<a href="https://www.stageit.com/the_war_and_treaty/hearts_town_conference_and_concert/70536" class="headliner"><h2>
+The War and Treaty
+</h2>
+</a><div class="date">
+Mar 25 AT  6:00PM PDT
+</div>
+</div>
+</div>
+<div class="staff_show" data-is-started="false" data-performance-id="69459" data-start-time="1585353600000">
+<a href="https://www.stageit.com/petermayermusic/nashville_tornado_benefit_show/69459" class="show_square"><img alt="Nashville Tornado Benefit Show " class="staff_show_image" src="./Stageit _ A front row seat to a backstage experience.™_files/tornadorelief.png">
+</a><div class="staff_info">
+<a href="https://www.stageit.com/petermayermusic/nashville_tornado_benefit_show/69459" class="headliner"><h2>
+PeterMayerMusic
+</h2>
+</a><div class="date">
+Mar 27 AT  5:00PM PDT
+</div>
+</div>
+</div>
+<div class="staff_show" data-is-started="false" data-performance-id="69161" data-start-time="1586124000000">
+<a href="https://www.stageit.com/sarah_donner/tis_the_season_to_find_kittens_meow_meow_meow_meow_meow/69161" class="show_square"><img alt="Tis the Season to Find Kittens MEOW MEOW MEOW MEOW MEOW" class="staff_show_image" src="./Stageit _ A front row seat to a backstage experience.™_files/hihi.jpg">
+</a><div class="staff_info">
+<a href="https://www.stageit.com/sarah_donner/tis_the_season_to_find_kittens_meow_meow_meow_meow_meow/69161" class="headliner"><h2>
+Sarah Donner
+<img alt="Verified-artist" class="verified big" data-tooltip-animation="true" data-tooltip-append-to-body="true" data-tooltip-class="black-tooltip" data-tooltip="This artist is verified" src="./Stageit _ A front row seat to a backstage experience.™_files/verified-artist-ecb64ec83c51bb34833daabd8402f293.png">
+
+</h2>
+</a><div class="date">
+Apr  5 AT  3:00PM PDT
+</div>
+</div>
+</div>
+</div><div class="mCSB_scrollTools" style="position: absolute; display: block;"><div class="mCSB_draggerContainer"><div class="mCSB_dragger" style="position: absolute; width: 305px; left: 0px;" oncontextmenu="return false;"><div class="mCSB_dragger_bar" style="position:relative;"></div></div><div class="mCSB_draggerRail"></div></div></div></div></div>
+</div>
+<div id="home_shadow"></div>
+<div id="bottom">
+<div class="lower_section">
+<div class="lower_header">
+<img alt="Star_logo" class="lower_logo" src="./Stageit _ A front row seat to a backstage experience.™_files/star_logo-5ea4f298eb8fd7310851c32705019db8.png">
+<h3>Fan Picks</h3>
+</div>
+<ul>
+<li class="small_show" data-is-started="false" data-performance-id="70917" data-start-time="1585519200000">
+<a href="https://www.stageit.com/jinkx_monsoon/cursed_sold_out/70917" class="show_square"><img alt="Cursed **SOLD OUT**" class="small_show_image" src="./Stageit _ A front row seat to a backstage experience.™_files/Screen_Shot_2020-03-19_at_10.40.48_PM.png">
+</a><div class="small_info">
+<a href="https://www.stageit.com/jinkx_monsoon/cursed_sold_out/70917" class="headliner"><h4>
+JINKX MONSOON
+<img alt="Verified-artist" class="verified regular" data-tooltip-animation="true" data-tooltip-append-to-body="true" data-tooltip-class="black-tooltip" data-tooltip="This artist is verified" src="./Stageit _ A front row seat to a backstage experience.™_files/verified-artist-ecb64ec83c51bb34833daabd8402f293.png">
+
+</h4>
+</a><div class="date">
+Mar 29 AT  3:00PM PDT
+</div>
+<div class="tix_remaining">
+<img alt="Ticket_small" src="./Stageit _ A front row seat to a backstage experience.™_files/ticket_small-99273ee8b8a978d73ad8bbfd3ac0385a.png">
+<span class="tix_remaining_copy">
+1 Ticket Remaining!
+</span>
+</div>
+</div>
+</li>
+<li class="small_show" data-is-started="false" data-performance-id="70922" data-start-time="1586041200000">
+<a href="https://www.stageit.com/sharon_needles/call_me_on_the_ouija_board_sold_out/70922" class="show_square"><img alt="Call Me On The Ouija Board **SOLD OUT**" class="small_show_image" src="./Stageit _ A front row seat to a backstage experience.™_files/Screen_Shot_2020-03-19_at_11.12.20_PM.png">
+</a><div class="small_sold_out">
+<a href="https://www.stageit.com/sharon_needles/call_me_on_the_ouija_board_sold_out/70922"><img alt="Sold_out" src="./Stageit _ A front row seat to a backstage experience.™_files/sold_out-1917a5ec9f8c05b6df6bf8c96889a68b.png">
+</a></div>
+<div class="small_info">
+<a href="https://www.stageit.com/sharon_needles/call_me_on_the_ouija_board_sold_out/70922" class="headliner"><h4>
+SHARON NEEDLES
+<img alt="Verified-artist" class="verified regular" data-tooltip-animation="true" data-tooltip-append-to-body="true" data-tooltip-class="black-tooltip" data-tooltip="This artist is verified" src="./Stageit _ A front row seat to a backstage experience.™_files/verified-artist-ecb64ec83c51bb34833daabd8402f293.png">
+
+</h4>
+</a><div class="date">
+Apr  4 AT  4:00PM PDT
+</div>
+</div>
+</li>
+<li class="small_show" data-is-started="false" data-performance-id="71034" data-start-time="1585368000000">
+<a href="https://www.stageit.com/alaska/the_corona_cabaret_sold_out/71034" class="show_square"><img alt="The Corona Cabaret **SOLD OUT**" class="small_show_image" src="./Stageit _ A front row seat to a backstage experience.™_files/Screen_Shot_2020-03-19_at_10.30.38_PM(1).png">
+</a><div class="small_sold_out">
+<a href="https://www.stageit.com/alaska/the_corona_cabaret_sold_out/71034"><img alt="Sold_out" src="./Stageit _ A front row seat to a backstage experience.™_files/sold_out-1917a5ec9f8c05b6df6bf8c96889a68b.png">
+</a></div>
+<div class="small_info">
+<a href="https://www.stageit.com/alaska/the_corona_cabaret_sold_out/71034" class="headliner"><h4>
+ALASKA
+<img alt="Verified-artist" class="verified regular" data-tooltip-animation="true" data-tooltip-append-to-body="true" data-tooltip-class="black-tooltip" data-tooltip="This artist is verified" src="./Stageit _ A front row seat to a backstage experience.™_files/verified-artist-ecb64ec83c51bb34833daabd8402f293.png">
+
+</h4>
+</a><div class="date">
+Mar 27 AT  9:00PM PDT
+</div>
+</div>
+</li>
+
+</ul>
+<div class="bottom_link">
+<img alt="Grid_logo" src="./Stageit _ A front row seat to a backstage experience.™_files/grid_logo-ce868b169445d4046fd7ac39cf3cf1c8.png">
+<a href="https://www.stageit.com/shows?show_filter=fan_picks">View All</a>
+</div>
+</div>
+<div class="lower_section" style="margin: 0 30px;">
+<div class="lower_header">
+<img alt="Clock" class="lower_logo" src="./Stageit _ A front row seat to a backstage experience.™_files/clock-e73f5c16225e0adc38278d0c5aa06171.png">
+<h3>Coming Up Next</h3>
+</div>
+<ul>
+<li class="small_show" data-is-started="false" data-performance-id="70731" data-start-time="1584806400000">
+<a href="https://www.stageit.com/slugs_bugs/slugs_bugs_unplugged_first_show/70731" class="show_square"><img alt="Slugs &amp; Bugs Unplugged (first show)!" class="small_show_image" src="./Stageit _ A front row seat to a backstage experience.™_files/Randall_Laughing.jpg">
+</a><div class="small_info">
+<a href="https://www.stageit.com/slugs_bugs/slugs_bugs_unplugged_first_show/70731" class="headliner"><h4>
+Slugs &amp; Bugs
+</h4>
+</a><div class="date">
+Mar 21 AT  9:00AM PDT
+</div>
+</div>
+</li>
+<li class="small_show" data-is-started="false" data-performance-id="70777" data-start-time="1584810000000">
+<a href="https://www.stageit.com/rhett_miller/saturday_silliness_kids_poetry_party/70777" class="show_square"><img alt="SATURDAY SILLINESS - KIDS POETRY PARTY" class="small_show_image" src="./Stageit _ A front row seat to a backstage experience.™_files/image0.jpeg">
+</a><div class="small_info">
+<a href="https://www.stageit.com/rhett_miller/saturday_silliness_kids_poetry_party/70777" class="headliner"><h4>
+Rhett Miller
+<img alt="Verified-artist" class="verified regular" data-tooltip-animation="true" data-tooltip-append-to-body="true" data-tooltip-class="black-tooltip" data-tooltip="This artist is verified" src="./Stageit _ A front row seat to a backstage experience.™_files/verified-artist-ecb64ec83c51bb34833daabd8402f293.png">
+
+</h4>
+</a><div class="date">
+Mar 21 AT 10:00AM PDT
+</div>
+</div>
+</li>
+<li class="small_show" data-is-started="false" data-performance-id="69826" data-start-time="1584813600000">
+<a href="https://www.stageit.com/mtasaccess/jodie_steele_online_concert/69826" class="show_square"><img alt="Jodie Steele Online Concert" class="small_show_image" src="./Stageit _ A front row seat to a backstage experience.™_files/unnamed_(2).jpg">
+</a><div class="small_info">
+<a href="https://www.stageit.com/mtasaccess/jodie_steele_online_concert/69826" class="headliner"><h4>
+MTASACCESS
+</h4>
+</a><div class="date">
+Mar 21 AT 11:00AM PDT
+</div>
+</div>
+</li>
+
+</ul>
+<div class="bottom_link">
+<img alt="Grid_logo" src="./Stageit _ A front row seat to a backstage experience.™_files/grid_logo-ce868b169445d4046fd7ac39cf3cf1c8.png">
+<a href="https://www.stageit.com/shows?time_filter=upcoming">View All</a>
+</div>
+</div>
+<div class="lower_section">
+<div class="lower_header">
+<img alt="Smartphone" class="lower_logo" src="./Stageit _ A front row seat to a backstage experience.™_files/smartphone-93a465edd9e2ae1503b8e42d3b59f4b1.png">
+<h3>Mobile Shows</h3>
+</div>
+<ul>
+
+</ul>
+<div class="bottom_link">
+<img alt="Grid_logo" src="./Stageit _ A front row seat to a backstage experience.™_files/grid_logo-ce868b169445d4046fd7ac39cf3cf1c8.png">
+<a href="https://www.stageit.com/shows?show_filter=mobile_picks">View All</a>
+</div>
+</div>
+</div>
+
+<div id="content_inner_bottom">
+
+</div>
+</div>
+<div id="content_wrapper_right">
+
+</div>
+</div>
+<div id="content_wrapper_bottom">
+
+</div>
+</div>
+<footer>
+<div class="container">
+<div class="row">
+<div class="chunk">
+<h5>About</h5>
+<a href="../static/static_pages/what_is_stageit.html">What is Stageit?</a>
+<br>
+<a href="../shows.html">Browse all shows</a>
+<br>
+<a href="../static/static_pages/our_company.html">Our Company</a>
+<br>
+<a href="../static/static_pages/our_artists.html">Our Artists</a>
+<br>
+<a href="../static/static_pages/press.html">Press</a>
+<br>
+<a href="../static/static_pages/jobs.html">Jobs at Stageit</a>
+</div>
+<div class="chunk">
+<h5>Help</h5>
+<a href="../static/contact.html">Contact Us</a>
+<br>
+<a href="https://stageit.zendesk.com/hc/en-us/sections/203198283-General-" target="_blank">FAQ</a>
+<br>
+</div>
+<div class="chunk">
+<h5>Community</h5>
+<a href="http://eepurl.com/cTNOo">Newsletter</a>
+<br>
+<a href="https://twitter.com/stageit/">Twitter</a>
+<br>
+<a href="https://www.facebook.com/stageit">Facebook</a>
+<br>
+</div>
+<div class="signoff">
+A front row seat to a backstage experience.
+©2020 Stageit All Rights Reserved.
+</div>
+</div>
+<div class="row">
+<div class="chunk">
+<h5>Performer Tips</h5>
+<a href="../static/static_pages/how_to_stageit.html">Show Ideas</a>
+<br>
+<a href="../static/static_pages/broadcasting_tips.html">Broadcasting Tips</a>
+<br>
+<a href="../static_pages/how_to_soundcheck.html">How To Soundcheck</a>
+<br>
+<a href="../static/static_pages/reward_top_supporters.html">Rewarding Top Supporters</a>
+<br>
+<a href="../static/static_pages/marketing_tips.html">Marketing Tips</a>
+<br>
+<a href="../static/static_pages/how_to_get_paid.html">How To Get Paid</a>
+<br>
+<br>
+</div>
+<div class="chunk">
+<h5>Legal</h5>
+<a href="../static/static_pages/terms_of_service.html">Terms of Service</a>
+<br>
+<a href="../static/static_pages/terms_of_sale.html">Terms of Sale</a>
+<br>
+<a href="../static/static_pages/broadcaster_agreement.html">Broadcaster Agreement</a>
+<br>
+<a href="../static/static_pages/privacy_policy.html">Privacy Policy</a>
+</div>
+<div style="display:none;"></div></div>
+</div>
+</footer>
+</div>
+
+<div style="display:none;"></div><div style="display:none;"></div><script id="redemption_gift_details_popup_template" type="text/x-handlebars-template">
+<div class='popup_contents wide_popup'>
+<div class='popup_text'>
+You have successfully redeemed the following:
+</div>
+<div class='gift_details_popup'>
+{{#if performance.available}}
+<div class='detail_bar'>
+1 Ticket to a live streaming show on Stageit.com{{#if extra_notes}} & {{extra_notes}} extra Notes{{/if}}
+</div>
+{{else}}
+<div class='detail_bar_canceled'>
+Canceled or Ended Performance:
+</div>
+{{/if}}
+<div class='ticket_info'>
+<div class='performance_pic'>
+<a href="{{performance.url}}"><img alt='{{performance.title}}' src='{{performance.image}}'>
+</a></div>
+<div class='upcoming_middle'>
+<div class='title'>
+<h2>
+<div class='truncate'>
+<a href="{{performance.url}}">{{performance.title}}
+</a></div>
+</h2>
+</div>
+<div class='info'>
+<div class='truncate'>
+{{performance.user}}
+</div>
+<div>
+{{performance.time}} - {{performance.length_minutes}} Min Show - {{performance.price}}
+</div>
+</div>
+</div>
+</div>
+{{#if extra_notes}}
+<div class='extra_notes'>
+<img alt="note icon" src="https://d2tp1vr1gg6ixe.cloudfront.net/assets/note_large-b04ffdbfa4f054d0d7af12bfc97729e6.png" />
+<span class='extra_note_info'>
+<h3>
+{{extra_notes}} Notes
+</h3>
+<p>
+Use Notes to tip performers or buy tickets to any Stageit show.
+</p>
+</span>
+</div>
+{{/if}}
+</div>
+</div>
+<div class='popup_footer'>
+<div class='right'>
+<input class='stageit_button close_button' type='button' value='Close'>
+</div>
+</div>
+</script>
+<div style="display:none;"></div>
+<script src="./Stageit _ A front row seat to a backstage experience.™_files/widgets.js.download" type="text/javascript"></script>
+<script>
+  var urls = {};
+</script>
+
+<script src="./Stageit _ A front row seat to a backstage experience.™_files/application-f8ed7b2e85b734c2f9f671e548c237ad.js.download" type="text/javascript"></script><script src="./Stageit _ A front row seat to a backstage experience.™_files/jquery.mousewheel.min.js.download"></script>
+
+
+<script id="error_template" type="text/x-handlebars-template">
+<div class='pretty_error' style='height: auto'>
+<div class='error'>
+{{#errors}}
+<span><img alt="Error_x" src="https://d2tp1vr1gg6ixe.cloudfront.net/assets/sidestage/error_x-8f16bd933c429947f68358b03ef00de3.gif" /></span>
+<span class='msg'>{{.}}</span>
+<br>
+{{/errors}}
+</div>
+</div>
+</script>
+<script>
+	var data = { 
+		UserPoolId : _config.cognito.userPoolId,
+        ClientId : _config.cognito.clientId
+    };
+    var userPool = new AmazonCognitoIdentity.CognitoUserPool(data);
+    var cognitoUser = userPool.getCurrentUser();
+	
+	window.onload = function(){
+    if (cognitoUser != null) {
+      
+        cognitoUser.getSession(function(err, session) {
+            if (err) {
+                alert(err);
+                return;
+            }
+            console.log('session validity: ' + session.isValid());
+			//Set the profile info
+			cognitoUser.getUserAttributes(function(err, result) {
+				if (err) {
+					console.log(err);
+					return;
+        }
+        document.getElementById("logout_link").style.display = "block";
+        document.getElementById("user_account_avatar").style.display = "block";
+        document.getElementsByClassName("user_photo")[0].src = "https://stageitstageit.s3.ap-south-1.amazonaws.com/image/" + result[3].getValue().split("@")[0] +".jpg";
+        document.getElementById("welcome").innerText = "Welcome " + result[2].getValue();
+			});			
+			
+        });
+    }else{
+      document.getElementById("login_link").style.display = "block";
+        document.getElementById("signup_link").style.display = "block";
+        document.getElementById("facebook_connect_link").style.display = "block";
+    }
+}
+	function signOut(){
+	    if (cognitoUser != null) {
+          cognitoUser.signOut();  
+        }
+	}
+    </script>
+
+
+
+<div id="flash"></div>
+
+<div id="cboxOverlay" style="display: none;"></div><div id="colorbox" class="" role="dialog" tabindex="-1" style="display: none;"><div id="cboxWrapper"><div><div id="cboxTopLeft" style="float: left;"></div><div id="cboxTopCenter" style="float: left;"></div><div id="cboxTopRight" style="float: left;"></div></div><div style="clear: left;"><div id="cboxMiddleLeft" style="float: left;"></div><div id="cboxContent" style="float: left;"><div id="cboxTitle" style="float: left;"></div><div id="cboxCurrent" style="float: left;"></div><button type="button" id="cboxPrevious"></button><button type="button" id="cboxNext"></button><button id="cboxSlideshow"></button><div id="cboxLoadingOverlay" style="float: left;"></div><div id="cboxLoadingGraphic" style="float: left;"></div></div><div id="cboxMiddleRight" style="float: left;"></div></div><div style="clear: left;"><div id="cboxBottomLeft" style="float: left;"></div><div id="cboxBottomCenter" style="float: left;"></div><div id="cboxBottomRight" style="float: left;"></div></div></div><div style="position: absolute; width: 9999px; visibility: hidden; display: none; max-width: none;"></div></div><div class="ui-dialog ui-widget ui-widget-content ui-corner-all" tabindex="-1" role="dialog" aria-labelledby="ui-id-1" style="display: none; outline: 0px; z-index: 1000;"><div class="ui-dialog-titlebar ui-widget-header ui-corner-all ui-helper-clearfix"><span id="ui-id-1" class="ui-dialog-title">&nbsp;</span><a href="https://www.stageit.com/#" class="ui-dialog-titlebar-close ui-corner-all" role="button"><span class="ui-icon ui-icon-closethick">close</span></a></div><div class="popup ui-dialog-content ui-widget-content" data-autoopen="false" data-bgiframe="true" data-height="auto" data-modal="true" data-resizable="false" data-width="auto" id="popup"><div id="popup_wrapper"></div></div></div><div class="ui-dialog ui-widget ui-widget-content ui-corner-all ui-draggable" tabindex="-1" role="dialog" aria-labelledby="ui-id-2" style="display: none; outline: 0px; z-index: 1000;"><div class="ui-dialog-titlebar ui-widget-header ui-corner-all ui-helper-clearfix"><span id="ui-id-2" class="ui-dialog-title">Redeem</span><a href="https://www.stageit.com/#" class="ui-dialog-titlebar-close ui-corner-all" role="button"><span class="ui-icon ui-icon-closethick">close</span></a></div><div class="popup ui-dialog-content ui-widget-content" data-autoopen="false" data-bgiframe="true" data-height="" data-modal="true" data-resizable="false" data-width="" id="redemption_popup"><form accept-charset="UTF-8" action="https://www.stageit.com/redemptions/redeem" class="new_redemption ng-pristine ng-valid" data-remote="true" id="new_redemption" method="post"><div style="margin:0;padding:0;display:inline"><input name="utf8" type="hidden" value="✓"><input name="_method" type="hidden" value="put"><input name="authenticity_token" type="hidden" value="qsjnBbhR4tigvxUqQyEgQWV8zL65mNC+xQMHWegxZSg="></div><input name="format" type="hidden" value="json">
+<div class="popup_contents wide_popup">
+<div class="popup_text">
+Enter your redemption code below:
+</div>
+<div class="popup_subtext">
+Redemption codes can be found in emails or other messages pertaining to gifts.
+</div>
+<div class="redemption_code">
+<input class="field" data-url-exists="/redemptions/exists" id="redemption_code" name="redemption[code]" placeholder="Paste or type your code here" required="required" size="30" type="text">
+</div>
+</div>
+<div class="popup_footer">
+<div class="right">
+<input class="stageit_button grey_button cancel_button ui-button ui-widget ui-state-default ui-corner-all" type="button" value="Cancel" role="button" aria-disabled="false">
+<input class="stageit_button continue_button ui-button ui-widget ui-state-default ui-corner-all ui-button-disabled ui-state-disabled" disabled="" name="commit" type="submit" value="Continue" role="button" aria-disabled="true">
+</div>
+</div>
+</form>
+
+</div></div><div class="ui-dialog ui-widget ui-widget-content ui-corner-all ui-draggable" tabindex="-1" role="dialog" aria-labelledby="ui-id-3" style="display: none; outline: 0px; z-index: 1000;"><div class="ui-dialog-titlebar ui-widget-header ui-corner-all ui-helper-clearfix"><span id="ui-id-3" class="ui-dialog-title">Gift Details</span><a href="https://www.stageit.com/#" class="ui-dialog-titlebar-close ui-corner-all" role="button"><span class="ui-icon ui-icon-closethick">close</span></a></div><div class="popup ui-dialog-content ui-widget-content" data-autoopen="false" data-bgiframe="true" data-height="" data-modal="true" data-resizable="false" data-width="" id="redemption_gift_details_popup"><div id="redemption_gift_details_popup_wrapper"></div></div></div><div class="ui-dialog ui-widget ui-widget-content ui-corner-all ui-draggable" tabindex="-1" role="dialog" aria-labelledby="ui-id-4" style="display: none; outline: 0px; z-index: 1000;"><div class="ui-dialog-titlebar ui-widget-header ui-corner-all ui-helper-clearfix"><span id="ui-id-4" class="ui-dialog-title">Redemption Error</span><a href="https://www.stageit.com/#" class="ui-dialog-titlebar-close ui-corner-all" role="button"><span class="ui-icon ui-icon-closethick">close</span></a></div><div class="popup ui-dialog-content ui-widget-content" data-autoopen="false" data-bgiframe="true" data-height="" data-modal="true" data-resizable="false" data-width="" id="redemption_error_popup"><div class="popup_contents wide_popup">
+<div class="error_message"></div>
+</div>
+</div></div><iframe scrolling="no" frameborder="0" allowtransparency="true" src="./Stageit _ A front row seat to a backstage experience.™_files/widget_iframe.d0f13be8321eb432fba28cfc1c3351b1.html" title="Twitter settings iframe" style="display: none;"></iframe></body></html>
