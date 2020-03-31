@@ -436,6 +436,7 @@ Use Notes to tip performers or buy tickets to any Stageit show.
   var profileurl;
     
   function registerButton() {
+    
     var bucketName = "stageitstageit";
     var bucketRegion = "ap-south-1";
     var IdentityPoolId = "ap-south-1:1b4f82e8-9014-4b41-ba7d-9ddd70712fc8";
@@ -525,20 +526,23 @@ Use Notes to tip performers or buy tickets to any Stageit show.
   attributeList.push(attributeEmail);
   attributeList.push(attributePersonalName);
 
+  var data = true;
   userPool.signUp(username, password, attributeList, null, function(err, result){
     if (err) {
       document.getElementById("errortitle").innerHTML = err.message || JSON.stringify(err);
+      data = false;
       return;
     }
     cognitoUser = result.user;
     console.log(cognitoUser);
+
     //change elements of pag
    
     
   });
   var uploaded;
-  
-  if (files) 
+  setTimeout(function(){
+  if (files && data) 
    {
      var file = files[0];
      var fileName = username.split("@")[0] + ".jpg";
@@ -560,11 +564,8 @@ Use Notes to tip performers or buy tickets to any Stageit show.
         window.location.assign("static/confirm.html");
       }
       });
-      
-   }else{
-    document.getElementById("errortitle").innerHTML = "Please upload image";
-      throw "Please upload image";
    }
+  }, 1500);
   }
 
 </script>

@@ -1,0 +1,62 @@
+
+<!DOCTYPE html>
+
+<head>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <script src="https://www.paypalobjects.com/api/checkout.js"></script>
+</head>
+
+<body>
+    <div id="paypal-button"></div>
+
+    <script>
+        paypal.Button.render({
+
+            env: 'sandbox', // sandbox | production
+
+            // PayPal Client IDs - replace with your own
+            // Create a PayPal app: https://developer.paypal.com/developer/applications/create
+            client: {
+                sandbox: 'AeyOcheRLDXOQ-V9e5A_j__Izl6YitddffldZi2jZw3ox-vFlqVVPnAE0WECR18ZbxTEEU7A0MVOPB-F',
+                production: 'AdfIVpK5DykWsVuPy9q600QOSUjrknP5h20lYCUVVtzRt0wLUdMSkndUwTmahVdP8MGq9Wbw7s3jX0Ly'
+            },
+
+            // Show the buyer a 'Pay Now' button in the checkout flow
+            commit: true,
+
+            // payment() is called when the button is clicked
+            payment: function (data, actions) {
+
+                // Make a call to the REST api to create the payment
+                return actions.payment.create({
+                    payment: {
+                        transactions: [
+                            {
+                                amount: {total: '1', currency: 'USD'}
+                            }
+                        ]
+                    }
+                });
+            },
+
+            // onAuthorize() is called when the buyer approves the payment
+            onAuthorize: function (data, actions) {
+
+                // Make a call to the REST api to execute the payment
+                return actions.payment.execute().then(function () {
+                    
+        
+                  window.alert('Payment Complete!');
+        
+        
+                });
+            }
+
+        }, '#paypal-button');
+
+    </script>
+</body>
+
+</html>
+
